@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_dXAEEIBvEeerU_YOHEa80Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_dXAEEYBvEeerU_YOHEa80Q" comment="" name="SFDCuser" prompt="SFDCuser?" promptNeeded="false" type="id_String" value="darrenbrunt@gmail.com"/>
+  <contextParameter xmi:id="_dXAEEoBvEeerU_YOHEa80Q" comment="" name="SFDCpasswd" prompt="SFDCpasswd?" promptNeeded="false" type="id_Password" value="yb90nqgkCVeNP3UqVnEZKPlPUl0C39EjE5IZjIoZ3SeJOMg0UU3FyQ=="/>
+  <contextParameter xmi:id="_dXAEE4BvEeerU_YOHEa80Q" comment="" name="SFDCurl" prompt="SFDCurl?" promptNeeded="false" type="id_String" value="https://www.salesforce.com/services/Soap/u/25.0"/>
+  <contextParameter xmi:id="_dXAEFIBvEeerU_YOHEa80Q" comment="" name="SFDCremotekey" prompt="SFDCremotekey?" promptNeeded="false" type="id_String" value="LNXkHk0SMC5TwN8PBddt5ch3G"/>
+</talendfile:ContextType>

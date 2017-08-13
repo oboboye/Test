@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_T_3EECWiEeerJu20fMA-Lg" name="DQTechnical"/>
+    <routinesParameter id="_T_jiECWiEeerJu20fMA-Lg" name="DataMasking"/>
+    <routinesParameter id="_T5zfYCWiEeerJu20fMA-Lg" name="DataOperation"/>
+    <routinesParameter id="_T_sE8CWiEeerJu20fMA-Lg" name="DataQualityDependencies"/>
+    <routinesParameter id="_T_pBoCWiEeerJu20fMA-Lg" name="DataQuality"/>
+    <routinesParameter id="_T_0n0CWiEeerJu20fMA-Lg" name="DqStringHandling"/>
+    <routinesParameter id="_T_6HYCWiEeerJu20fMA-Lg" name="MDM"/>
+    <routinesParameter id="_T9cCMCWiEeerJu20fMA-Lg" name="Mathematical"/>
+    <routinesParameter id="_T9d3YCWiEeerJu20fMA-Lg" name="Numeric"/>
+    <routinesParameter id="_T9hhwCWiEeerJu20fMA-Lg" name="Relational"/>
+    <routinesParameter id="_T_78kCWiEeerJu20fMA-Lg" name="SQLike"/>
+    <routinesParameter id="_T_ROMCWiEeerJu20fMA-Lg" name="StringHandling"/>
+    <routinesParameter id="_T_U4kCWiEeerJu20fMA-Lg" name="TalendDataGenerator"/>
+    <routinesParameter id="_T_X74CWiEeerJu20fMA-Lg" name="TalendDate"/>
+    <routinesParameter id="_T_epkCWiEeerJu20fMA-Lg" name="TalendString"/>
+    <routinesParameter id="_kmsmAMNKEeW3AMObSTyzLw" name="TracabUtils"/>
+    <routinesParameter id="_rSdr4BjoEeaXZpc63th25Q" name="myRoutine"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/wt&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="displayPublications"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="displayPublication"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="addPublication"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications&quot;"/>
+      <elementValue elementRef="CONSUMES" value="XML"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;API_23b_API_Workflow_Job&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="displayPublications" name="displayPublications"/>
+    <metadata connector="FLOW" label="displayPublication" name="displayPublication">
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="addPublication" name="addPublication">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tdllYFHFEeeVm6TbPzwxfg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wtdb&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;tadmin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="JOWA5maO7B5AyuJHnjYhGg=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_SeyKsVHHEeeVm6TbPzwxfg - publications" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;publications&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * from publications&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pmid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pmcid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="doi"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalTitle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="issue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalVolume"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pubYear"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalIssn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pageInfo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pubType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isOpenAccess"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inEPMC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inPMC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasPDF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasBook"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasSuppl"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="citedByCount"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasReferences"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasTextMinedTerms"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasDbCrossReferences"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasLabsLinks"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasTMAccessionNumbers"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstPublicationDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&quot;Publications&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="publications" name="tMysqlInput_1">
+      <column comment="" key="true" length="255" name="id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmcid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="doi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalTitle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="issue" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalVolume" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubYear" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalIssn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pageInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isOpenAccess" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inEPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasPDF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasBook" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasSuppl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="citedByCount" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTextMinedTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasDbCrossReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasLabsLinks" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTMAccessionNumbers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="firstPublicationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="sendPublications">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="id" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/id" nullable="false"/>
+        <nodes name="source" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/source"/>
+        <nodes name="pmid" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/pmid"/>
+        <nodes name="pmcid" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/pmcid"/>
+        <nodes name="doi" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/doi"/>
+        <nodes name="title" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/title"/>
+        <nodes name="journalTitle" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/journalTitle"/>
+        <nodes name="issue" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row1/issue"/>
+        <nodes name="journalVolume" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row1/journalVolume"/>
+        <nodes name="pubYear" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.9" xpath="row1/pubYear"/>
+        <nodes name="journalIssn" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.10" xpath="row1/journalIssn"/>
+        <nodes name="pageInfo" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.11" xpath="row1/pageInfo"/>
+        <nodes name="pubType" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.12" xpath="row1/pubType"/>
+        <nodes name="isOpenAccess" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.13" xpath="row1/isOpenAccess"/>
+        <nodes name="inEPMC" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.14" xpath="row1/inEPMC"/>
+        <nodes name="inPMC" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.15" xpath="row1/inPMC"/>
+        <nodes name="hasPDF" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.16" xpath="row1/hasPDF"/>
+        <nodes name="hasBook" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.17" xpath="row1/hasBook"/>
+        <nodes name="hasSuppl" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.18" xpath="row1/hasSuppl"/>
+        <nodes name="citedByCount" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.19" xpath="row1/citedByCount"/>
+        <nodes name="hasReferences" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.20" xpath="row1/hasReferences"/>
+        <nodes name="hasTextMinedTerms" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.21" xpath="row1/hasTextMinedTerms"/>
+        <nodes name="hasDbCrossReferences" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.22" xpath="row1/hasDbCrossReferences"/>
+        <nodes name="hasLabsLinks" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.23" xpath="row1/hasLabsLinks"/>
+        <nodes name="hasTMAccessionNumbers" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.24" xpath="row1/hasTMAccessionNumbers"/>
+        <nodes name="firstPublicationDate" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.25" xpath="row1/firstPublicationDate"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="sendPublications" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="sendPublications/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wt" expression="" type="id_String" xpath="sendPublications.body:/wt" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="publication" expression="" type="id_String" xpath="sendPublications.body:/wt/publication" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="sendPublications.body:/wt/publication/id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="source" expression="row1.source" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="sendPublications.body:/wt/publication/source"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pmid" expression="row1.pmid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="sendPublications.body:/wt/publication/pmid"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pmcid" expression="row1.pmcid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="sendPublications.body:/wt/publication/pmcid"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="doi" expression="row1.doi" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="sendPublications.body:/wt/publication/doi"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="sendPublications.body:/wt/publication/title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="authorString" expression="" type="id_String" xpath="sendPublications.body:/wt/publication/authorString"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="journalTitle" expression="row1.journalTitle" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="sendPublications.body:/wt/publication/journalTitle"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="issue" expression="row1.issue" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="sendPublications.body:/wt/publication/issue"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="journalVolume" expression="row1.journalVolume" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="sendPublications.body:/wt/publication/journalVolume"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pubYear" expression="row1.pubYear" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="sendPublications.body:/wt/publication/pubYear"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="journalIssn" expression="row1.journalIssn" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.10" xpath="sendPublications.body:/wt/publication/journalIssn"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pageInfo" expression="row1.pageInfo" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.11" xpath="sendPublications.body:/wt/publication/pageInfo"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pubType" expression="row1.pubType" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.12" xpath="sendPublications.body:/wt/publication/pubType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="isOpenAccess" expression="row1.isOpenAccess" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.13" xpath="sendPublications.body:/wt/publication/isOpenAccess"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="inEPMC" expression="row1.inEPMC" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.14" xpath="sendPublications.body:/wt/publication/inEPMC"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="inPMC" expression="row1.inPMC" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.15" xpath="sendPublications.body:/wt/publication/inPMC"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasPDF" expression="row1.hasPDF" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.16" xpath="sendPublications.body:/wt/publication/hasPDF"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasBook" expression="row1.hasBook" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.17" xpath="sendPublications.body:/wt/publication/hasBook"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasSuppl" expression="row1.hasSuppl" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.18" xpath="sendPublications.body:/wt/publication/hasSuppl"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="citedByCount" expression="row1.citedByCount" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.19" xpath="sendPublications.body:/wt/publication/citedByCount"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasReferences" expression="row1.hasReferences" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.20" xpath="sendPublications.body:/wt/publication/hasReferences"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasTextMinedTerms" expression="row1.hasTextMinedTerms" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.21" xpath="sendPublications.body:/wt/publication/hasTextMinedTerms"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasDbCrossReferences" expression="row1.hasDbCrossReferences" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.22" xpath="sendPublications.body:/wt/publication/hasDbCrossReferences"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasLabsLinks" expression="row1.hasLabsLinks" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.23" xpath="sendPublications.body:/wt/publication/hasLabsLinks"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasTMAccessionNumbers" expression="row1.hasTMAccessionNumbers" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.24" xpath="sendPublications.body:/wt/publication/hasTMAccessionNumbers"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstPublicationDate" expression="row1.firstPublicationDate" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.25" xpath="sendPublications.body:/wt/publication/firstPublicationDate"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.11" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.12" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.13" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.14" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.15" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.16" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.17" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.18" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.19" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.20" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.21" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.22" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.23" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.24" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.25" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tdllYFHFEeeVm6TbPzwxfg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wtdb&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;tadmin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="JOWA5maO7B5AyuJHnjYhGg=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_SeyKsVHHEeeVm6TbPzwxfg - publications" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;publications&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * from publications&#xA;WHERE publications.id ='&quot;+((String)globalMap.get(&quot;displayPublication.id&quot;))+&quot;'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pmid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pmcid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="doi"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalTitle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="issue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalVolume"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pubYear"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalIssn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pageInfo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pubType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isOpenAccess"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inEPMC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inPMC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasPDF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasBook"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasSuppl"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="citedByCount"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasReferences"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasTextMinedTerms"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasDbCrossReferences"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasLabsLinks"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasTMAccessionNumbers"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstPublicationDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&quot;Publications&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="publications" name="tMysqlInput_2">
+      <column comment="" key="true" length="255" name="id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmcid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="doi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalTitle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="issue" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalVolume" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubYear" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalIssn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pageInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isOpenAccess" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inEPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasPDF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasBook" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasSuppl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="citedByCount" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTextMinedTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasDbCrossReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasLabsLinks" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTMAccessionNumbers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="firstPublicationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="sendPublication">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="id" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row2/id" nullable="false"/>
+        <nodes name="source" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="row2/source"/>
+        <nodes name="pmid" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.2" xpath="row2/pmid"/>
+        <nodes name="pmcid" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.3" xpath="row2/pmcid"/>
+        <nodes name="doi" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.4" xpath="row2/doi"/>
+        <nodes name="title" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.5" xpath="row2/title"/>
+        <nodes name="journalTitle" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.6" xpath="row2/journalTitle"/>
+        <nodes name="issue" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.7" xpath="row2/issue"/>
+        <nodes name="journalVolume" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.8" xpath="row2/journalVolume"/>
+        <nodes name="pubYear" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.9" xpath="row2/pubYear"/>
+        <nodes name="journalIssn" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.10" xpath="row2/journalIssn"/>
+        <nodes name="pageInfo" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.11" xpath="row2/pageInfo"/>
+        <nodes name="pubType" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.12" xpath="row2/pubType"/>
+        <nodes name="isOpenAccess" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.13" xpath="row2/isOpenAccess"/>
+        <nodes name="inEPMC" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.14" xpath="row2/inEPMC"/>
+        <nodes name="inPMC" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.15" xpath="row2/inPMC"/>
+        <nodes name="hasPDF" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.16" xpath="row2/hasPDF"/>
+        <nodes name="hasBook" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.17" xpath="row2/hasBook"/>
+        <nodes name="hasSuppl" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.18" xpath="row2/hasSuppl"/>
+        <nodes name="citedByCount" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.19" xpath="row2/citedByCount"/>
+        <nodes name="hasReferences" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.20" xpath="row2/hasReferences"/>
+        <nodes name="hasTextMinedTerms" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.21" xpath="row2/hasTextMinedTerms"/>
+        <nodes name="hasDbCrossReferences" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.22" xpath="row2/hasDbCrossReferences"/>
+        <nodes name="hasLabsLinks" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.23" xpath="row2/hasLabsLinks"/>
+        <nodes name="hasTMAccessionNumbers" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.24" xpath="row2/hasTMAccessionNumbers"/>
+        <nodes name="firstPublicationDate" type="id_Date" outgoingConnections="//@node.7/@nodeData/@connections.25" xpath="row2/firstPublicationDate"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="sendPublication">
+        <nodes name="body" expression="" type="id_Document" xpath="sendPublication/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wt" expression="" type="id_String" xpath="sendPublication.body:/wt" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="publication" expression="" type="id_String" xpath="sendPublication.body:/wt/publication" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row2.id" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="sendPublication.body:/wt/publication/id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="source" expression="row2.source" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="sendPublication.body:/wt/publication/source"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pmid" expression="row2.pmid" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.2" xpath="sendPublication.body:/wt/publication/pmid"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pmcid" expression="row2.pmcid" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.3" xpath="sendPublication.body:/wt/publication/pmcid"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="doi" expression="row2.doi" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.4" xpath="sendPublication.body:/wt/publication/doi"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row2.title" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.5" xpath="sendPublication.body:/wt/publication/title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="authorString" expression="" type="id_String" xpath="sendPublication.body:/wt/publication/authorString"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="journalTitle" expression="row2.journalTitle" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.6" xpath="sendPublication.body:/wt/publication/journalTitle"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="issue" expression="row2.issue" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.7" xpath="sendPublication.body:/wt/publication/issue"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="journalVolume" expression="row2.journalVolume" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.8" xpath="sendPublication.body:/wt/publication/journalVolume"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pubYear" expression="row2.pubYear" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.9" xpath="sendPublication.body:/wt/publication/pubYear"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="journalIssn" expression="row2.journalIssn" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.10" xpath="sendPublication.body:/wt/publication/journalIssn"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pageInfo" expression="row2.pageInfo" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.11" xpath="sendPublication.body:/wt/publication/pageInfo"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="pubType" expression="row2.pubType" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.12" xpath="sendPublication.body:/wt/publication/pubType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="isOpenAccess" expression="row2.isOpenAccess" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.13" xpath="sendPublication.body:/wt/publication/isOpenAccess"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="inEPMC" expression="row2.inEPMC" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.14" xpath="sendPublication.body:/wt/publication/inEPMC"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="inPMC" expression="row2.inPMC" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.15" xpath="sendPublication.body:/wt/publication/inPMC"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasPDF" expression="row2.hasPDF" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.16" xpath="sendPublication.body:/wt/publication/hasPDF"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasBook" expression="row2.hasBook" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.17" xpath="sendPublication.body:/wt/publication/hasBook"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasSuppl" expression="row2.hasSuppl" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.18" xpath="sendPublication.body:/wt/publication/hasSuppl"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="citedByCount" expression="row2.citedByCount" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.19" xpath="sendPublication.body:/wt/publication/citedByCount"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasReferences" expression="row2.hasReferences" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.20" xpath="sendPublication.body:/wt/publication/hasReferences"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasTextMinedTerms" expression="row2.hasTextMinedTerms" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.21" xpath="sendPublication.body:/wt/publication/hasTextMinedTerms"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasDbCrossReferences" expression="row2.hasDbCrossReferences" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.22" xpath="sendPublication.body:/wt/publication/hasDbCrossReferences"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasLabsLinks" expression="row2.hasLabsLinks" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.23" xpath="sendPublication.body:/wt/publication/hasLabsLinks"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hasTMAccessionNumbers" expression="row2.hasTMAccessionNumbers" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.24" xpath="sendPublication.body:/wt/publication/hasTMAccessionNumbers"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstPublicationDate" expression="row2.firstPublicationDate" type="id_Date" incomingConnections="//@node.7/@nodeData/@connections.25" xpath="sendPublication.body:/wt/publication/firstPublicationDate"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.3" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.4" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.5" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.6" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.7" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.8" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.9" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.10" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.11" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.12" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.13" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.14" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.15" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.16" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.17" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.18" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.19" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.20" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.21" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.22" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.23" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.24" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.25" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="publications" name="toDB">
+      <column comment="" key="true" length="255" name="id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmcid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="doi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="authorString" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalTitle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="issue" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalVolume" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubYear" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalIssn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pageInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isOpenAccess" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inEPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasPDF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasBook" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasSuppl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="citedByCount" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTextMinedTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasDbCrossReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasLabsLinks" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTMAccessionNumbers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="firstPublicationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="addPublication" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="addPublication/body">
+          <children name="responseWrapper" type="id_String" xpath="addPublication.body:/responseWrapper" main="true">
+            <children name="resultList" type="id_String" xpath="addPublication.body:/responseWrapper/resultList" main="true">
+              <children name="result" type="id_String" xpath="addPublication.body:/responseWrapper/resultList/result" loop="true" main="true">
+                <children name="id" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.0" xpath="addPublication.body:/responseWrapper/resultList/result/id"/>
+                <children name="source" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.1" xpath="addPublication.body:/responseWrapper/resultList/result/source"/>
+                <children name="pmid" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.2" xpath="addPublication.body:/responseWrapper/resultList/result/pmid"/>
+                <children name="pmcid" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.3" xpath="addPublication.body:/responseWrapper/resultList/result/pmcid"/>
+                <children name="doi" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.4" xpath="addPublication.body:/responseWrapper/resultList/result/doi"/>
+                <children name="title" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.5" xpath="addPublication.body:/responseWrapper/resultList/result/title"/>
+                <children name="authorString" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.6" xpath="addPublication.body:/responseWrapper/resultList/result/authorString"/>
+                <children name="journalTitle" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.7" xpath="addPublication.body:/responseWrapper/resultList/result/journalTitle"/>
+                <children name="issue" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.8" xpath="addPublication.body:/responseWrapper/resultList/result/issue"/>
+                <children name="journalVolume" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.9" xpath="addPublication.body:/responseWrapper/resultList/result/journalVolume"/>
+                <children name="pubYear" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.10" xpath="addPublication.body:/responseWrapper/resultList/result/pubYear"/>
+                <children name="journalIssn" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.11" xpath="addPublication.body:/responseWrapper/resultList/result/journalIssn"/>
+                <children name="pageInfo" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.12" xpath="addPublication.body:/responseWrapper/resultList/result/pageInfo"/>
+                <children name="pubType" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.13" xpath="addPublication.body:/responseWrapper/resultList/result/pubType"/>
+                <children name="isOpenAccess" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.14" xpath="addPublication.body:/responseWrapper/resultList/result/isOpenAccess"/>
+                <children name="inEPMC" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.15" xpath="addPublication.body:/responseWrapper/resultList/result/inEPMC"/>
+                <children name="inPMC" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.16" xpath="addPublication.body:/responseWrapper/resultList/result/inPMC"/>
+                <children name="hasPDF" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.17" xpath="addPublication.body:/responseWrapper/resultList/result/hasPDF"/>
+                <children name="hasBook" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.18" xpath="addPublication.body:/responseWrapper/resultList/result/hasBook"/>
+                <children name="hasSuppl" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.19" xpath="addPublication.body:/responseWrapper/resultList/result/hasSuppl"/>
+                <children name="citedByCount" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.20" xpath="addPublication.body:/responseWrapper/resultList/result/citedByCount"/>
+                <children name="hasReferences" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.21" xpath="addPublication.body:/responseWrapper/resultList/result/hasReferences"/>
+                <children name="hasTextMinedTerms" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.22" xpath="addPublication.body:/responseWrapper/resultList/result/hasTextMinedTerms"/>
+                <children name="hasDbCrossReferences" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.23" xpath="addPublication.body:/responseWrapper/resultList/result/hasDbCrossReferences"/>
+                <children name="hasLabsLinks" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.24" xpath="addPublication.body:/responseWrapper/resultList/result/hasLabsLinks"/>
+                <children name="hasTMAccessionNumbers" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.25" xpath="addPublication.body:/responseWrapper/resultList/result/hasTMAccessionNumbers"/>
+                <children name="firstPublicationDate" type="id_Date" outgoingConnections="//@node.9/@nodeData/@connections.26" xpath="addPublication.body:/responseWrapper/resultList/result/firstPublicationDate" pattern="&quot;dd-MM-yyyy&quot;"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="toDB">
+        <nodes name="id" expression="[addPublication.body:/responseWrapper/resultList/result/id]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.0" xpath="toDB/id" nullable="false"/>
+        <nodes name="source" expression="[addPublication.body:/responseWrapper/resultList/result/source]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.1" xpath="toDB/source"/>
+        <nodes name="pmid" expression="[addPublication.body:/responseWrapper/resultList/result/pmid]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.2" xpath="toDB/pmid"/>
+        <nodes name="pmcid" expression="[addPublication.body:/responseWrapper/resultList/result/pmcid]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.3" xpath="toDB/pmcid"/>
+        <nodes name="doi" expression="[addPublication.body:/responseWrapper/resultList/result/doi]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.4" xpath="toDB/doi"/>
+        <nodes name="title" expression="[addPublication.body:/responseWrapper/resultList/result/title]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.5" xpath="toDB/title"/>
+        <nodes name="authorString" expression="[addPublication.body:/responseWrapper/resultList/result/authorString]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.6" xpath="toDB/authorString"/>
+        <nodes name="journalTitle" expression="[addPublication.body:/responseWrapper/resultList/result/journalTitle]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.7" xpath="toDB/journalTitle"/>
+        <nodes name="issue" expression="[addPublication.body:/responseWrapper/resultList/result/issue]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.8" xpath="toDB/issue"/>
+        <nodes name="journalVolume" expression="[addPublication.body:/responseWrapper/resultList/result/journalVolume]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.9" xpath="toDB/journalVolume"/>
+        <nodes name="pubYear" expression="[addPublication.body:/responseWrapper/resultList/result/pubYear]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.10" xpath="toDB/pubYear"/>
+        <nodes name="journalIssn" expression="[addPublication.body:/responseWrapper/resultList/result/journalIssn]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.11" xpath="toDB/journalIssn"/>
+        <nodes name="pageInfo" expression="[addPublication.body:/responseWrapper/resultList/result/pageInfo]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.12" xpath="toDB/pageInfo"/>
+        <nodes name="pubType" expression="[addPublication.body:/responseWrapper/resultList/result/pubType]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.13" xpath="toDB/pubType"/>
+        <nodes name="isOpenAccess" expression="[addPublication.body:/responseWrapper/resultList/result/isOpenAccess]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.14" xpath="toDB/isOpenAccess"/>
+        <nodes name="inEPMC" expression="[addPublication.body:/responseWrapper/resultList/result/inEPMC]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.15" xpath="toDB/inEPMC"/>
+        <nodes name="inPMC" expression="[addPublication.body:/responseWrapper/resultList/result/inPMC]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.16" xpath="toDB/inPMC"/>
+        <nodes name="hasPDF" expression="[addPublication.body:/responseWrapper/resultList/result/hasPDF]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.17" xpath="toDB/hasPDF"/>
+        <nodes name="hasBook" expression="[addPublication.body:/responseWrapper/resultList/result/hasBook]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.18" xpath="toDB/hasBook"/>
+        <nodes name="hasSuppl" expression="[addPublication.body:/responseWrapper/resultList/result/hasSuppl]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.19" xpath="toDB/hasSuppl"/>
+        <nodes name="citedByCount" expression="[addPublication.body:/responseWrapper/resultList/result/citedByCount]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.20" xpath="toDB/citedByCount"/>
+        <nodes name="hasReferences" expression="[addPublication.body:/responseWrapper/resultList/result/hasReferences]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.21" xpath="toDB/hasReferences"/>
+        <nodes name="hasTextMinedTerms" expression="[addPublication.body:/responseWrapper/resultList/result/hasTextMinedTerms]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.22" xpath="toDB/hasTextMinedTerms"/>
+        <nodes name="hasDbCrossReferences" expression="[addPublication.body:/responseWrapper/resultList/result/hasDbCrossReferences]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.23" xpath="toDB/hasDbCrossReferences"/>
+        <nodes name="hasLabsLinks" expression="[addPublication.body:/responseWrapper/resultList/result/hasLabsLinks]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.24" xpath="toDB/hasLabsLinks"/>
+        <nodes name="hasTMAccessionNumbers" expression="[addPublication.body:/responseWrapper/resultList/result/hasTMAccessionNumbers]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.25" xpath="toDB/hasTMAccessionNumbers"/>
+        <nodes name="firstPublicationDate" expression="[addPublication.body:/responseWrapper/resultList/result/firstPublicationDate]" type="id_Date" incomingConnections="//@node.9/@nodeData/@connections.26" xpath="toDB/firstPublicationDate"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0" target="//@node.9/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.1" target="//@node.9/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.2" target="//@node.9/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.3" target="//@node.9/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.4" target="//@node.9/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.5" target="//@node.9/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.6" target="//@node.9/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.7" target="//@node.9/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.8" target="//@node.9/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.9" target="//@node.9/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.10" target="//@node.9/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.11" target="//@node.9/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.12" target="//@node.9/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.13" target="//@node.9/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.14" target="//@node.9/@nodeData/@outputTrees.0/@nodes.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.15" target="//@node.9/@nodeData/@outputTrees.0/@nodes.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.16" target="//@node.9/@nodeData/@outputTrees.0/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.17" target="//@node.9/@nodeData/@outputTrees.0/@nodes.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.18" target="//@node.9/@nodeData/@outputTrees.0/@nodes.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.19" target="//@node.9/@nodeData/@outputTrees.0/@nodes.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.20" target="//@node.9/@nodeData/@outputTrees.0/@nodes.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.21" target="//@node.9/@nodeData/@outputTrees.0/@nodes.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.22" target="//@node.9/@nodeData/@outputTrees.0/@nodes.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.23" target="//@node.9/@nodeData/@outputTrees.0/@nodes.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.24" target="//@node.9/@nodeData/@outputTrees.0/@nodes.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.25" target="//@node.9/@nodeData/@outputTrees.0/@nodes.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.26" target="//@node.9/@nodeData/@outputTrees.0/@nodes.26"/>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tdllYFHFEeeVm6TbPzwxfg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wtdb&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;tadmin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="JOWA5maO7B5AyuJHnjYhGg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;publications&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_SeyKsVHHEeeVm6TbPzwxfg - publications" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pmid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pmcid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="doi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalTitle"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="issue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalVolume"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pubYear"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="journalIssn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pageInfo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pubType"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isOpenAccess"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inEPMC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inPMC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasPDF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasBook"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasSuppl"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="citedByCount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasReferences"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasTextMinedTerms"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasDbCrossReferences"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasLabsLinks"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasTMAccessionNumbers"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstPublicationDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&quot;Publications&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="publications" name="tMysqlOutput_1">
+      <column comment="" key="true" length="255" name="id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmcid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="doi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalTitle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="issue" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalVolume" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubYear" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalIssn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pageInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isOpenAccess" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inEPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasPDF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasBook" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasSuppl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="citedByCount" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTextMinedTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasDbCrossReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasLabsLinks" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTMAccessionNumbers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="firstPublicationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="publications" name="REJECT">
+      <column comment="" key="true" length="255" name="id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pmcid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="doi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalTitle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="issue" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalVolume" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubYear" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="journalIssn" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pageInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="pubType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isOpenAccess" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inEPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="inPMC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasPDF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasBook" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasSuppl" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="citedByCount" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTextMinedTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasDbCrossReferences" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasLabsLinks" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="hasTMAccessionNumbers" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="firstPublicationDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="response">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="id" type="id_String" xpath="row3/id" nullable="false"/>
+        <nodes name="source" type="id_String" xpath="row3/source"/>
+        <nodes name="pmid" type="id_String" xpath="row3/pmid"/>
+        <nodes name="pmcid" type="id_String" xpath="row3/pmcid"/>
+        <nodes name="doi" type="id_String" xpath="row3/doi"/>
+        <nodes name="title" type="id_String" outgoingConnections="//@node.11/@nodeData/@connections.0" xpath="row3/title"/>
+        <nodes name="journalTitle" type="id_String" xpath="row3/journalTitle"/>
+        <nodes name="issue" type="id_String" xpath="row3/issue"/>
+        <nodes name="journalVolume" type="id_String" xpath="row3/journalVolume"/>
+        <nodes name="pubYear" type="id_String" xpath="row3/pubYear"/>
+        <nodes name="journalIssn" type="id_String" xpath="row3/journalIssn"/>
+        <nodes name="pageInfo" type="id_String" xpath="row3/pageInfo"/>
+        <nodes name="pubType" type="id_String" xpath="row3/pubType"/>
+        <nodes name="isOpenAccess" type="id_String" xpath="row3/isOpenAccess"/>
+        <nodes name="inEPMC" type="id_String" xpath="row3/inEPMC"/>
+        <nodes name="inPMC" type="id_String" xpath="row3/inPMC"/>
+        <nodes name="hasPDF" type="id_String" xpath="row3/hasPDF"/>
+        <nodes name="hasBook" type="id_String" xpath="row3/hasBook"/>
+        <nodes name="hasSuppl" type="id_String" xpath="row3/hasSuppl"/>
+        <nodes name="citedByCount" type="id_String" xpath="row3/citedByCount"/>
+        <nodes name="hasReferences" type="id_String" xpath="row3/hasReferences"/>
+        <nodes name="hasTextMinedTerms" type="id_String" xpath="row3/hasTextMinedTerms"/>
+        <nodes name="hasDbCrossReferences" type="id_String" xpath="row3/hasDbCrossReferences"/>
+        <nodes name="hasLabsLinks" type="id_String" xpath="row3/hasLabsLinks"/>
+        <nodes name="hasTMAccessionNumbers" type="id_String" xpath="row3/hasTMAccessionNumbers"/>
+        <nodes name="firstPublicationDate" type="id_Date" xpath="row3/firstPublicationDate"/>
+      </inputTrees>
+      <outputTrees name="response">
+        <nodes name="body" expression="" type="id_Document" xpath="response/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="&quot;Publication &quot;+row3.title+&quot; was inserted into the Publication database&quot; " type="id_String" incomingConnections="//@node.11/@nodeData/@connections.0" xpath="response.body:/message" loop="true" main="true"/>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.5" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_3" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="displayPublications" lineStyle="0" metaname="displayPublications" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTRequest_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="displayPublications" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="displayPublication" lineStyle="0" metaname="displayPublication" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTRequest_1" target="tFlowToIterate_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="displayPublication" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="addPublication" lineStyle="0" metaname="addPublication" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tRESTRequest_1" target="tXMLMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="addPublication" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tMysqlInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="sendPublications" lineStyle="0" metaname="sendPublications" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendPublications" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tMysqlInput_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMysqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_2" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="sendPublication" lineStyle="0" metaname="sendPublication" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendPublication" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="toDB" lineStyle="0" metaname="toDB" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tMysqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="toDB" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tMysqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlOutput_1" target="tXMLMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="response" lineStyle="0" metaname="response" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_4" target="tRESTResponse_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="response" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

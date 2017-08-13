@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_dW4vUIBvEeerU_YOHEa80Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_dW4vUYBvEeerU_YOHEa80Q" comment="" name="datasetPath" prompt="datasetPath?" promptNeeded="false" type="id_String" value="&quot;/user/cloudera/MachineLearning/PubsClassification/&quot;"/>
+  <contextParameter xmi:id="_dW4vUoBvEeerU_YOHEa80Q" comment="" name="outputPath" prompt="outputPath?" promptNeeded="false" type="id_String" value="&quot;/user/cloudera/MachineLearning/PubsClassification/output/&quot;"/>
+  <contextParameter xmi:id="_dW4vU4BvEeerU_YOHEa80Q" comment="" name="datasetPath_Local" prompt="datasetPath_Local?" promptNeeded="false" type="id_String" value="&quot;c:/Talend/Demos/MachineLearning/&quot;"/>
+</talendfile:ContextType>

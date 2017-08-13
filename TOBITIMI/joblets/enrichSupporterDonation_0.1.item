@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/v6.3.1/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_vs5acERwEeeozMe9RSjesg" name="DQTechnical"/>
+      <routinesParameter id="_vr8YMERwEeeozMe9RSjesg" name="DataMasking"/>
+      <routinesParameter id="_vnc5wERwEeeozMe9RSjesg" name="DataOperation"/>
+      <routinesParameter id="_vso7wERwEeeozMe9RSjesg" name="DataQualityDependencies"/>
+      <routinesParameter id="_vsgY4ERwEeeozMe9RSjesg" name="DataQuality"/>
+      <routinesParameter id="_vsyFsERwEeeozMe9RSjesg" name="DqStringHandling"/>
+      <routinesParameter id="_vtBWQERwEeeozMe9RSjesg" name="MDM"/>
+      <routinesParameter id="_vq-u4ERwEeeozMe9RSjesg" name="Mathematical"/>
+      <routinesParameter id="_vrGqsERwEeeozMe9RSjesg" name="Numeric"/>
+      <routinesParameter id="_vrPNkERwEeeozMe9RSjesg" name="Relational"/>
+      <routinesParameter id="_vtLHQERwEeeozMe9RSjesg" name="SQLike"/>
+      <routinesParameter id="_vrXwcERwEeeozMe9RSjesg" name="StringHandling"/>
+      <routinesParameter id="_vrg6YERwEeeozMe9RSjesg" name="TalendDataGenerator"/>
+      <routinesParameter id="_vrqrYERwEeeozMe9RSjesg" name="TalendDate"/>
+      <routinesParameter id="_vrzOQERwEeeozMe9RSjesg" name="TalendString"/>
+      <routinesParameter id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
+      <routinesParameter id="_tCAnQMeYEeSrE9pbd6oYnw" name="DataTypeUtil"/>
+      <routinesParameter id="_CvTbIOkKEeK60_2jX9gBEQ" name="FileListHtmlGenerator"/>
+      <routinesParameter id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
+      <routinesParameter id="_kmsmAMNKEeW3AMObSTyzLw" name="TracabUtils"/>
+      <routinesParameter id="_JsAZQHlHEeS5M-4wmV8XNg" name="Transformation"/>
+      <routinesParameter id="_rSdr4BjoEeaXZpc63th25Q" name="myRoutine"/>
+      <routinesParameter id="_1cAIgMywEeSadJSYhJEDKA" name="tic_word_titleCase"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_AgxSMEvCEeeTBO24v0s-rA-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="enrichedDontation">
+        <column comment="" key="false" length="32" name="id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="ID"/>
+        </column>
+        <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Source"/>
+        </column>
+        <column comment="" key="false" length="64" name="sourceName" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="campaign" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Campaign Type"/>
+        </column>
+        <column comment="" key="false" length="64" name="campaignType" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
+        <column comment="" key="false" length="4" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Title"/>
+        </column>
+        <column comment="" key="false" length="8" name="initials" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Initial"/>
+        </column>
+        <column comment="" key="false" length="32" name="forename" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="32" name="surname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="10" name="dateOfBrith" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Birth Date"/>
+        </column>
+        <column comment="" key="false" length="32" name="contactNumber1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK Phone"/>
+        </column>
+        <column comment="" key="false" length="32" name="contactNumber2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="64" name="emailAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Email"/>
+        </column>
+        <column comment="" key="false" length="32" name="companyName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="32" name="houseName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="64" name="addressLine1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Address"/>
+        </column>
+        <column comment="" key="false" length="64" name="addressLine2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Address"/>
+        </column>
+        <column comment="" key="false" length="32" name="town" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="City"/>
+        </column>
+        <column comment="" key="false" length="32" name="county" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK County"/>
+        </column>
+        <column comment="" key="false" length="7" name="postcode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+        </column>
+        <column comment="" key="false" length="32" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK County"/>
+        </column>
+        <column comment="" key="false" length="2" name="pafStatus" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="PAF"/>
+        </column>
+        <column comment="" key="false" length="10" name="transactionNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Content Type" value="Interval"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK Phone"/>
+        </column>
+        <column comment="" key="false" length="10" name="transactionDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="32" name="product" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Product ID"/>
+        </column>
+        <column comment="" key="false" length="32" name="amount" nullable="true" pattern="" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+          <additionalField key="Content Type" value="Interval"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+        </column>
+        <column comment="" key="false" length="2" name="paymentMethod" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+        </column>
+        <column comment="" key="false" length="32" name="paymentRef" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+        </column>
+        <column comment="" key="false" length="32" name="creditCardNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+        </column>
+        <column comment="" key="false" length="32" name="creditCardType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+        </column>
+        <column comment="" key="false" length="10" name="creditCardExpiryDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+        </column>
+        <column comment="" key="false" length="10" name="quantity" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Content Type" value="Interval"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="32" name="paymentFrequency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="paymentStartDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="optForGiftAid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Answer"/>
+        </column>
+        <column comment="" key="false" length="8" name="giftAidClaimed" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Answer"/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties shellMaximized="true"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="enrichedDontation">
+          <mapperTableEntries name="id" expression="donation.supporterId " type="id_String" nullable="true"/>
+          <mapperTableEntries name="source" expression="donation.source " type="id_String" nullable="true"/>
+          <mapperTableEntries name="sourceName" expression="campaignSource.Name " type="id_String" nullable="true"/>
+          <mapperTableEntries name="campaign" expression="donation.campaign " type="id_String" nullable="true"/>
+          <mapperTableEntries name="campaignType" expression="campaignType.Name " type="id_String" nullable="true"/>
+          <mapperTableEntries name="title" expression="donation.title " type="id_String" nullable="true"/>
+          <mapperTableEntries name="initials" expression="donation.initials " type="id_String" nullable="true"/>
+          <mapperTableEntries name="forename" expression="donation.forename " type="id_String" nullable="true"/>
+          <mapperTableEntries name="surname" expression="donation.surname " type="id_String" nullable="true"/>
+          <mapperTableEntries name="dateOfBrith" expression="donation.dateOfBrith " type="id_String" nullable="true"/>
+          <mapperTableEntries name="contactNumber1" expression="donation.contactNumber1 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="contactNumber2" expression="donation.contactNumber2 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="emailAddress" expression="donation.emailAddress " type="id_String" nullable="true"/>
+          <mapperTableEntries name="companyName" expression="donation.companyName " type="id_String" nullable="true"/>
+          <mapperTableEntries name="houseName" expression="donation.houseName " type="id_String" nullable="true"/>
+          <mapperTableEntries name="addressLine1" expression="donation.addressLine1 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="addressLine2" expression="donation.addressLine2 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="town" expression="donation.town " type="id_String" nullable="true"/>
+          <mapperTableEntries name="county" expression="donation.county " type="id_String" nullable="true"/>
+          <mapperTableEntries name="postcode" expression="donation.postcode " type="id_String" nullable="true"/>
+          <mapperTableEntries name="country" expression="donation.country " type="id_String" nullable="true"/>
+          <mapperTableEntries name="pafStatus" expression="donation.pafStatus " type="id_String" nullable="true"/>
+          <mapperTableEntries name="transactionNumber" expression="donation.transactionNumber " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="transactionDate" expression="donation.transactionDate " type="id_String" nullable="true"/>
+          <mapperTableEntries name="product" expression="donation.product " type="id_String" nullable="true"/>
+          <mapperTableEntries name="amount" expression="donation.amount " type="id_Float" nullable="true"/>
+          <mapperTableEntries name="paymentMethod" expression="donation.paymentMethod " type="id_String" nullable="true"/>
+          <mapperTableEntries name="paymentRef" expression="donation.paymentRef " type="id_String" nullable="true"/>
+          <mapperTableEntries name="creditCardNumber" expression="donation.creditCardNumber " type="id_String" nullable="true"/>
+          <mapperTableEntries name="creditCardType" expression="donation.creditCardType " type="id_String" nullable="true"/>
+          <mapperTableEntries name="creditCardExpiryDate" expression="donation.creditCardExpiryDate " type="id_String" nullable="true"/>
+          <mapperTableEntries name="quantity" expression="donation.quantity " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="paymentFrequency" expression="donation.paymentFrequency " type="id_String" nullable="true"/>
+          <mapperTableEntries name="paymentStartDate" expression="donation.paymentStartDate " type="id_String" nullable="true"/>
+          <mapperTableEntries name="optForGiftAid" expression="donation.optForGiftAid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="giftAidClaimed" expression="donation.giftAidClaimed " type="id_String" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="donation" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="supporterId" type="id_String" nullable="true"/>
+          <mapperTableEntries name="source" type="id_String" nullable="true"/>
+          <mapperTableEntries name="campaign" type="id_String" nullable="true"/>
+          <mapperTableEntries name="title" type="id_String" nullable="true"/>
+          <mapperTableEntries name="initials" type="id_String" nullable="true"/>
+          <mapperTableEntries name="forename" type="id_String" nullable="true"/>
+          <mapperTableEntries name="surname" type="id_String" nullable="true"/>
+          <mapperTableEntries name="dateOfBrith" type="id_String" nullable="true"/>
+          <mapperTableEntries name="contactNumber1" type="id_String" nullable="true"/>
+          <mapperTableEntries name="contactNumber2" type="id_String" nullable="true"/>
+          <mapperTableEntries name="emailAddress" type="id_String" nullable="true"/>
+          <mapperTableEntries name="companyName" type="id_String" nullable="true"/>
+          <mapperTableEntries name="houseName" type="id_String" nullable="true"/>
+          <mapperTableEntries name="addressLine1" type="id_String" nullable="true"/>
+          <mapperTableEntries name="addressLine2" type="id_String" nullable="true"/>
+          <mapperTableEntries name="town" type="id_String" nullable="true"/>
+          <mapperTableEntries name="county" type="id_String" nullable="true"/>
+          <mapperTableEntries name="postcode" type="id_String" nullable="true"/>
+          <mapperTableEntries name="country" type="id_String" nullable="true"/>
+          <mapperTableEntries name="pafStatus" type="id_String" nullable="true"/>
+          <mapperTableEntries name="transactionNumber" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="transactionDate" type="id_String" nullable="true"/>
+          <mapperTableEntries name="product" type="id_String" nullable="true"/>
+          <mapperTableEntries name="amount" type="id_Float" nullable="true"/>
+          <mapperTableEntries name="paymentMethod" type="id_String" nullable="true"/>
+          <mapperTableEntries name="paymentRef" type="id_String" nullable="true"/>
+          <mapperTableEntries name="creditCardNumber" type="id_String" nullable="true"/>
+          <mapperTableEntries name="creditCardType" type="id_String" nullable="true"/>
+          <mapperTableEntries name="creditCardExpiryDate" type="id_String" nullable="true"/>
+          <mapperTableEntries name="quantity" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="paymentFrequency" type="id_String" nullable="true"/>
+          <mapperTableEntries name="paymentStartDate" type="id_String" nullable="true"/>
+          <mapperTableEntries name="optForGiftAid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="giftAidClaimed" type="id_String" nullable="true"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="campaignSource" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+          <mapperTableEntries name="ID" expression="donation.source " type="id_String" operator="="/>
+          <mapperTableEntries name="Name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Description" type="id_String" nullable="true"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="campaignType" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+          <mapperTableEntries name="GUID" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Id" expression="donation.campaign " type="id_String" nullable="true" operator="="/>
+          <mapperTableEntries name="Name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Description" type="id_String" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <connection connectorName="FLOW" label="donation" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="donation" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="enrichedDontation" lineStyle="0" metaname="enrichedDontation" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="enrichedDontation" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="campaignSource" lineStyle="8" metaname="INPUT_2" offsetLabelX="0" offsetLabelY="0" source="INPUT_2" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="campaignSource" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="campaignType" lineStyle="8" metaname="INPUT_3" offsetLabelX="0" offsetLabelY="0" source="INPUT_3" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="campaignType" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="supporters" name="INPUT_1">
+        <column comment="" key="false" length="32" name="supporterId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="ID"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Source"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="8" name="campaign" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Campaign Type"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="4" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Title"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="8" name="initials" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Initial"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="forename" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="surname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="10" name="dateOfBrith" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Birth Date"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="contactNumber1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK Phone"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="contactNumber2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="64" name="emailAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Email"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="companyName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="houseName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="64" name="addressLine1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Address"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="64" name="addressLine2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Address"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="town" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="City"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="county" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK County"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="7" name="postcode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK County"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="2" name="pafStatus" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="PAF"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="10" name="transactionNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK Phone"/>
+          <additionalField key="Content Type" value="Interval"/>
+        </column>
+        <column comment="" key="false" length="10" name="transactionDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="product" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Product ID"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="amount" nullable="true" pattern="" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+          <additionalField key="Content Type" value="Interval"/>
+        </column>
+        <column comment="" key="false" length="2" name="paymentMethod" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="paymentRef" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="creditCardNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="32" name="creditCardType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="10" name="creditCardExpiryDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="10" name="quantity" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+          <additionalField key="Content Type" value="Interval"/>
+        </column>
+        <column comment="" key="false" length="32" name="paymentFrequency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="10" name="paymentStartDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="8" name="optForGiftAid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Answer"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <column comment="" key="false" length="8" name="giftAidClaimed" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Answer"/>
+          <additionalField key="Content Type" value="Nominal"/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+        <additionalProperties key="CONCEPT_NAME" value="Financing"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="campaignsource" name="INPUT_2">
+        <column comment="" key="true" length="6" name="ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="37" name="Description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_3"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="metadata" name="INPUT_3">
+        <column comment="" key="false" length="6" name="GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="3" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="false" length="32" name="id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="ID"/>
+        </column>
+        <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Source"/>
+        </column>
+        <column comment="" key="false" length="64" name="sourceName" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="campaign" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Campaign Type"/>
+        </column>
+        <column comment="" key="false" length="64" name="campaignType" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
+        <column comment="" key="false" length="4" name="title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Title"/>
+        </column>
+        <column comment="" key="false" length="8" name="initials" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Initial"/>
+        </column>
+        <column comment="" key="false" length="32" name="forename" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="32" name="surname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="10" name="dateOfBrith" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Birth Date"/>
+        </column>
+        <column comment="" key="false" length="32" name="contactNumber1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK Phone"/>
+        </column>
+        <column comment="" key="false" length="32" name="contactNumber2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="64" name="emailAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Email"/>
+        </column>
+        <column comment="" key="false" length="32" name="companyName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="32" name="houseName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Name Suffix"/>
+        </column>
+        <column comment="" key="false" length="64" name="addressLine1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Address"/>
+        </column>
+        <column comment="" key="false" length="64" name="addressLine2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Address"/>
+        </column>
+        <column comment="" key="false" length="32" name="town" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="City"/>
+        </column>
+        <column comment="" key="false" length="32" name="county" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK County"/>
+        </column>
+        <column comment="" key="false" length="7" name="postcode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+        </column>
+        <column comment="" key="false" length="32" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK County"/>
+        </column>
+        <column comment="" key="false" length="2" name="pafStatus" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="PAF"/>
+        </column>
+        <column comment="" key="false" length="10" name="transactionNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Content Type" value="Interval"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="UK Phone"/>
+        </column>
+        <column comment="" key="false" length="10" name="transactionDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="32" name="product" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Product ID"/>
+        </column>
+        <column comment="" key="false" length="32" name="amount" nullable="true" pattern="" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+          <additionalField key="Content Type" value="Interval"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+        </column>
+        <column comment="" key="false" length="2" name="paymentMethod" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+        </column>
+        <column comment="" key="false" length="32" name="paymentRef" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Payment Amount"/>
+        </column>
+        <column comment="" key="false" length="32" name="creditCardNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+        </column>
+        <column comment="" key="false" length="32" name="creditCardType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+        </column>
+        <column comment="" key="false" length="10" name="creditCardExpiryDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="credit Card Type"/>
+        </column>
+        <column comment="" key="false" length="10" name="quantity" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Content Type" value="Interval"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="32" name="paymentFrequency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="paymentStartDate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="optForGiftAid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Answer"/>
+        </column>
+        <column comment="" key="false" length="8" name="giftAidClaimed" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Content Type" value="Nominal"/>
+          <additionalField key="Comment" value=""/>
+          <additionalField key="SEMANTIC_NAME" value="Answer"/>
+        </column>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

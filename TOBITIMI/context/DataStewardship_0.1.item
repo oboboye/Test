@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_dWkmQIBvEeerU_YOHEa80Q" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_dWkmQYBvEeerU_YOHEa80Q" comment="" name="DSA_URL" prompt="DSA_URL?" promptNeeded="false" type="id_String" value="&quot;http://localhost:19999/data-stewardship&quot;"/>
+    <contextParameter xmi:id="_dWkmQoBvEeerU_YOHEa80Q" comment="" name="DSA_Username" prompt="DSA_Username?" promptNeeded="false" type="id_String" value="&quot;dbrunt@talend.com&quot;"/>
+    <contextParameter xmi:id="_dWkmQ4BvEeerU_YOHEa80Q" comment="" name="DSA_Password" prompt="DSA_Password?" promptNeeded="false" type="id_Password" value="nhp0dNllkPg="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_dWkmRIBvEeerU_YOHEa80Q" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_dWkmRYBvEeerU_YOHEa80Q" comment="" name="DSA_URL" prompt="DSA_URL?" promptNeeded="false" type="id_String" value="&quot;http://localhost:19999/data-stewardship&quot;"/>
+    <contextParameter xmi:id="_dWkmRoBvEeerU_YOHEa80Q" comment="" name="DSA_Username" prompt="DSA_Username?" promptNeeded="false" type="id_String" value="&quot;dbrunt@talend.com&quot;"/>
+    <contextParameter xmi:id="_dWkmR4BvEeerU_YOHEa80Q" comment="" name="DSA_Password" prompt="DSA_Password?" promptNeeded="false" type="id_Password" value="ZPWq5aeWLcyUncDx6QSt5w=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_dWkmSIBvEeerU_YOHEa80Q" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_dWkmSYBvEeerU_YOHEa80Q" comment="" name="DSA_URL" prompt="DSA_URL?" promptNeeded="false" type="id_String" value="&quot;http://localhost:19999/data-stewardship&quot;"/>
+    <contextParameter xmi:id="_dWkmSoBvEeerU_YOHEa80Q" comment="" name="DSA_Username" prompt="DSA_Username?" promptNeeded="false" type="id_String" value="&quot;dbrunt@talend.com&quot;"/>
+    <contextParameter xmi:id="_dWkmS4BvEeerU_YOHEa80Q" comment="" name="DSA_Password" prompt="DSA_Password?" promptNeeded="false" type="id_Password" value="ZPWq5aeWLcyUncDx6QSt5w=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

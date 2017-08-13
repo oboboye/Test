@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_tsrsIFHXEee0z_NbrfCumQ" comment="connectionComment" label="connectionLabel" dataPackage="_tsrsIVHXEee0z_NbrfCumQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_tsrsIVHXEee0z_NbrfCumQ" dataManager="_tsrsIFHXEee0z_NbrfCumQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_tsrsIlHXEee0z_NbrfCumQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsI1HXEee0z_NbrfCumQ" name="id" id="19291" label="id" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsJFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsJVHXEee0z_NbrfCumQ" name="source" id="19407" label="source" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsJlHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsJ1HXEee0z_NbrfCumQ" name="pmid" id="19408" label="pmid" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsKFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsKVHXEee0z_NbrfCumQ" name="title" id="19409" label="title" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsKlHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsK1HXEee0z_NbrfCumQ" name="authorString" id="19410" label="authorString" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsLFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsLVHXEee0z_NbrfCumQ" name="pubYear" id="19411" label="pubYear" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsLlHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsL1HXEee0z_NbrfCumQ" name="pageInfo" id="19412" label="pageInfo" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsMFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsM1HXEee0z_NbrfCumQ" name="affiliation" id="19414" label="affiliation" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsNFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsNVHXEee0z_NbrfCumQ" name="language" id="19415" label="language" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsNlHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsN1HXEee0z_NbrfCumQ" name="pubModel" id="19416" label="pubModel" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsOFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsOVHXEee0z_NbrfCumQ" name="dateOfCreation" id="19417" label="dateOfCreation" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsOlHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsO1HXEee0z_NbrfCumQ" name="dateOfRevision" id="19418" label="dateOfRevision" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsPFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsPVHXEee0z_NbrfCumQ" name="electronicPublicationDate" id="19419" label="electronicPublicationDate" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsPlHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tsrsP1HXEee0z_NbrfCumQ" name="firstPublicationDate" id="19420" label="firstPublicationDate" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_tsrsQFHXEee0z_NbrfCumQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NKl94FJvEeek6JTKyrUpeQ" name="email" label="email" length="-1" precision="-1" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

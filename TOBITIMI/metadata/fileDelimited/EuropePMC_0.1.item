@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_QsZsMFJ5Eeek6JTKyrUpeQ" name="EuropePMC" dataPackage="_QsZsMVJ5Eeek6JTKyrUpeQ" Server="Localhost 127.0.0.1" FilePath="C:/Talend/Demos/Feeds/europepmc.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;\t&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Tabulation"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_QsZsMVJ5Eeek6JTKyrUpeQ" name="default" dataManager="_QsZsMFJ5Eeek6JTKyrUpeQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QsZsMlJ5Eeek6JTKyrUpeQ" id="_ER9kwFJ5Eeek6JTKyrUpeQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsM1J5Eeek6JTKyrUpeQ" label="id" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsNFJ5Eeek6JTKyrUpeQ" label="source" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsNVJ5Eeek6JTKyrUpeQ" label="pmid" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsNlJ5Eeek6JTKyrUpeQ" label="title" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsN1J5Eeek6JTKyrUpeQ" label="authorString" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsOFJ5Eeek6JTKyrUpeQ" label="pubYear" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsOVJ5Eeek6JTKyrUpeQ" label="pageInfo" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsOlJ5Eeek6JTKyrUpeQ" label="affiliation" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsO1J5Eeek6JTKyrUpeQ" label="language" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsPFJ5Eeek6JTKyrUpeQ" label="pubModel" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsPVJ5Eeek6JTKyrUpeQ" label="dateOfCreation" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsPlJ5Eeek6JTKyrUpeQ" label="dateOfRevision" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsP1J5Eeek6JTKyrUpeQ" label="electronicPublicationDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsQFJ5Eeek6JTKyrUpeQ" label="firstPublicationDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QsZsQVJ5Eeek6JTKyrUpeQ" label="email" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
