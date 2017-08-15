@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "gender"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "genderGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( gender, "Gender", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Gender" );
+
+end
+
+

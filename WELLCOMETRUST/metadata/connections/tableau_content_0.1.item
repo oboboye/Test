@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_enNWMFUWEeeiz_NvkSjXbQ" name="tableau_content" id="_YkNR8FUWEeeiz_NvkSjXbQ" label="tableau_content" dataPackage="_eoTiYFUWEeeiz_NvkSjXbQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/tableau_content?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="tadmin" Password="W+jRt+Sxy3A=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="tableau_content" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_enNWMVUWEeeiz_NvkSjXbQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_enb_sFUWEeeiz_NvkSjXbQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_enb_sVUWEeeiz_NvkSjXbQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_enb_slUWEeeiz_NvkSjXbQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_enb_s1UWEeeiz_NvkSjXbQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_encmwFUWEeeiz_NvkSjXbQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_encmwVUWEeeiz_NvkSjXbQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_encmwlUWEeeiz_NvkSjXbQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_en2PYFUWEeeiz_NvkSjXbQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_en2PYVUWEeeiz_NvkSjXbQ" tag="DB ProductVersion" value="5.7.17-log"/>
+    <taggedValue xmi:id="_en2PYlUWEeeiz_NvkSjXbQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_enNWMlUWEeeiz_NvkSjXbQ" key="CONN_PARA_KEY_USERNAME" value="tadmin"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_eoTiYFUWEeeiz_NvkSjXbQ" name="tableau_content" dataManager="_enNWMFUWEeeiz_NvkSjXbQ"/>
+</xmi:XMI>

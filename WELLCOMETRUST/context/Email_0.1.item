@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_f3B0UIGBEeeIW-suiuViZg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_f3B0UYGBEeeIW-suiuViZg" comment="" name="SMTP_host" prompt="SMTP_host?" promptNeeded="false" type="id_String" value="&quot;smtp.gmail.com&quot;"/>
+    <contextParameter xmi:id="_f3B0UoGBEeeIW-suiuViZg" comment="" name="SMTP_port" prompt="SMTP_port?" promptNeeded="false" type="id_String" value="465"/>
+    <contextParameter xmi:id="_f3B0U4GBEeeIW-suiuViZg" comment="" name="SMTP_username" prompt="SMTP_username?" promptNeeded="false" type="id_String" value="&quot;darrenbrunt@gmail.com&quot;"/>
+    <contextParameter xmi:id="_f3B0VIGBEeeIW-suiuViZg" comment="" name="SMTP_password" prompt="SMTP_password?" promptNeeded="false" type="id_Password" value="yb90nqgkCVfrvEiiSZjYOA=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_f3B0VYGBEeeIW-suiuViZg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_f3B0VoGBEeeIW-suiuViZg" comment="" name="SMTP_host" prompt="SMTP_host?" promptNeeded="false" type="id_String" value="&quot;smtp.gmail.com&quot;"/>
+    <contextParameter xmi:id="_f3B0V4GBEeeIW-suiuViZg" comment="" name="SMTP_port" prompt="SMTP_port?" promptNeeded="false" type="id_String" value="465"/>
+    <contextParameter xmi:id="_f3B0WIGBEeeIW-suiuViZg" comment="" name="SMTP_username" prompt="SMTP_username?" promptNeeded="false" type="id_String" value="&quot;darrenbrunt@gmail.com&quot;"/>
+    <contextParameter xmi:id="_f3B0WYGBEeeIW-suiuViZg" comment="" name="SMTP_password" prompt="SMTP_password?" promptNeeded="false" type="id_Password" value="yb90nqgkCVfrvEiiSZjYOA=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_f3B0WoGBEeeIW-suiuViZg" confirmationNeeded="false" name="TEST">
+    <contextParameter xmi:id="_f3B0W4GBEeeIW-suiuViZg" comment="" name="SMTP_host" prompt="SMTP_host?" promptNeeded="false" type="id_String" value="&quot;smtp.gmail.com&quot;"/>
+    <contextParameter xmi:id="_f3B0XIGBEeeIW-suiuViZg" comment="" name="SMTP_port" prompt="SMTP_port?" promptNeeded="false" type="id_String" value="465"/>
+    <contextParameter xmi:id="_f3B0XYGBEeeIW-suiuViZg" comment="" name="SMTP_username" prompt="SMTP_username?" promptNeeded="false" type="id_String" value="&quot;darrenbrunt@gmail.com&quot;"/>
+    <contextParameter xmi:id="_f3B0XoGBEeeIW-suiuViZg" comment="" name="SMTP_password" prompt="SMTP_password?" promptNeeded="false" type="id_Password" value="yb90nqgkCVfrvEiiSZjYOA=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

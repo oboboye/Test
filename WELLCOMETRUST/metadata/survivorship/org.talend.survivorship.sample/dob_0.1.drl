@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "dob"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "dobGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( dob, "DOB", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "DOB" );
+
+end
+
+

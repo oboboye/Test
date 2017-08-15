@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_SeyxwFHHEeeVm6TbPzwxfg" dataPackage="_SeyxwVHHEeeVm6TbPzwxfg"/>
+  <TalendMetadata:GenericPackage xmi:id="_SeyxwVHHEeeVm6TbPzwxfg" dataManager="_SeyxwFHHEeeVm6TbPzwxfg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SeyxwlHHEeeVm6TbPzwxfg" id="_SeyKsFHHEeeVm6TbPzwxfg" label="publications">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyxw1HHEeeVm6TbPzwxfg" name="id" label="id" length="255" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+        <initialValue xmi:id="_SeyxxFHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SeyxxVHHEeeVm6TbPzwxfg" name="source" label="source" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_SeyxxlHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyxx1HHEeeVm6TbPzwxfg" name="pmid" label="pmid" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_SeyxyFHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SeyxyVHHEeeVm6TbPzwxfg" name="pmcid" label="pmcid" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_SeyxylHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyxy1HHEeeVm6TbPzwxfg" name="doi" label="doi" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_SeyxzFHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SeyxzVHHEeeVm6TbPzwxfg" name="title" label="title" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_SeyxzlHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx0VHHEeeVm6TbPzwxfg" name="journalTitle" label="journalTitle" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx0lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx01HHEeeVm6TbPzwxfg" name="issue" label="issue" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx1FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx1VHHEeeVm6TbPzwxfg" name="journalVolume" label="journalVolume" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx1lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx11HHEeeVm6TbPzwxfg" name="pubYear" label="pubYear" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx2FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx2VHHEeeVm6TbPzwxfg" name="journalIssn" label="journalIssn" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx2lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx21HHEeeVm6TbPzwxfg" name="pageInfo" label="pageInfo" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx3FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx3VHHEeeVm6TbPzwxfg" name="pubType" label="pubType" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx3lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx31HHEeeVm6TbPzwxfg" name="isOpenAccess" label="isOpenAccess" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx4FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx4VHHEeeVm6TbPzwxfg" name="inEPMC" label="inEPMC" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx4lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx41HHEeeVm6TbPzwxfg" name="inPMC" label="inPMC" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx5FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx5VHHEeeVm6TbPzwxfg" name="hasPDF" label="hasPDF" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx5lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx51HHEeeVm6TbPzwxfg" name="hasBook" label="hasBook" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx6FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx6VHHEeeVm6TbPzwxfg" name="hasSuppl" label="hasSuppl" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx6lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx61HHEeeVm6TbPzwxfg" name="citedByCount" label="citedByCount" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx7FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx7VHHEeeVm6TbPzwxfg" name="hasReferences" label="hasReferences" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx7lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx71HHEeeVm6TbPzwxfg" name="hasTextMinedTerms" label="hasTextMinedTerms" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx8FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx8VHHEeeVm6TbPzwxfg" name="hasDbCrossReferences" label="hasDbCrossReferences" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx8lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx81HHEeeVm6TbPzwxfg" name="hasLabsLinks" label="hasLabsLinks" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx9FHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx9VHHEeeVm6TbPzwxfg" name="hasTMAccessionNumbers" label="hasTMAccessionNumbers" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Seyx9lHHEeeVm6TbPzwxfg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Seyx91HHEeeVm6TbPzwxfg" name="firstPublicationDate" label="firstPublicationDate" length="19" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Seyx-FHHEeeVm6TbPzwxfg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

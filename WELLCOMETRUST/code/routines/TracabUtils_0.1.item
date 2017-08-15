@@ -1,0 +1,53 @@
+package routines;
+
+public class TracabUtils {
+	
+	//private static final int PENALTY_AREA_X = 165;
+	//private static final int PENALTY_AREA_Y = 404;
+	
+	private static final int PENALTY_AREA_X = 350;
+	private static final int PENALTY_AREA_Y = 215;
+	private static final int TRACAB_PITCH_X_MAX = 525;
+	private static final int TRACAB_PITCH_X_MIN = -525;
+	private static final int TRACAB_PITCH_Y_MAX = 340;
+	private static final int TRACAB_PITCH_Y_MIN = -340;
+	
+	
+    public static boolean isWing(Integer x, Integer y, Integer pitchX, Integer pitchY) {
+    	Double xAbs = Mathematical.ABS(x);
+    	Double yAbs = Mathematical.ABS(y);
+
+    	/*
+    	Integer minY = pitchY / 2 - (pitchY / 2 - PENALTY_AREA_Y / 2);
+    	Integer maxY = pitchY / 2;
+    	Integer minX = pitchX / 2 - pitchX / 3;
+    	Integer maxX = pitchX / 2;
+    	*/
+    	
+    	Integer minY = PENALTY_AREA_Y;
+    	Integer maxY = TRACAB_PITCH_Y_MAX;
+    	Integer minX = TRACAB_PITCH_X_MAX - (TRACAB_PITCH_X_MAX / 3);
+    	Integer maxX = TRACAB_PITCH_X_MAX;
+    	
+        
+    	if(xAbs > minX && xAbs < maxX && yAbs > minY && yAbs < maxY) return true;
+        return false;
+    }
+    
+    public static boolean isPenaltyArea(Integer x, Integer y, Integer pitchX, Integer pitchY) {
+    	Double xAbs = Mathematical.ABS(x);
+    	Double yAbs = Mathematical.ABS(y);
+    	
+    	Integer minY = 0;
+    	Integer maxY = PENALTY_AREA_Y;
+    	Integer minX = PENALTY_AREA_X;
+    	Integer maxX = TRACAB_PITCH_X_MAX;   
+    	
+    	if(xAbs > minX && xAbs < maxX && yAbs > minY && yAbs < maxY) return true;
+        return false;
+    }
+    
+    public static void main(String [] args) {
+    	System.out.println(isPenaltyArea(1, -372, 680, 1054));
+    }
+}
