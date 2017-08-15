@@ -57,7 +57,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/Talend/workspace641b/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -112,6 +112,7 @@
     <routinesParameter id="_J-yGI1DjEeeSG_VFSMC-mA" name="TalendDate"/>
     <routinesParameter id="_J-_hgFDjEeeSG_VFSMC-mA" name="TalendString"/>
     <routinesParameter id="_r4cPsFHJEee0z_NbrfCumQ" name="WebscrapeTstandardizerow_1"/>
+    <routinesParameter id="_jbqekIBWEeexY_jALX2Pjg" name="TalendStringUtil"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
@@ -260,6 +261,8 @@
     <elementParameter field="PASSWORD" name="PASSWORD" value="8YJxxg2TCpn6REp2/E0Cnw=="/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;310f7011-5085-4335-8e20-597698622f2b&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" value="europepmc Preparation" show="false"/>
+    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
+    <elementParameter field="TEXT" name="VERSION_ID" value="" show="false"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
