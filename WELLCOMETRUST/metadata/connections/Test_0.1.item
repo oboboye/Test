@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_8_jksIG4EeeclMM4duO8XA" name="Test" id="_zLoMgIG4EeeclMM4duO8XA" label="Test" dataPackage="_9BgFcIG4EeeclMM4duO8XA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/test?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="NZNgK6DuncI=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="test" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_8_jksIG4EeeclMM4duO8XA" name="Test" id="_zLoMgIG4EeeclMM4duO8XA" label="Test" dataPackage="_9BgFcIG4EeeclMM4duO8XA" ContextMode="true" ContextId="_U-JEwIG5EeeclMM4duO8XA" contextName="Default" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/test?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="context.Test_Port" Username="context.Test_Login" Password="context.Test_Password" ServerName="context.Test_Server" DatasourceName="" FileFieldName="" SID="context.Test_Database" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="context.Test_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_8_jksYG4EeeclMM4duO8XA" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_8_474IG4EeeclMM4duO8XA" tag="package filter" value=""/>
     <taggedValue xmi:id="_8_90YIG4EeeclMM4duO8XA" tag="Status" value=""/>
@@ -12,7 +12,8 @@
     <taggedValue xmi:id="_9ApJ0IG4EeeclMM4duO8XA" tag="DB ProductName" value="MySQL"/>
     <taggedValue xmi:id="_9ApJ0YG4EeeclMM4duO8XA" tag="DB ProductVersion" value="5.6.25"/>
     <taggedValue xmi:id="_9ApJ0oG4EeeclMM4duO8XA" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_8_jksoG4EeeclMM4duO8XA" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_8_jksoG4EeeclMM4duO8XA" key="CONN_PARA_KEY_USERNAME" value="context.Test_Login"/>
+    <parameters xmi:id="_TjvjUIG5EeeclMM4duO8XA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_9BgFcIG4EeeclMM4duO8XA" name="test" dataManager="_8_jksIG4EeeclMM4duO8XA">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_A6ZCkIG5EeeclMM4duO8XA" name="flowmetercatcher" id="_A6VYMIG5EeeclMM4duO8XA" label="flowmetercatcher" tableType="TABLE">
