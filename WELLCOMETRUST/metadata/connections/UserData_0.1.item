@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_jHmEIO27EeaLctyYoxLhmg" name="UserData" id="_W6sCYO27EeaLctyYoxLhmg" label="UserData" dataPackage="_jIyW8-27EeaLctyYoxLhmg" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/dynamic?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="NZNgK6DuncI=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="dynamic" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_jHmEIe27EeaLctyYoxLhmg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_jIpNAO27EeaLctyYoxLhmg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_jIpNAe27EeaLctyYoxLhmg" tag="Status" value=""/>
+    <taggedValue xmi:id="_jIpNAu27EeaLctyYoxLhmg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_jIpNA-27EeaLctyYoxLhmg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_jIpNBO27EeaLctyYoxLhmg" tag="Description" value=""/>
+    <taggedValue xmi:id="_jIpNBe27EeaLctyYoxLhmg" tag="Author" value=""/>
+    <taggedValue xmi:id="_jIpNBu27EeaLctyYoxLhmg" tag="otherParameter"/>
+    <taggedValue xmi:id="_jIyW8O27EeaLctyYoxLhmg" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_jIyW8e27EeaLctyYoxLhmg" tag="DB ProductVersion" value="5.6.25-log"/>
+    <taggedValue xmi:id="_jIyW8u27EeaLctyYoxLhmg" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_jHmEIu27EeaLctyYoxLhmg" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_jIyW8-27EeaLctyYoxLhmg" name="dynamic" dataManager="_jHmEIO27EeaLctyYoxLhmg">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_9RbKYO3UEeawiph590D2RA" name="userdata" id="_9RRZYO3UEeawiph590D2RA" label="userdata" tableType="TABLE">
+      <taggedValue xmi:id="_9RbKYe3UEeawiph590D2RA" tag="Comment" value=""/>
+      <taggedValue xmi:id="_9RbKYu3UEeawiph590D2RA" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_9RbKY-3UEeawiph590D2RA" name="Name" label="Name" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_9RbKZO3UEeawiph590D2RA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_9RbKZe3UEeawiph590D2RA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_9RbKZu3UEeawiph590D2RA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_9RbKZ-3UEeawiph590D2RA" name="City" label="City" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_9RbKaO3UEeawiph590D2RA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_9RbKae3UEeawiph590D2RA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_9RbKau3UEeawiph590D2RA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_9RbKa-3UEeawiph590D2RA" name="Age" label="Age" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_9RbKbO3UEeawiph590D2RA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_9RbKbe3UEeawiph590D2RA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_9RbKbu3UEeawiph590D2RA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
