@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_iiqXQIJJEeerZtmujjxXKA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_iiqXQYJJEeerZtmujjxXKA" comment="" name="RepoOutputDir" prompt="RepoOutputDir?" promptNeeded="false" type="id_String" value="&quot;C:/StudentFiles/DIBasics/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_iiqXQoJJEeerZtmujjxXKA" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_iiqXQ4JJEeerZtmujjxXKA" comment="" name="RepoOutputDir" prompt="RepoOutputDir?" promptNeeded="false" type="id_String" value="&quot;C:/StudentFiles/DIBasics/New_Production/&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>
