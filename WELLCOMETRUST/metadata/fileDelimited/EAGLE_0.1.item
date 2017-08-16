@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_-HN1sIhsEeWfb_S1xRxuDQ" name="EAGLE" dataPackage="_-HN1sYhsEeWfb_S1xRxuDQ" Server="Localhost 127.0.0.1" FilePath="/data/DataMigration/Input/DVLA_MOT.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" UseFooter="true" FooterValue="1" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-HN1sYhsEeWfb_S1xRxuDQ" name="default" dataManager="_-HN1sIhsEeWfb_S1xRxuDQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-HN1sohsEeWfb_S1xRxuDQ" id="_l_BGoIhsEeWfb_S1xRxuDQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-HOcwIhsEeWfb_S1xRxuDQ" label="REGISTRATION" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="20"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-HOcwYhsEeWfb_S1xRxuDQ" label="EXPIRY_DATE" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-HOcwohsEeWfb_S1xRxuDQ" label="TEST_NUMBER" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="20"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

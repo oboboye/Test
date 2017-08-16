@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5n43UIJSEeerZtmujjxXKA" name="SIT">
+    <contextParameter xmi:id="_5n43UYJSEeerZtmujjxXKA" comment="false" name="JOB_DB_COMMIT_CHANGES_FLAG" prompt="JOB_DB_COMMIT_CHANGES_FLAG?" promptNeeded="false" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_5n43UoJSEeerZtmujjxXKA" comment="count of error while inserting or updating into TARGET DB" name="JOB_DB_TARGET_ERROR_CNT" prompt="JOB_DB_TARGET_ERROR_CNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5n43U4JSEeerZtmujjxXKA" comment="max number of errors when processing into target DB" name="JOB_DB_TARGET_ERROR_MAX" prompt="JOB_DB_TARGET_ERROR_MAX?" promptNeeded="false" type="id_Integer" value="0"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5n43VIJSEeerZtmujjxXKA" name="DEV">
+    <contextParameter xmi:id="_5n43VYJSEeerZtmujjxXKA" comment="false" name="JOB_DB_COMMIT_CHANGES_FLAG" prompt="JOB_DB_COMMIT_CHANGES_FLAG?" promptNeeded="false" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_5n43VoJSEeerZtmujjxXKA" comment="count of error while inserting or updating into TARGET DB" name="JOB_DB_TARGET_ERROR_CNT" prompt="JOB_DB_TARGET_ERROR_CNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5n43V4JSEeerZtmujjxXKA" comment="max number of errors when processing into target DB" name="JOB_DB_TARGET_ERROR_MAX" prompt="JOB_DB_TARGET_ERROR_MAX?" promptNeeded="false" type="id_Integer" value="0"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5n43WIJSEeerZtmujjxXKA" name="UAT">
+    <contextParameter xmi:id="_5n43WYJSEeerZtmujjxXKA" comment="false" name="JOB_DB_COMMIT_CHANGES_FLAG" prompt="JOB_DB_COMMIT_CHANGES_FLAG?" promptNeeded="false" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_5n43WoJSEeerZtmujjxXKA" comment="count of error while inserting or updating into TARGET DB" name="JOB_DB_TARGET_ERROR_CNT" prompt="JOB_DB_TARGET_ERROR_CNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5n43W4JSEeerZtmujjxXKA" comment="max number of errors when processing into target DB" name="JOB_DB_TARGET_ERROR_MAX" prompt="JOB_DB_TARGET_ERROR_MAX?" promptNeeded="false" type="id_Integer" value="0"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5n43XIJSEeerZtmujjxXKA" name="PROD">
+    <contextParameter xmi:id="_5n43XYJSEeerZtmujjxXKA" comment="false" name="JOB_DB_COMMIT_CHANGES_FLAG" prompt="JOB_DB_COMMIT_CHANGES_FLAG?" promptNeeded="false" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_5n43XoJSEeerZtmujjxXKA" comment="count of error while inserting or updating into TARGET DB" name="JOB_DB_TARGET_ERROR_CNT" prompt="JOB_DB_TARGET_ERROR_CNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5n43X4JSEeerZtmujjxXKA" comment="max number of errors when processing into target DB" name="JOB_DB_TARGET_ERROR_MAX" prompt="JOB_DB_TARGET_ERROR_MAX?" promptNeeded="false" type="id_Integer" value="0"/>
+  </talendfile:ContextType>
+</xmi:XMI>

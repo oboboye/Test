@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5uX50IJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV_DAILY">
+    <contextParameter xmi:id="_5uX50YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX50oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX504JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX51IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX51YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX51oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value="zzzz"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX514JSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV_DELTA">
+    <contextParameter xmi:id="_5uX52IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX52YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX52oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX524JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX53IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX53YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX53oJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DAILY_AMAZON">
+    <contextParameter xmi:id="_5uX534JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX54IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX54YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX54oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX544JSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX55IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX55YJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DAILY_SKYSCAPE">
+    <contextParameter xmi:id="_5uX55oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX554JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX56IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX56YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX56oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX564JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX57IJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DELTA_AMAZON">
+    <contextParameter xmi:id="_5uX57YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX57oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX574JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX58IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX58YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX58oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX584JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DELTA_SKYSCAPE">
+    <contextParameter xmi:id="_5uX59IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX59YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX59oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX594JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX5-IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX5-YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX5-oJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT_DAILY">
+    <contextParameter xmi:id="_5uX5-4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX5_IJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX5_YJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX5_oJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX5_4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX6AIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX6AYJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT_DELTA">
+    <contextParameter xmi:id="_5uX6AoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6A4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6BIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX6BYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6BoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX6B4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX6CIJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DAILY_AMAZON">
+    <contextParameter xmi:id="_5uX6CYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6CoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6C4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX6DIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6DYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX6DoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX6D4JSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DAILY_SKYSCAPE">
+    <contextParameter xmi:id="_5uX6EIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6EYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6EoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX6E4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6FIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX6FYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX6FoJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DELTA_AMAZON">
+    <contextParameter xmi:id="_5uX6F4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6GIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6GYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX6GoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6G4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX6HIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5uX6HYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DELTA_SKYSCAPE">
+    <contextParameter xmi:id="_5uX6HoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Database" prompt="Talend_TMP_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6H4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Port" prompt="Talend_TMP_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6IIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Password" prompt="Talend_TMP_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5uX6IYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_Login" prompt="Talend_TMP_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5uX6IoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_AdditionalParams" prompt="Talend_TMP_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5uX6I4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_Server" prompt="Talend_TMP_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

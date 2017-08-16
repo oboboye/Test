@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5nmjcIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5nmjcYJSEeerZtmujjxXKA" comment="" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjcoJSEeerZtmujjxXKA" comment="" name="folderPath" prompt="folderPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjc4JSEeerZtmujjxXKA" comment="" name="fileName" prompt="fileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjdIJSEeerZtmujjxXKA" comment="" name="windowStart" prompt="windowStart?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjdYJSEeerZtmujjxXKA" comment="" name="touchFile" prompt="touchFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjdoJSEeerZtmujjxXKA" comment="" name="windowEnd" prompt="windowEnd?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5nmjd4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5nmjeIJSEeerZtmujjxXKA" comment="" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjeYJSEeerZtmujjxXKA" comment="" name="folderPath" prompt="folderPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjeoJSEeerZtmujjxXKA" comment="" name="fileName" prompt="fileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmje4JSEeerZtmujjxXKA" comment="" name="windowStart" prompt="windowStart?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjfIJSEeerZtmujjxXKA" comment="" name="touchFile" prompt="touchFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjfYJSEeerZtmujjxXKA" comment="" name="windowEnd" prompt="windowEnd?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5nmjfoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5nmjf4JSEeerZtmujjxXKA" comment="" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjgIJSEeerZtmujjxXKA" comment="" name="folderPath" prompt="folderPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjgYJSEeerZtmujjxXKA" comment="" name="fileName" prompt="fileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjgoJSEeerZtmujjxXKA" comment="" name="windowStart" prompt="windowStart?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjg4JSEeerZtmujjxXKA" comment="" name="touchFile" prompt="touchFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjhIJSEeerZtmujjxXKA" comment="" name="windowEnd" prompt="windowEnd?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5nmjhYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5nmjhoJSEeerZtmujjxXKA" comment="" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjh4JSEeerZtmujjxXKA" comment="" name="folderPath" prompt="folderPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjiIJSEeerZtmujjxXKA" comment="" name="fileName" prompt="fileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjiYJSEeerZtmujjxXKA" comment="" name="windowStart" prompt="windowStart?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmjioJSEeerZtmujjxXKA" comment="" name="touchFile" prompt="touchFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5nmji4JSEeerZtmujjxXKA" comment="" name="windowEnd" prompt="windowEnd?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

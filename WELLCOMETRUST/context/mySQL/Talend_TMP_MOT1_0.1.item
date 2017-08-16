@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5u76gIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5u76gYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_AdditionalParams" prompt="Talend_TMP_MOT1_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5u76goJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Login" prompt="Talend_TMP_MOT1_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76g4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Port" prompt="Talend_TMP_MOT1_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76hIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Password" prompt="Talend_TMP_MOT1_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5u76hYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Database" prompt="Talend_TMP_MOT1_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76hoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Server" prompt="Talend_TMP_MOT1_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5u76h4JSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5u76iIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_AdditionalParams" prompt="Talend_TMP_MOT1_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5u76iYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Login" prompt="Talend_TMP_MOT1_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76ioJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Port" prompt="Talend_TMP_MOT1_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76i4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Password" prompt="Talend_TMP_MOT1_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5u76jIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Database" prompt="Talend_TMP_MOT1_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76jYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Server" prompt="Talend_TMP_MOT1_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5u76joJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5u76j4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_AdditionalParams" prompt="Talend_TMP_MOT1_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5u76kIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Login" prompt="Talend_TMP_MOT1_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76kYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Port" prompt="Talend_TMP_MOT1_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76koJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Password" prompt="Talend_TMP_MOT1_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5u76k4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Database" prompt="Talend_TMP_MOT1_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76lIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Server" prompt="Talend_TMP_MOT1_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5u76lYJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5u76loJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_AdditionalParams" prompt="Talend_TMP_MOT1_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5u76l4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Login" prompt="Talend_TMP_MOT1_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76mIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Port" prompt="Talend_TMP_MOT1_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76mYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Password" prompt="Talend_TMP_MOT1_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5u76moJSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Database" prompt="Talend_TMP_MOT1_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5u76m4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_MOT1_Server" prompt="Talend_TMP_MOT1_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

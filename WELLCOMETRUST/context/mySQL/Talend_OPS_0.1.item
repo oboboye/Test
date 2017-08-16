@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5tyD8IJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5tyD8YJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" type="id_String" value="dme-mot1.mot.npm"/>
+    <contextParameter xmi:id="_5tyD8oJSEeerZtmujjxXKA" comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyD84JSEeerZtmujjxXKA" comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" type="id_String" value="talend_ops"/>
+    <contextParameter xmi:id="_5tyD9IJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5tyD9YJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" type="id_Password" value="w4OGp+ZRn0Q6InrzqewdUzdeVtPC33Ky"/>
+    <contextParameter xmi:id="_5tyD9oJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" type="id_String" value="talend_ops"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tyD94JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5tyD-IJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyD-YJSEeerZtmujjxXKA" comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyD-oJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyD-4JSEeerZtmujjxXKA" comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyD_IJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tyD_YJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tyD_oJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5tyD_4JSEeerZtmujjxXKA" comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyEAIJSEeerZtmujjxXKA" comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyEAYJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyEAoJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyEA4JSEeerZtmujjxXKA" comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tyEBIJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tyEBYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5tyEBoJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyEB4JSEeerZtmujjxXKA" comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyECIJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyECYJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tyECoJSEeerZtmujjxXKA" comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tyEC4JSEeerZtmujjxXKA" comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

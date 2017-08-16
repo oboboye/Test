@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_D9pVUISCEeW6vMhsDqlP3w" comment="connectionComment" label="connectionLabel" dataPackage="_D9pVUYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_D9pVUYSCEeW6vMhsDqlP3w" dataManager="_D9pVUISCEeW6vMhsDqlP3w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_D9pVUoSCEeW6vMhsDqlP3w" comment="MDM441_VEHICLE" label="MDM441_VEHICLE">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVU4SCEeW6vMhsDqlP3w" name="vehicle_id" id="112626" label="vehicle_id" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_D9pVVISCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVVYSCEeW6vMhsDqlP3w" name="dvla_vehicle_id" id="112627" comment="Unique DVLA reference" label="dvla_vehicle_id" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_D9pVVoSCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVV4SCEeW6vMhsDqlP3w" name="registration" id="112628" comment="also called VRM" label="registration" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_D9pVWISCEeW6vMhsDqlP3w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVWYSCEeW6vMhsDqlP3w" name="vin" id="112629" label="vin" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_D9pVWoSCEeW6vMhsDqlP3w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVW4SCEeW6vMhsDqlP3w" name="first_registration_date" id="112630" label="first_registration_date" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_D9pVXISCEeW6vMhsDqlP3w"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

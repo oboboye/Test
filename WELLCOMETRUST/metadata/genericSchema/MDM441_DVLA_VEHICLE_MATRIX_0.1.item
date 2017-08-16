@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_CXC0EJKdEeWkItm-fAiRbQ" name="Copy_of_MDM441_VEHICLE" comment="connectionComment" label="Copy_of_MDM441_VEHICLE" dataPackage="_D9pVUYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_D9pVUYSCEeW6vMhsDqlP3w" dataManager="_CXC0EJKdEeWkItm-fAiRbQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_D9pVUoSCEeW6vMhsDqlP3w" comment="MDM441_DVLA_VEHICLE_MATRIX" label="MDM441_DVLA_VEHICLE_MATRIX">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NdBC8JKdEeWkItm-fAiRbQ" name="dvla_vehicle_id" label="dvla_vehicle_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long" key="true" nullable="false">
+        <initialValue xmi:id="_NdBC8ZKdEeWkItm-fAiRbQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NdBC8pKdEeWkItm-fAiRbQ" name="extract_date_1" label="extract_date_1" length="19" precision="-1" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_NdBC85KdEeWkItm-fAiRbQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NdBC9JKdEeWkItm-fAiRbQ" name="status_id_1" label="status_id_1" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_NdBC9ZKdEeWkItm-fAiRbQ" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

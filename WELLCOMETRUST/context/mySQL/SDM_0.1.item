@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5sEzwIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5sEzwYJSEeerZtmujjxXKA" comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" type="id_String" value="dme-mot6.mg.dvsa"/>
+    <contextParameter xmi:id="_5sEzwoJSEeerZtmujjxXKA" comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5sEzw4JSEeerZtmujjxXKA" comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEzxIJSEeerZtmujjxXKA" comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5sEzxYJSEeerZtmujjxXKA" comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" type="id_Password" value="I6LAxCJJuEhiUobrxr5NFQ=="/>
+    <contextParameter xmi:id="_5sEzxoJSEeerZtmujjxXKA" comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" type="id_String" value="williamsg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5sEzx4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5sEzyIJSEeerZtmujjxXKA" comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEzyYJSEeerZtmujjxXKA" comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5sEzyoJSEeerZtmujjxXKA" comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEzy4JSEeerZtmujjxXKA" comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEzzIJSEeerZtmujjxXKA" comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5sEzzYJSEeerZtmujjxXKA" comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5sEzzoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5sEzz4JSEeerZtmujjxXKA" comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEz0IJSEeerZtmujjxXKA" comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5sEz0YJSEeerZtmujjxXKA" comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEz0oJSEeerZtmujjxXKA" comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEz04JSEeerZtmujjxXKA" comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5sEz1IJSEeerZtmujjxXKA" comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5sEz1YJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5sEz1oJSEeerZtmujjxXKA" comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEz14JSEeerZtmujjxXKA" comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5sEz2IJSEeerZtmujjxXKA" comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEz2YJSEeerZtmujjxXKA" comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5sEz2oJSEeerZtmujjxXKA" comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5sEz24JSEeerZtmujjxXKA" comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

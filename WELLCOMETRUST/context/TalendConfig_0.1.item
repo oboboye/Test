@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5pCG0IJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5pCG0YJSEeerZtmujjxXKA" comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.DEV"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5pCG0oJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5pCG04JSEeerZtmujjxXKA" comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.PROD"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5pCG1IJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5pCG1YJSEeerZtmujjxXKA" comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.SIT"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5pCG1oJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5pCG14JSEeerZtmujjxXKA" comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.UAT"/>
+  </talendfile:ContextType>
+</xmi:XMI>

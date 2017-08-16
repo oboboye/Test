@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_PVTi8IxKEeWxCI5g64ydAQ" name="MDM441_VEHICLE_SUMMARY" comment="connectionComment" label="MDM441_VEHICLE_SUMMARY" dataPackage="_0_Q1AYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_0_Q1AYSCEeW6vMhsDqlP3w" dataManager="_PVTi8IxKEeWxCI5g64ydAQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0_Q1AoSCEeW6vMhsDqlP3w" comment="MDM441_VEHICLE_SUMMARY" label="MDM441_VEHICLE_SUMMARY">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l10IxQEeWxCI5g64ydAQ" name="run_date" label="run_date" length="19" sourceType="DATETIME" talendType="id_Date" key="true" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_95l10YxQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l10oxQEeWxCI5g64ydAQ" name="dq_rule_id" label="dq_rule_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long" key="true" nullable="false">
+        <initialValue xmi:id="_95l104xQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l11IxQEeWxCI5g64ydAQ" name="category" label="category" length="255" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_95l11YxQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l11oxQEeWxCI5g64ydAQ" name="code" label="code" length="255" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_95l114xQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l12IxQEeWxCI5g64ydAQ" name="purpose" label="purpose" length="255" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_95l12YxQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l12oxQEeWxCI5g64ydAQ" name="description" label="description" length="255" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_95l124xQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_95l13IxQEeWxCI5g64ydAQ" name="rule_count" label="rule_count" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_95l13YxQEeWxCI5g64ydAQ" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

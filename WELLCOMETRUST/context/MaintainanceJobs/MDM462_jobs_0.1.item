@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_5oxBEYJSEeerZtmujjxXKA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_5oxBEoJSEeerZtmujjxXKA" comment="" name="sqlTbl_vehicle" prompt="sqlTbl_vehicle?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_5oxBE4JSEeerZtmujjxXKA" comment="" name="sqlTbl_dvla_vehicle" prompt="sqlTbl_dvla_vehicle?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_5oxBFIJSEeerZtmujjxXKA" comment="" name="sqlTbl_talendTmp_vehicleCalc" prompt="sqlTbl_talendTmp_vehicleCalc?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_5oxBFYJSEeerZtmujjxXKA" comment="" name="sqlTbl_talendTmp_vehicleIdExceptionList" prompt="sqlTbl_talendTmp_vehicleIdExceptionList?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_5oxBFoJSEeerZtmujjxXKA" comment="" name="prefixTalendTmpMdm" prompt="prefixTalendTmpMdm?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_5oxBF4JSEeerZtmujjxXKA" comment="" name="sqlTbl_talendTmp_execLog" prompt="sqlTbl_talendTmp_execLog?" promptNeeded="false" type="id_String" value="null"/>
+</talendfile:ContextType>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5smYMIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5smYMYJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" type="id_String" value="dme-mot1.mot.npm"/>
+    <contextParameter xmi:id="_5smYMoJSEeerZtmujjxXKA" comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5smYM4JSEeerZtmujjxXKA" comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" type="id_String" value="talend_amc"/>
+    <contextParameter xmi:id="_5smYNIJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5smYNYJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5smYNoJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" type="id_String" value="talend_amc"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5smYN4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5smYOIJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYOYJSEeerZtmujjxXKA" comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5smYOoJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYO4JSEeerZtmujjxXKA" comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYPIJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5smYPYJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5smYPoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5smYP4JSEeerZtmujjxXKA" comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYQIJSEeerZtmujjxXKA" comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5smYQYJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYQoJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYQ4JSEeerZtmujjxXKA" comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5smYRIJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5smYRYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5smYRoJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYR4JSEeerZtmujjxXKA" comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5smYSIJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYSYJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5smYSoJSEeerZtmujjxXKA" comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5smYS4JSEeerZtmujjxXKA" comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

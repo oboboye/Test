@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5qiisIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5qiisYJSEeerZtmujjxXKA" comment="" name="InformationSchema_Login" prompt="InformationSchema_Login?" promptNeeded="false" type="id_String" value="sdm_195"/>
+    <contextParameter xmi:id="_5qiisoJSEeerZtmujjxXKA" comment="" name="InformationSchema_Port" prompt="InformationSchema_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5qiis4JSEeerZtmujjxXKA" comment="" name="InformationSchema_Password" prompt="InformationSchema_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qiitIJSEeerZtmujjxXKA" comment="" name="InformationSchema_Database" prompt="InformationSchema_Database?" promptNeeded="false" type="id_String" value="informationschema"/>
+    <contextParameter xmi:id="_5qiitYJSEeerZtmujjxXKA" comment="" name="InformationSchema_AdditionalParams" prompt="InformationSchema_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qiitoJSEeerZtmujjxXKA" comment="" name="InformationSchema_Server" prompt="InformationSchema_Server?" promptNeeded="false" type="id_String" value="dme-mot1.mot.npm"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5qiit4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5qiiuIJSEeerZtmujjxXKA" comment="" name="InformationSchema_Login" prompt="InformationSchema_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiuYJSEeerZtmujjxXKA" comment="" name="InformationSchema_Port" prompt="InformationSchema_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiuoJSEeerZtmujjxXKA" comment="" name="InformationSchema_Password" prompt="InformationSchema_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qiiu4JSEeerZtmujjxXKA" comment="" name="InformationSchema_Database" prompt="InformationSchema_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiivIJSEeerZtmujjxXKA" comment="" name="InformationSchema_AdditionalParams" prompt="InformationSchema_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qiivYJSEeerZtmujjxXKA" comment="" name="InformationSchema_Server" prompt="InformationSchema_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5qiivoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5qiiv4JSEeerZtmujjxXKA" comment="" name="InformationSchema_Login" prompt="InformationSchema_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiwIJSEeerZtmujjxXKA" comment="" name="InformationSchema_Port" prompt="InformationSchema_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiwYJSEeerZtmujjxXKA" comment="" name="InformationSchema_Password" prompt="InformationSchema_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qiiwoJSEeerZtmujjxXKA" comment="" name="InformationSchema_Database" prompt="InformationSchema_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiw4JSEeerZtmujjxXKA" comment="" name="InformationSchema_AdditionalParams" prompt="InformationSchema_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qiixIJSEeerZtmujjxXKA" comment="" name="InformationSchema_Server" prompt="InformationSchema_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5qiixYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5qiixoJSEeerZtmujjxXKA" comment="" name="InformationSchema_Login" prompt="InformationSchema_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiix4JSEeerZtmujjxXKA" comment="" name="InformationSchema_Port" prompt="InformationSchema_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiyIJSEeerZtmujjxXKA" comment="" name="InformationSchema_Password" prompt="InformationSchema_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qiiyYJSEeerZtmujjxXKA" comment="" name="InformationSchema_Database" prompt="InformationSchema_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qiiyoJSEeerZtmujjxXKA" comment="" name="InformationSchema_AdditionalParams" prompt="InformationSchema_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qiiy4JSEeerZtmujjxXKA" comment="" name="InformationSchema_Server" prompt="InformationSchema_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

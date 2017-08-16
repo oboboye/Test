@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5wBfoIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5wBfoYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5wBfooJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfo4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfpIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5wBfpYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfpoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5wBfp4JSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5wBfqIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5wBfqYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfqoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfq4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5wBfrIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfrYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5wBfroJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5wBfr4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5wBfsIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfsYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfsoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5wBfs4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBftIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5wBftYJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5wBftoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter xmi:id="_5wBft4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfuIJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfuYJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+    <contextParameter xmi:id="_5wBfuoJSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5wBfu4JSEeerZtmujjxXKA" comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

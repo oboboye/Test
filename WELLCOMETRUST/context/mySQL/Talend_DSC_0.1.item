@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5tODQIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV_DAILY">
+    <contextParameter xmi:id="_5tODQYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODQoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODQ4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODRIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODRYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODRoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODR4JSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV_DELTA">
+    <contextParameter xmi:id="_5tODSIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODSYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODSoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODS4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODTIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODTYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODToJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DAILY_AMAZON">
+    <contextParameter xmi:id="_5tODT4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODUIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODUYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODUoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODU4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODVIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODVYJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DAILY_SKYSCAPE">
+    <contextParameter xmi:id="_5tODVoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODV4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODWIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODWYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODWoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODW4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODXIJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DELTA_AMAZON">
+    <contextParameter xmi:id="_5tODXYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODXoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODX4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODYIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODYYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODYoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODY4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD_DELTA_SKYSCAPE">
+    <contextParameter xmi:id="_5tODZIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODZYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODZoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODZ4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODaIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODaYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODaoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT_DAILY">
+    <contextParameter xmi:id="_5tODa4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODbIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODbYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODboJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODb4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODcIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODcYJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT_DELTA">
+    <contextParameter xmi:id="_5tODcoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODc4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODdIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODdYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODdoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODd4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODeIJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DAILY_AMAZON">
+    <contextParameter xmi:id="_5tODeYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODeoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODe4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODfIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODfYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODfoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODf4JSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DAILY_SKYSCAPE">
+    <contextParameter xmi:id="_5tODgIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODgYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODgoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODg4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODhIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODhYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODhoJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DELTA_AMAZON">
+    <contextParameter xmi:id="_5tODh4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODiIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODiYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODioJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODi4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODjIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5tODjYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT_DELTA_SKYSCAPE">
+    <contextParameter xmi:id="_5tODjoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Server" prompt="Talend_DSC_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODj4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_AdditionalParams" prompt="Talend_DSC_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5tODkIJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Database" prompt="Talend_DSC_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODkYJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Port" prompt="Talend_DSC_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5tODkoJSEeerZtmujjxXKA" comment="" name="Talend_DSC_Password" prompt="Talend_DSC_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5tODk4JSEeerZtmujjxXKA" comment="" name="Talend_DSC_Login" prompt="Talend_DSC_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_b6CQMNDlEeWPxf1wni7hKg" name="repository.metadataGenericSchema" dataPackage="_b6CQMdDlEeWPxf1wni7hKg" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_b6CQMdDlEeWPxf1wni7hKg" name="repository.metadataGenericSchema" dataManager="_b6CQMNDlEeWPxf1wni7hKg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_b6CQMtDlEeWPxf1wni7hKg" id="_EMCw4NDlEeWPxf1wni7hKg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUtRcNF0EeWa55t6Bau3fg" name="event_id" label="event_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long" key="true" nullable="false">
+        <initialValue xmi:id="_dUt4gNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4gdF0EeWa55t6Bau3fg" name="event_outcome_id" label="event_outcome_id" length="5" sourceType="SMALLINT UNSIGNED" talendType="id_Integer">
+        <initialValue xmi:id="_dUt4gtF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4g9F0EeWa55t6Bau3fg" name="event_type_id" label="event_type_id" length="5" sourceType="SMALLINT UNSIGNED" talendType="id_Integer">
+        <initialValue xmi:id="_dUt4hNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4hdF0EeWa55t6Bau3fg" name="organisation_id" label="organisation_id" sourceType="" talendType="id_Long">
+        <initialValue xmi:id="_dUt4htF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4h9F0EeWa55t6Bau3fg" name="person_id" label="person_id" sourceType="" talendType="id_Long">
+        <initialValue xmi:id="_dUt4iNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4idF0EeWa55t6Bau3fg" name="site_id" label="site_id" sourceType="" talendType="id_Long">
+        <initialValue xmi:id="_dUt4itF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4i9F0EeWa55t6Bau3fg" name="description" comment="Mandatory description" label="description" length="250" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_dUt4jNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4jdF0EeWa55t6Bau3fg" name="event_date" label="event_date" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_dUt4jtF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4j9F0EeWa55t6Bau3fg" name="is_manual_event" label="is_manual_event" length="4" sourceType="TINYINT" talendType="id_Integer">
+        <initialValue xmi:id="_dUt4kNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4kdF0EeWa55t6Bau3fg" name="comment_id" comment="Optional long description" label="comment_id" length="20" sourceType="BIGINT UNSIGNED" talendType="id_String">
+        <initialValue xmi:id="_dUt4ktF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4k9F0EeWa55t6Bau3fg" name="mot1_legacy_id" comment="Used to hold MOT1 associated primary key for migration purposes" label="mot1_legacy_id" length="80" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_dUt4lNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4ldF0EeWa55t6Bau3fg" name="created_by" label="created_by" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_dUt4ltF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4l9F0EeWa55t6Bau3fg" name="created_on" label="created_on" length="26" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSS&quot;">
+        <initialValue xmi:id="_dUt4mNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4mdF0EeWa55t6Bau3fg" name="last_updated_by" label="last_updated_by" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_dUt4mtF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4m9F0EeWa55t6Bau3fg" name="last_updated_on" label="last_updated_on" length="26" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSS&quot;">
+        <initialValue xmi:id="_dUt4nNF0EeWa55t6Bau3fg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4ndF0EeWa55t6Bau3fg" name="version" label="version" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_dUt4ntF0EeWa55t6Bau3fg" body="1"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dUt4n9F0EeWa55t6Bau3fg" name="batch_number" comment="ETL batch number: for use by ETL process only" label="batch_number" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_dUt4oNF0EeWa55t6Bau3fg" body="1"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

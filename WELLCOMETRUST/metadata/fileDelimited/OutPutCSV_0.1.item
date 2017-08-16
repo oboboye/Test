@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_V3k3wAZJEea1K6eYgd_TMw" name="OutPutCSV" dataPackage="_V3k3wQZJEea1K6eYgd_TMw" Server="Localhost 127.0.0.1" FilePath="/data/DataMigration/Review/MDM_419_ODOMETER_UPDATE_MOT_TEST_20160120021908.csv" Encoding="ISO-8859-15" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" EscapeChar="&quot;&quot;&quot;" TextEnclosure="&quot;&quot;&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_V3k3wQZJEea1K6eYgd_TMw" name="default" dataManager="_V3k3wAZJEea1K6eYgd_TMw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_V3k3wgZJEea1K6eYgd_TMw" id="_rAoxoAZIEea1K6eYgd_TMw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_V3k3wwZJEea1K6eYgd_TMw" label="Column0" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

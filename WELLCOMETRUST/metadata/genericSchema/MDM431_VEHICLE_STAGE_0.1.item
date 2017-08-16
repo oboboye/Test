@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_uML1AKNKEeWcU4kkggJ0Zg" name="MDM431_VEHICLE_STAGE" comment="connectionComment" label="MDM431_VEHICLE_STAGE" dataPackage="_D9pVUYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_D9pVUYSCEeW6vMhsDqlP3w" dataManager="_uML1AKNKEeWcU4kkggJ0Zg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_D9pVUoSCEeW6vMhsDqlP3w" comment="MDM431_VEHICLE_STAGE" label="MDM431_VEHICLE_STAGE">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CTCSoKQIEeWYN5SlBLaZ8w" name="id" label="id" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_CTCSoaQIEeWYN5SlBLaZ8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CTCSoqQIEeWYN5SlBLaZ8w" name="dvla_vehicle_id" label="dvla_vehicle_id" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_CTCSo6QIEeWYN5SlBLaZ8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CTCSpKQIEeWYN5SlBLaZ8w" name="last_updated_by" label="last_updated_by" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_CTCSpaQIEeWYN5SlBLaZ8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CTCSpqQIEeWYN5SlBLaZ8w" name="last_updated_on" label="last_updated_on" length="26" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSS&quot;">
+        <initialValue xmi:id="_CTCSp6QIEeWYN5SlBLaZ8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CTCSqKQIEeWYN5SlBLaZ8w" name="version" label="version" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_CTCSqaQIEeWYN5SlBLaZ8w" body="1"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CTCSqqQIEeWYN5SlBLaZ8w" name="batch_number" comment="ETL batch number: for use by ETL process only" label="batch_number" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_CTCSq6QIEeWYN5SlBLaZ8w" body="0"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

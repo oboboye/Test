@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_47CLIA33EeaJ572hihIizQ" name="MDM489_VEHICLE_DATA" comment="connectionComment" label="MDM489_VEHICLE_DATA" dataPackage="_D9pVUYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_D9pVUYSCEeW6vMhsDqlP3w" dataManager="_47CLIA33EeaJ572hihIizQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_D9pVUoSCEeW6vMhsDqlP3w" comment="MDM489_VEHICLE_DATA" label="MDM489_VEHICLE_DATA">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVU4SCEeW6vMhsDqlP3w" name="vehicle_id" id="112626" label="vehicle_id" length="10" sourceType="INT" talendType="id_Integer" key="true">
+        <initialValue xmi:id="_D9pVVISCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3_L4gKPsEeW9jODFVVtqYQ" name="mot1_legacy_id" comment="Used to hold MOT1 associated primary key for migration purposes" label="mot1_legacy_id" length="80" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_3_L4gaPsEeW9jODFVVtqYQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVV4SCEeW6vMhsDqlP3w" name="rootvrm" id="112628" comment="mot1_legacy_id first" label="rootvrm" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_D9pVWISCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D9pVVYSCEeW6vMhsDqlP3w" name="counter" id="112627" comment="mot1_legacy_id second" label="counter" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_D9pVVoSCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rGRAIKP-EeWYN5SlBLaZ8w" name="batch_number" label="batch_number" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_rGRAIaP-EeWYN5SlBLaZ8w" body="1"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

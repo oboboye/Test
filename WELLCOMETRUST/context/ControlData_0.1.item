@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5m7OAIJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5m7OAYJSEeerZtmujjxXKA" comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter xmi:id="_5m7OAoJSEeerZtmujjxXKA" comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" type="id_String" value="DataIntegration"/>
+    <contextParameter xmi:id="_5m7OA4JSEeerZtmujjxXKA" comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OBIJSEeerZtmujjxXKA" comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_5m7OBYJSEeerZtmujjxXKA" comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OBoJSEeerZtmujjxXKA" comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OB4JSEeerZtmujjxXKA" comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OCIJSEeerZtmujjxXKA" comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OCYJSEeerZtmujjxXKA" comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OCoJSEeerZtmujjxXKA" comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OC4JSEeerZtmujjxXKA" comment="" name="JobType" prompt="JobType?" promptNeeded="false" type="id_String" value="Job"/>
+    <contextParameter xmi:id="_5m7ODIJSEeerZtmujjxXKA" comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter xmi:id="_5m7ODYJSEeerZtmujjxXKA" comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7ODoJSEeerZtmujjxXKA" comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OD4JSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OEIJSEeerZtmujjxXKA" comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OEYJSEeerZtmujjxXKA" comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OEoJSEeerZtmujjxXKA" comment="" name="Branch" prompt="Branch?" promptNeeded="false" type="id_String" value="trunk"/>
+    <contextParameter xmi:id="_5m7OE4JSEeerZtmujjxXKA" comment="" name="TempFilename" prompt="TempFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OFIJSEeerZtmujjxXKA" comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5m7OFYJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5m7OFoJSEeerZtmujjxXKA" comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter xmi:id="_5m7OF4JSEeerZtmujjxXKA" comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" type="id_String" value="DataIntegration"/>
+    <contextParameter xmi:id="_5m7OGIJSEeerZtmujjxXKA" comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OGYJSEeerZtmujjxXKA" comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_5m7OGoJSEeerZtmujjxXKA" comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OG4JSEeerZtmujjxXKA" comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OHIJSEeerZtmujjxXKA" comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OHYJSEeerZtmujjxXKA" comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OHoJSEeerZtmujjxXKA" comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OH4JSEeerZtmujjxXKA" comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OIIJSEeerZtmujjxXKA" comment="" name="JobType" prompt="JobType?" promptNeeded="false" type="id_String" value="Job"/>
+    <contextParameter xmi:id="_5m7OIYJSEeerZtmujjxXKA" comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter xmi:id="_5m7OIoJSEeerZtmujjxXKA" comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OI4JSEeerZtmujjxXKA" comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OJIJSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OJYJSEeerZtmujjxXKA" comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OJoJSEeerZtmujjxXKA" comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OJ4JSEeerZtmujjxXKA" comment="" name="Branch" prompt="Branch?" promptNeeded="false" type="id_String" value="trunk"/>
+    <contextParameter xmi:id="_5m7OKIJSEeerZtmujjxXKA" comment="" name="TempFilename" prompt="TempFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OKYJSEeerZtmujjxXKA" comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5m7OKoJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5m7OK4JSEeerZtmujjxXKA" comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter xmi:id="_5m7OLIJSEeerZtmujjxXKA" comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" type="id_String" value="DataIntegration"/>
+    <contextParameter xmi:id="_5m7OLYJSEeerZtmujjxXKA" comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OLoJSEeerZtmujjxXKA" comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_5m7OL4JSEeerZtmujjxXKA" comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OMIJSEeerZtmujjxXKA" comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OMYJSEeerZtmujjxXKA" comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OMoJSEeerZtmujjxXKA" comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OM4JSEeerZtmujjxXKA" comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7ONIJSEeerZtmujjxXKA" comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7ONYJSEeerZtmujjxXKA" comment="" name="JobType" prompt="JobType?" promptNeeded="false" type="id_String" value="Job"/>
+    <contextParameter xmi:id="_5m7ONoJSEeerZtmujjxXKA" comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter xmi:id="_5m7ON4JSEeerZtmujjxXKA" comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OOIJSEeerZtmujjxXKA" comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OOYJSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OOoJSEeerZtmujjxXKA" comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OO4JSEeerZtmujjxXKA" comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OPIJSEeerZtmujjxXKA" comment="" name="Branch" prompt="Branch?" promptNeeded="false" type="id_String" value="trunk"/>
+    <contextParameter xmi:id="_5m7OPYJSEeerZtmujjxXKA" comment="" name="TempFilename" prompt="TempFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OPoJSEeerZtmujjxXKA" comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5m7OP4JSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5m7OQIJSEeerZtmujjxXKA" comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter xmi:id="_5m7OQYJSEeerZtmujjxXKA" comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" type="id_String" value="DataIntegration"/>
+    <contextParameter xmi:id="_5m7OQoJSEeerZtmujjxXKA" comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7OQ4JSEeerZtmujjxXKA" comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_5m7ORIJSEeerZtmujjxXKA" comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" type="id_String" value="Initialise"/>
+    <contextParameter xmi:id="_5m7ORYJSEeerZtmujjxXKA" comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7ORoJSEeerZtmujjxXKA" comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OR4JSEeerZtmujjxXKA" comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OSIJSEeerZtmujjxXKA" comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OSYJSEeerZtmujjxXKA" comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OSoJSEeerZtmujjxXKA" comment="" name="JobType" prompt="JobType?" promptNeeded="false" type="id_String" value="Job"/>
+    <contextParameter xmi:id="_5m7OS4JSEeerZtmujjxXKA" comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter xmi:id="_5m7OTIJSEeerZtmujjxXKA" comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OTYJSEeerZtmujjxXKA" comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OToJSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OT4JSEeerZtmujjxXKA" comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_5m7OUIJSEeerZtmujjxXKA" comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OUYJSEeerZtmujjxXKA" comment="" name="Branch" prompt="Branch?" promptNeeded="false" type="id_String" value="trunk"/>
+    <contextParameter xmi:id="_5m7OUoJSEeerZtmujjxXKA" comment="" name="TempFilename" prompt="TempFilename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5m7OU4JSEeerZtmujjxXKA" comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+  </talendfile:ContextType>
+</xmi:XMI>

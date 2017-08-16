@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_0_Q1AISCEeW6vMhsDqlP3w" comment="connectionComment" label="connectionLabel" dataPackage="_0_Q1AYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_0_Q1AYSCEeW6vMhsDqlP3w" dataManager="_0_Q1AISCEeW6vMhsDqlP3w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0_Q1AoSCEeW6vMhsDqlP3w" comment="MDM441_VEHICLE_QUALITY" label="MDM441_VEHICLE_QUALITY">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H0IgMI9uEeWk_PVeKS9a_A" name="extract_date" label="extract_date" length="19" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" originalLength="19"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZhWvsJkNEeWvo6q3k1oEdw" name="dvla_vehicle_pk" label="dvla_vehicle_pk" length="10" sourceType="INT UNSIGNED" talendType="id_Long" originalLength="40">
+        <initialValue xmi:id="_ZhWvsZkNEeWvo6q3k1oEdw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0_Q1A4SCEeW6vMhsDqlP3w" name="dvla_vehicle_id" id="23437" label="dvla_vehicle_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long">
+        <initialValue xmi:id="_0_Q1BISCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0_Q1BYSCEeW6vMhsDqlP3w" name="vehicle_id" id="23438" label="vehicle_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long">
+        <initialValue xmi:id="_0_Q1BoSCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0_Q1B4SCEeW6vMhsDqlP3w" name="registration" id="23439" label="registration" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0_Q1CISCEeW6vMhsDqlP3w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0_Q1CYSCEeW6vMhsDqlP3w" name="vin" id="23440" label="vin" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_0_Q1CoSCEeW6vMhsDqlP3w"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0_Q1C4SCEeW6vMhsDqlP3w" name="dq_rule_id" id="23438" label="dq_rule_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_0_Q1DISCEeW6vMhsDqlP3w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0_Q1DYSCEeW6vMhsDqlP3w" name="rule_count" id="23584" label="rule_count" length="10" sourceType="BIGINT" talendType="id_Long">
+        <initialValue xmi:id="_0_Q1DoSCEeW6vMhsDqlP3w"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

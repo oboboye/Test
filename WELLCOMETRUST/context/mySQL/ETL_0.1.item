@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5qBlUIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5qBlUYJSEeerZtmujjxXKA" comment="" name="ETL_Server" prompt="ETL_Server?" promptNeeded="false" type="id_String" value="dme-mot1.mg.dvsa"/>
+    <contextParameter xmi:id="_5qBlUoJSEeerZtmujjxXKA" comment="" name="ETL_AdditionalParams" prompt="ETL_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qBlU4JSEeerZtmujjxXKA" comment="" name="ETL_Database" prompt="ETL_Database?" promptNeeded="false" type="id_String" value="etl_191"/>
+    <contextParameter xmi:id="_5qBlVIJSEeerZtmujjxXKA" comment="" name="ETL_Port" prompt="ETL_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5qBlVYJSEeerZtmujjxXKA" comment="" name="ETL_Password" prompt="ETL_Password?" promptNeeded="false" type="id_Password" value="37xICeLExFP4LPf2huRv0xAlx/TzuO3G"/>
+    <contextParameter xmi:id="_5qBlVoJSEeerZtmujjxXKA" comment="" name="ETL_Login" prompt="ETL_Login?" promptNeeded="false" type="id_String" value="etl_191"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5qBlV4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5qBlWIJSEeerZtmujjxXKA" comment="" name="ETL_Server" prompt="ETL_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlWYJSEeerZtmujjxXKA" comment="" name="ETL_AdditionalParams" prompt="ETL_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qBlWoJSEeerZtmujjxXKA" comment="" name="ETL_Database" prompt="ETL_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlW4JSEeerZtmujjxXKA" comment="" name="ETL_Port" prompt="ETL_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlXIJSEeerZtmujjxXKA" comment="" name="ETL_Password" prompt="ETL_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qBlXYJSEeerZtmujjxXKA" comment="" name="ETL_Login" prompt="ETL_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5qBlXoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5qBlX4JSEeerZtmujjxXKA" comment="" name="ETL_Server" prompt="ETL_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlYIJSEeerZtmujjxXKA" comment="" name="ETL_AdditionalParams" prompt="ETL_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qBlYYJSEeerZtmujjxXKA" comment="" name="ETL_Database" prompt="ETL_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlYoJSEeerZtmujjxXKA" comment="" name="ETL_Port" prompt="ETL_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlY4JSEeerZtmujjxXKA" comment="" name="ETL_Password" prompt="ETL_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qBlZIJSEeerZtmujjxXKA" comment="" name="ETL_Login" prompt="ETL_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5qBlZYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5qBlZoJSEeerZtmujjxXKA" comment="" name="ETL_Server" prompt="ETL_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlZ4JSEeerZtmujjxXKA" comment="" name="ETL_AdditionalParams" prompt="ETL_AdditionalParams?" promptNeeded="false" type="id_String" value="autoReconnect=true"/>
+    <contextParameter xmi:id="_5qBlaIJSEeerZtmujjxXKA" comment="" name="ETL_Database" prompt="ETL_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlaYJSEeerZtmujjxXKA" comment="" name="ETL_Port" prompt="ETL_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5qBlaoJSEeerZtmujjxXKA" comment="" name="ETL_Password" prompt="ETL_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5qBla4JSEeerZtmujjxXKA" comment="" name="ETL_Login" prompt="ETL_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

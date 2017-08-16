@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="SIT">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" repositoryContextId="_Tb5gABn5EeOL7Y2Fp9DDOw" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.DEV"/>
+    <contextParameter comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DataIntegration"/>
+    <contextParameter comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="input_folder" prompt="input_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="process_folder" prompt="process_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="archive_folder" prompt="archive_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="error_folder" prompt="error_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="review_folder" prompt="review_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobType" prompt="JobType?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Job"/>
+    <contextParameter comment="" name="DEV_Database" prompt="DEV_Database?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="etl_191"/>
+    <contextParameter comment="" name="DEV_Password" prompt="DEV_Password?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_Password" value="37xICeLExFP4LPf2huRv0xAlx/TzuO3G"/>
+    <contextParameter comment="" name="DEV_Login" prompt="DEV_Login?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="etl_191"/>
+    <contextParameter comment="" name="DEV_Server" prompt="DEV_Server?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="dme-mot1.mg.dvsa"/>
+    <contextParameter comment="" name="DEV_Port" prompt="DEV_Port?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="DEV_AdditionalParams" prompt="DEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="dme-mot1.mot.npm"/>
+    <contextParameter comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="mot1_mirror"/>
+    <contextParameter comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_Password" value="w4OGp+ZRn0Q6InrzqewdUzdeVtPC33Ky"/>
+    <contextParameter comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="mot1_mirror"/>
+    <contextParameter comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_Password" value="I6LAxCJJuEhiUobrxr5NFQ=="/>
+    <contextParameter comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="williamsg"/>
+    <contextParameter comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="dme-mot6.mg.dvsa"/>
+    <contextParameter comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value="talend_ops"/>
+    <contextParameter comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value="talend_ops"/>
+    <contextParameter comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value="dme-mot1.mot.npm"/>
+    <contextParameter comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_Password" value="w4OGp+ZRn0Q6InrzqewdUzdeVtPC33Ky"/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="talend_amc"/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="dme-mot1.mot.npm"/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="autoReconnect=true"/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="talend_amc"/>
+    <contextParameter comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VRM" prompt="VRM?" promptNeeded="false" type="id_String" value="&quot;00%&quot;"/>
+    <contextParameter comment="" name="Branch" prompt="Branch?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="trunk"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" repositoryContextId="_Tb5gABn5EeOL7Y2Fp9DDOw" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.PROD"/>
+    <contextParameter comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DataIntegration"/>
+    <contextParameter comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="input_folder" prompt="input_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="process_folder" prompt="process_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="archive_folder" prompt="archive_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="error_folder" prompt="error_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="review_folder" prompt="review_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobType" prompt="JobType?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Job"/>
+    <contextParameter comment="" name="DEV_Database" prompt="DEV_Database?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Password" prompt="DEV_Password?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="DEV_Login" prompt="DEV_Login?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Server" prompt="DEV_Server?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Port" prompt="DEV_Port?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_AdditionalParams" prompt="DEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="autoReconnect=true"/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VRM" prompt="VRM?" promptNeeded="false" type="id_String" value="&quot;00%&quot;"/>
+    <contextParameter comment="" name="Branch" prompt="Branch?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="trunk"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+  </context>
+  <context confirmationNeeded="false" name="SIT">
+    <contextParameter comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" repositoryContextId="_Tb5gABn5EeOL7Y2Fp9DDOw" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.SIT"/>
+    <contextParameter comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DataIntegration"/>
+    <contextParameter comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="input_folder" prompt="input_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="process_folder" prompt="process_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="archive_folder" prompt="archive_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="error_folder" prompt="error_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="review_folder" prompt="review_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobType" prompt="JobType?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Job"/>
+    <contextParameter comment="" name="DEV_Database" prompt="DEV_Database?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Password" prompt="DEV_Password?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="DEV_Login" prompt="DEV_Login?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Server" prompt="DEV_Server?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Port" prompt="DEV_Port?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_AdditionalParams" prompt="DEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="autoReconnect=true"/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VRM" prompt="VRM?" promptNeeded="false" type="id_String" value="&quot;00%&quot;"/>
+    <contextParameter comment="" name="Branch" prompt="Branch?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="trunk"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="TalendConfig" prompt="TalendConfig?" promptNeeded="false" repositoryContextId="_Tb5gABn5EeOL7Y2Fp9DDOw" type="id_String" value="/home/talend/config/DataMigration/DVSA_DATA_MIGRATION.properties.UAT"/>
+    <contextParameter comment="" name="MasterStatus" prompt="MasterStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="MasterIntegrationName" prompt="MasterIntegrationName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DataIntegration"/>
+    <contextParameter comment="" name="MasterProjectName" prompt="MasterProjectName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="DVSA_DATA_MIGRATION"/>
+    <contextParameter comment="" name="BatchNumber" prompt="BatchNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Long" value="0"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFilename" prompt="DataFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobStatus" prompt="JobStatus?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Initialise"/>
+    <contextParameter comment="" name="TriggerFilename" prompt="TriggerFilename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorNumber" prompt="ErrorNumber?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ErrorDetail" prompt="ErrorDetail?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="input_folder" prompt="input_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="process_folder" prompt="process_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="archive_folder" prompt="archive_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="error_folder" prompt="error_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="review_folder" prompt="review_folder?" promptNeeded="false" repositoryContextId="_cgXOIBe1EeSw45xYUhz-xQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobType" prompt="JobType?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="Job"/>
+    <contextParameter comment="" name="DEV_Database" prompt="DEV_Database?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Password" prompt="DEV_Password?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="DEV_Login" prompt="DEV_Login?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Server" prompt="DEV_Server?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_Port" prompt="DEV_Port?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DEV_AdditionalParams" prompt="DEV_AdditionalParams?" promptNeeded="false" repositoryContextId="_EBsdsC9MEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" repositoryContextId="_Vz_aoC9MEeSartDH_d9fnQ" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Password" prompt="SDM_Password?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="SDM_Port" prompt="SDM_Port?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Database" prompt="SDM_Database?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_Login" prompt="SDM_Login?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SDM_AdditionalParams" prompt="SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter comment="" name="SDM_Server" prompt="SDM_Server?" promptNeeded="false" repositoryContextId="_2Q8GwC9PEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ForeignKeyChecks" prompt="ForeignKeyChecks?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="SET FOREIGN_KEY_CHECKS=1"/>
+    <contextParameter comment="" name="Talend_OPS_Port" prompt="Talend_OPS_Port?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Database" prompt="Talend_OPS_Database?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Login" prompt="Talend_OPS_Login?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_AdditionalParams" prompt="Talend_OPS_AdditionalParams?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Server" prompt="Talend_OPS_Server?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_OPS_Password" prompt="Talend_OPS_Password?" promptNeeded="false" repositoryContextId="_TjOVEC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value="autoReconnect=true"/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="_IG-7QC9QEeSartDH_d9fnQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Tablename" prompt="Tablename?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="MasterJobName" prompt="MasterJobName?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="JobPartitionName" prompt="JobPartitionName?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter comment="" name="InsertBatchSize" prompt="InsertBatchSize?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="TempDirectory" prompt="TempDirectory?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VRM" prompt="VRM?" promptNeeded="false" type="id_String" value="&quot;00%&quot;"/>
+    <contextParameter comment="" name="Branch" prompt="Branch?" promptNeeded="false" repositoryContextId="_vqlfgIgnEeODKMn4d_CyNQ" type="id_String" value="trunk"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Server" prompt="Talend_TMP_SDM_Server?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Database" prompt="Talend_TMP_SDM_Database?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Port" prompt="Talend_TMP_SDM_Port?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Login" prompt="Talend_TMP_SDM_Login?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_TMP_SDM_AdditionalParams" prompt="Talend_TMP_SDM_AdditionalParams?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" name="Talend_TMP_SDM_Password" prompt="Talend_TMP_SDM_Password?" promptNeeded="false" repositoryContextId="_plJcAGtxEeWLo_kYXQ6lvA" type="id_Password" value="8pW6Nmy2kue1Y+87OKIakBI3qC1TBe8A65m7XBompXE="/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1G&quot;,&quot;-Xmx4G&quot;,&quot;-XX:-UseGCOverheadLimit&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="71"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="256"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="context.TalendConfig"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;=&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/xinl/Talend-5.4.2/studio/workspace_remote/.metadata&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_wAxXcBDKEeSkVuhE-pvrBg"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL" value=""/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_AMC_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_AMC_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_AMC_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_AMC_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value=""/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_AMC_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuegXvH5yjWkLBgMCgEWhrNWMsB26XZZ3z8="/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;tstatcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;tlogcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;tflowmetercatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <routinesParameter id="_MZ-fUAwCEeS15qJuCYrtoQ" name="DQTechnical"/>
+    <routinesParameter id="_MaTPcAwCEeS15qJuCYrtoQ" name="DataOperation"/>
+    <routinesParameter id="_MWMLgAwCEeS15qJuCYrtoQ" name="DataQuality"/>
+    <routinesParameter id="_MZvOwAwCEeS15qJuCYrtoQ" name="DqStringHandling"/>
+    <routinesParameter id="_kGplYAzFEeSS4pxMPY_U_A" name="MDM"/>
+    <routinesParameter id="_MaeOkAwCEeS15qJuCYrtoQ" name="Mathematical"/>
+    <routinesParameter id="_MapNsAwCEeS15qJuCYrtoQ" name="Numeric"/>
+    <routinesParameter id="_Ma2pEAwCEeS15qJuCYrtoQ" name="Relational"/>
+    <routinesParameter id="_MaI3YAwCEeS15qJuCYrtoQ" name="SQLike"/>
+    <routinesParameter id="_MbCPQAwCEeS15qJuCYrtoQ" name="StringHandling"/>
+    <routinesParameter id="_MbOcgAwCEeS15qJuCYrtoQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_MbaCsAwCEeS15qJuCYrtoQ" name="TalendDate"/>
+    <routinesParameter id="_Mbm3AAwCEeS15qJuCYrtoQ" name="TalendString"/>
+    <routinesParameter id="__j6ZkAGQEeK0pv6YsbtEnA" name="Example"/>
+    <routinesParameter id="_chUnQHB_Ed6oFM5S1Wl1-A" name="PopulateFromDynamic"/>
+    <routinesParameter id="_VM9_ACy6EeKYTswVMeRQHg" name="RecordType_Delimiters_Check"/>
+    <routinesParameter id="_FHWWACAnEeKHAaq9T2wVkg" name="lowerCase"/>
+    <routinesParameter id="_JXwJUCApEeKHAaq9T2wVkg" name="trim"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JobControl"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_XyUSkA5dEeSJHNza52sqzA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="SIT"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JobName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Initialise&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_7">
+      <column comment="" key="false" length="0" name="key" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="value" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_1"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ControlContexts"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Oa_z8BfLEeSU5riMRwz5OA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SDM_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SDM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SDM_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SDM_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.SDM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucwI045cHDTSPgAxNngz8xf"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Connect"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tMysqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Disconnect"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1664">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JobControl"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_XyUSkA5dEeSJHNza52sqzA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="SIT"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JobName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Successful&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="1664">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="ErrorLog"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_LQnDQBGDEeSPwIttnbUMwg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ErrorNumber"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="2"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ErrorDetail"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Load row3 from MIRROR error&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1664">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JobControl"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_XyUSkA5dEeSJHNza52sqzA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="SIT"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JobName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Failed&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tChronometerStart" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tChronometerStart_1"/>
+    <elementParameter field="TEXT" name="CAPTION" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tMysqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMysqlCommit_1"/>
+  </node>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1344">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE VEHICLETESTRESULT R&#xA;    INNER JOIN  VEHTSTNONSTDADV N&#xA;                   ON R.TESTVEHVRM = N.TESTVEHVRM&#xA;      AND R.VEHTESTCNTR = N.VEHTESTCNTR&#xA;      SET N.BATCH_NUMBER = R.BATCH_NUMBER&#xA;WHERE&#xA;   R.BATCH_NUMBER = &quot; + context.BatchNumber"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="VEHTSTNONSTDADV"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMysqlRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_3"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Oa_z8BfLEeSU5riMRwz5OA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SDM_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SDM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SDM_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SDM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucwI045cHDTSPgAxNngz8xf"/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE mot_test_rfr_map m&#xA;JOIN &quot; + context.Talend_TMP_SDM_Database + &quot;.mot_test_certificate_issue_status s&#xA;ON s.mot_test_id=m.mot_test_id&#xA;SET m.batch_number = &quot; + context.BatchNumber + &quot;&#xA;WHERE s.mot1_legacy_group like '&quot; + context.VRM + &quot;'&#xA;AND s.is_current_mot2_test&#x9;= 'Y'&#xA;AND s.is_current_mot2_certificate_issue = 'Y'&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SDM_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="mot_test_rfr_map"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMysqlRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_5"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Oa_z8BfLEeSU5riMRwz5OA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SDM_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SDM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SDM_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SDM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucwI045cHDTSPgAxNngz8xf"/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE mot_test t&#xA;JOIN &quot; + context.Talend_TMP_SDM_Database + &quot;.mot_test_certificate_issue_status s&#xA;ON s.mot_test_id=t.id&#xA;SET t.batch_number = &quot; + context.BatchNumber + &quot;&#xA;WHERE s.mot1_legacy_group like '&quot; + context.VRM + &quot;'&#xA;AND s.is_current_mot2_test&#x9;= 'Y'&#xA;AND s.is_current_mot2_certificate_issue = 'Y'&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SDM_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="mot_test"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMysqlRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_4"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Oa_z8BfLEeSU5riMRwz5OA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SDM_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SDM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SDM_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SDM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucwI045cHDTSPgAxNngz8xf"/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE vehicle v&#xA;JOIN &quot; + context.Talend_TMP_SDM_Database + &quot;.mot_test_certificate_issue_status s&#xA;ON s.vehicle_id=v.id&#xA;SET v.batch_number = &quot; + context.BatchNumber + &quot;&#xA;WHERE s.mot1_legacy_group like '&quot; + context.VRM + &quot;'&#xA;AND s.is_current_mot2_test&#x9;= 'Y'&#xA;AND s.is_current_mot2_certificate_issue = 'Y'&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SDM_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="vehicle"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMysqlRow_4"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_CJSLEGtwEeWLo_kYXQ6lvA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_TMP_SDM_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_TMP_SDM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_TMP_SDM_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_TMP_SDM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kue1Y+87OKIakBLXguxaXbEAFt4AFqiambA="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;certificate_batches&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id, prefix, status, current_ind&#xA;FROM `certificate_batches` &#xA;WHERE current_ind = 'Y'&#xA;ORDER BY current_ind, id&#xA;LIMIT 1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_TMP_SDM_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Current_IND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="certificate_batches"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="jobpartition" name="tMysqlInput_1">
+      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Prefix" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Current_IND" nullable="true" pattern="" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_CMDBQIhmEeWQOa6G0SIu3Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Assign Batch"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="jobwrapper" name="JobStreaming">
+      <column comment="" key="false" name="key" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="value" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="JobStreaming" expressionFilter="&quot;Processing&quot;.equals(partitions.Status )" activateExpressionFilter="true">
+        <mapperTableEntries name="key" expression="&quot;VRM&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="value" expression="partitions.Prefix  " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="partitions" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ID" type="id_Integer"/>
+        <mapperTableEntries name="Prefix" type="id_String"/>
+        <mapperTableEntries name="Status" type="id_String"/>
+        <mapperTableEntries name="Current_IND" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_2"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ControlContexts"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tContextLoad_2">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE mot_test_event e&#xA;JOIN &quot; + context.Talend_TMP_SDM_Database + &quot;.mot_test_certificate_issue_status s&#xA;ON e.id=s.id&#xA;SET e.batch_number = &quot; + context.BatchNumber + &quot;&#xA;WHERE s.mot1_legacy_group like '&quot; + context.VRM + &quot;'&#xA;AND s.is_current_mot2_test&#x9;= 'Y'&#xA;AND s.is_current_mot2_certificate_issue = 'Y'&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="mot_test_event"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMysqlRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="512" sizeX="32" sizeY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="3" offsetLabelY="-1" source="tPrejob_1" target="tMysqlConnection_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tMysqlCommit_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tContextLoad_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tMysqlInput_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlConnection_1" target="tChronometerStart_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_6">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMysqlCommit_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlCommit_1" target="tMysqlClose_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="FLOW" label="partitions" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GroupName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Current_IND"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="partitions"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tParallelize_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="FLOW" label="JobStreaming" lineStyle="0" metaname="JobStreaming" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tContextLoad_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JobStreaming"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tMysqlRow_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tMysqlRow_4">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tParallelize_1" target="tMysqlRow_5">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tParallelize_1" target="tMysqlRow_3">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tJava_1">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Synchronize"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_4">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError2"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_2">
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <note opaque="true" posX="32" posY="-256" sizeHeight="96" sizeWidth="673" text="Author:&#x9;&#x9;&#x9;Gary Williams&#xD;&#xA;Creation date:&#x9;&#x9;17/07/2014&#xD;&#xA;Last changed date:&#x9;17/07/2014 &#xD;&#xA;Description:&#x9;&#x9;Load the ODOMETER_READING table to APP for the MOT component of DVSA project">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;203"/>
+    <elementParameter field="COLOR" name="NOTETXT_COLOR" value="0;0;0"/>
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_RIGHT" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_BOTTOM" value="false"/>
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Time New Roman"/>
+    <elementParameter field="TEXT" name="FONT_SIZE" value="10"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="false"/>
+    <elementParameter field="CHECK" name="FONT_ITALIC" value="false"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="237;201;122"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Job Control"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tChronometerStart_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

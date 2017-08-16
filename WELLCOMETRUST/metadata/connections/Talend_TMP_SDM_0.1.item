@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_CJ2LwGtwEeWLo_kYXQ6lvA" name="Talend_TMP_SDM" id="_CJSLEGtwEeWLo_kYXQ6lvA" label="Talend_TMP_SDM" dataPackage="_YsD80JvdEeSIUOA-34-5qA" ContextMode="true" ContextId="_plJcAGtxEeWLo_kYXQ6lvA" contextName="Default" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://:/?" dbVersionString="MYSQL_5" Port="context.Talend_TMP_SDM_Port" Username="context.Talend_TMP_SDM_Login" Password="context.Talend_TMP_SDM_Password" ServerName="context.Talend_TMP_SDM_Server" DatasourceName="" FileFieldName="" SID="context.Talend_TMP_SDM_Database" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="context.Talend_TMP_SDM_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_q3rksZZ3EeSs3ZfJmds0ZA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_q49-IJZ3EeSs3ZfJmds0ZA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_q-TxIJZ3EeSs3ZfJmds0ZA" tag="Status" value=""/>
+    <taggedValue xmi:id="_q-TxIZZ3EeSs3ZfJmds0ZA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_q-TxIpZ3EeSs3ZfJmds0ZA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_q-TxI5Z3EeSs3ZfJmds0ZA" tag="Description" value=""/>
+    <taggedValue xmi:id="_q-TxJJZ3EeSs3ZfJmds0ZA" tag="Author" value=""/>
+    <taggedValue xmi:id="_q-UYMJZ3EeSs3ZfJmds0ZA" tag="otherParameter"/>
+    <taggedValue xmi:id="_q-ZQsJZ3EeSs3ZfJmds0ZA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_q-ZQsZZ3EeSs3ZfJmds0ZA" tag="DB ProductVersion" value="5.6.19-67.0-log"/>
+    <taggedValue xmi:id="_q-ZQspZ3EeSs3ZfJmds0ZA" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_q3rkspZ3EeSs3ZfJmds0ZA" key="CONN_PARA_KEY_USERNAME" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_YsD80JvdEeSIUOA-34-5qA" name="talend_tmp" dataManager="_CJ2LwGtwEeWLo_kYXQ6lvA">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOooKMWEeSm47SsvkUmhg" name="TMP_HASHCHECKS_FOR_ALL" id="_BY264KMWEeSm47SsvkUmhg" label="TMP_HASHCHECKS_FOR_ALL" tableType="TABLE">
+      <taggedValue xmi:id="_BfOooaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HARPUKMWEeSm47SsvkUmhg" name="Table_Analysed" id="Table_Analysed" label="Table_Analysed" length="32" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HARPUaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+        <taggedValue xmi:id="_N1YtAKMWEeSm47SsvkUmhg" tag="Content Type" value="Nominal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HARPUqMWEeSm47SsvkUmhg" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HARPU6MWEeSm47SsvkUmhg" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HARPVKMWEeSm47SsvkUmhg" name="SourcePK" id="SourcePK" label="SourcePK" length="80" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HARPVaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+        <taggedValue xmi:id="_N1YtDaMWEeSm47SsvkUmhg" tag="Content Type" value="Nominal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HARPVqMWEeSm47SsvkUmhg" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HARPV6MWEeSm47SsvkUmhg" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HARPWKMWEeSm47SsvkUmhg" name="CRC" id="CRC" label="CRC" length="19" sourceType="BIGINT" talendType="id_Long">
+        <taggedValue xmi:id="_HARPWaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+        <taggedValue xmi:id="_N1YtGKMWEeSm47SsvkUmhg" tag="Content Type" value="Interval"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HARPWqMWEeSm47SsvkUmhg" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HARPW6MWEeSm47SsvkUmhg" name="BIGINT" numericPrecisionRadix="10" javaDataType="-5" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HARPXKMWEeSm47SsvkUmhg" name="testMD5" id="testMD5" label="testMD5" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HARPXaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+        <taggedValue xmi:id="_N1YtJaMWEeSm47SsvkUmhg" tag="Content Type" value="Nominal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HARPXqMWEeSm47SsvkUmhg" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HARPX6MWEeSm47SsvkUmhg" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_HARPYKMWEeSm47SsvkUmhg" name="testSHA256" id="testSHA256" label="testSHA256" length="255" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_HARPYaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+        <taggedValue xmi:id="_N1YtMqMWEeSm47SsvkUmhg" tag="Content Type" value="Nominal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_HARPYqMWEeSm47SsvkUmhg" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_HARPY6MWEeSm47SsvkUmhg" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOooqMWEeSm47SsvkUmhg" name="TMP_HASHCHECKS_FOR_MOT" id="_BY5-MKMWEeSm47SsvkUmhg" label="TMP_HASHCHECKS_FOR_MOT" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoo6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOopKMWEeSm47SsvkUmhg" name="TMP_MOT_TEST_WITH_CRC_AND_MD5" id="_BY9BgKMWEeSm47SsvkUmhg" label="TMP_MOT_TEST_WITH_CRC_AND_MD5" tableType="TABLE">
+      <taggedValue xmi:id="_BfOopaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOopqMWEeSm47SsvkUmhg" name="TMP_VEHICLE_WITH_CRC_AND_MD5" id="_BZAE0KMWEeSm47SsvkUmhg" label="TMP_VEHICLE_WITH_CRC_AND_MD5" tableType="TABLE">
+      <taggedValue xmi:id="_BfOop6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOoqKMWEeSm47SsvkUmhg" name="comment_stage" id="_BZChEKMWEeSm47SsvkUmhg" label="comment_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoqaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOoqqMWEeSm47SsvkUmhg" name="configuration" id="_BZFkYKMWEeSm47SsvkUmhg" label="configuration" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoq6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOorKMWEeSm47SsvkUmhg" name="contact_detail" id="_BZInsKMWEeSm47SsvkUmhg" label="contact_detail" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoraMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOorqMWEeSm47SsvkUmhg" name="contact_details_type" id="_BZLrAKMWEeSm47SsvkUmhg" label="contact_details_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOor6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOosKMWEeSm47SsvkUmhg" name="contact_type" id="_BZOuUKMWEeSm47SsvkUmhg" label="contact_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOosaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOosqMWEeSm47SsvkUmhg" name="conviction" id="_BZS_wKMWEeSm47SsvkUmhg" label="conviction" tableType="TABLE">
+      <taggedValue xmi:id="_BfOos6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOotKMWEeSm47SsvkUmhg" name="country_of_registration" id="_BZXRMKMWEeSm47SsvkUmhg" label="country_of_registration" tableType="TABLE">
+      <taggedValue xmi:id="_BfOotaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOotqMWEeSm47SsvkUmhg" name="direct_debit" id="_BZbioKMWEeSm47SsvkUmhg" label="direct_debit" tableType="TABLE">
+      <taggedValue xmi:id="_BfOot6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOouKMWEeSm47SsvkUmhg" name="direct_debit_history" id="_BZf0EKMWEeSm47SsvkUmhg" label="direct_debit_history" tableType="TABLE">
+      <taggedValue xmi:id="_BfOouaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOouqMWEeSm47SsvkUmhg" name="direct_debit_history_status" id="_BZkFgKMWEeSm47SsvkUmhg" label="direct_debit_history_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfOou6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOovKMWEeSm47SsvkUmhg" name="direct_debit_status" id="_BZoW8KMWEeSm47SsvkUmhg" label="direct_debit_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfOovaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOovqMWEeSm47SsvkUmhg" name="dvla_vehicle" id="_BZsoYKMWEeSm47SsvkUmhg" label="dvla_vehicle" tableType="TABLE">
+      <taggedValue xmi:id="_BfOov6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOowKMWEeSm47SsvkUmhg" name="dvla_vehicle_import_changes" id="_BZw50KMWEeSm47SsvkUmhg" label="dvla_vehicle_import_changes" tableType="TABLE">
+      <taggedValue xmi:id="_BfOowaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOowqMWEeSm47SsvkUmhg" name="dvla_vehicle_stage" id="_BZz9IKMWEeSm47SsvkUmhg" label="dvla_vehicle_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfOow6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOoxKMWEeSm47SsvkUmhg" name="email" id="_BZ3AcKMWEeSm47SsvkUmhg" label="email" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoxaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOoxqMWEeSm47SsvkUmhg" name="enforcement_condition_appointment_lookup" id="_BZ6DwKMWEeSm47SsvkUmhg" label="enforcement_condition_appointment_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOox6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOoyKMWEeSm47SsvkUmhg" name="enforcement_decision_category_lookup" id="_BZ9HEKMWEeSm47SsvkUmhg" label="enforcement_decision_category_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoyaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOoyqMWEeSm47SsvkUmhg" name="enforcement_decision_lookup" id="_BaBYgKMWEeSm47SsvkUmhg" label="enforcement_decision_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoy6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOozKMWEeSm47SsvkUmhg" name="enforcement_decision_outcome_lookup" id="_BaFC4KMWEeSm47SsvkUmhg" label="enforcement_decision_outcome_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOozaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOozqMWEeSm47SsvkUmhg" name="enforcement_decision_reinspection_outcome_lookup" id="_BaIGMKMWEeSm47SsvkUmhg" label="enforcement_decision_reinspection_outcome_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOoz6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo0KMWEeSm47SsvkUmhg" name="enforcement_decision_score_lookup" id="_BaKicKMWEeSm47SsvkUmhg" label="enforcement_decision_score_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo0aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo0qMWEeSm47SsvkUmhg" name="enforcement_fuel_type_lookup" id="_BaNlwKMWEeSm47SsvkUmhg" label="enforcement_fuel_type_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo06MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo1KMWEeSm47SsvkUmhg" name="enforcement_full_partial_retest_lookup" id="_BaR3MKMWEeSm47SsvkUmhg" label="enforcement_full_partial_retest_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo1aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo1qMWEeSm47SsvkUmhg" name="enforcement_mot_demo_test" id="_BaWIoKMWEeSm47SsvkUmhg" label="enforcement_mot_demo_test" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo16MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo2KMWEeSm47SsvkUmhg" name="enforcement_mot_demo_test_tester_status_lookup" id="_BaYk4KMWEeSm47SsvkUmhg" label="enforcement_mot_demo_test_tester_status_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo2aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo2qMWEeSm47SsvkUmhg" name="enforcement_mot_test_differences" id="_BacPQKMWEeSm47SsvkUmhg" label="enforcement_mot_test_differences" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo26MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo3KMWEeSm47SsvkUmhg" name="enforcement_mot_test_result" id="_Baf5oKMWEeSm47SsvkUmhg" label="enforcement_mot_test_result" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo3aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo3qMWEeSm47SsvkUmhg" name="enforcement_mot_test_result_witnesses" id="_BaiV4KMWEeSm47SsvkUmhg" label="enforcement_mot_test_result_witnesses" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo36MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo4KMWEeSm47SsvkUmhg" name="enforcement_site_assessment" id="_BalZMKMWEeSm47SsvkUmhg" label="enforcement_site_assessment" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo4aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo4qMWEeSm47SsvkUmhg" name="enforcement_visit_outcome_lookup" id="_BaocgKMWEeSm47SsvkUmhg" label="enforcement_visit_outcome_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo46MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo5KMWEeSm47SsvkUmhg" name="equipment" id="_Barf0KMWEeSm47SsvkUmhg" label="equipment" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo5aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo5qMWEeSm47SsvkUmhg" name="equipment_make" id="_Bat8EKMWEeSm47SsvkUmhg" label="equipment_make" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo56MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo6KMWEeSm47SsvkUmhg" name="equipment_model" id="_BawYUKMWEeSm47SsvkUmhg" label="equipment_model" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo6aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo6qMWEeSm47SsvkUmhg" name="equipment_model_status" id="_BazboKMWEeSm47SsvkUmhg" label="equipment_model_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo66MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo7KMWEeSm47SsvkUmhg" name="equipment_model_vehicle_class_link" id="_Ba2e8KMWEeSm47SsvkUmhg" label="equipment_model_vehicle_class_link" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo7aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo7qMWEeSm47SsvkUmhg" name="equipment_status" id="_Ba5iQKMWEeSm47SsvkUmhg" label="equipment_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo76MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo8KMWEeSm47SsvkUmhg" name="equipment_type" id="_Ba8lkKMWEeSm47SsvkUmhg" label="equipment_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo8aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo8qMWEeSm47SsvkUmhg" name="event" id="_Ba_B0KMWEeSm47SsvkUmhg" label="event" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo86MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo9KMWEeSm47SsvkUmhg" name="experience" id="_BbCFIKMWEeSm47SsvkUmhg" label="experience" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo9aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo9qMWEeSm47SsvkUmhg" name="facility_type" id="_BbFIcKMWEeSm47SsvkUmhg" label="facility_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo96MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo-KMWEeSm47SsvkUmhg" name="fuel_type" id="_BbHksKMWEeSm47SsvkUmhg" label="fuel_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo-aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo-qMWEeSm47SsvkUmhg" name="gender" id="_BbKA8KMWEeSm47SsvkUmhg" label="gender" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo-6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo_KMWEeSm47SsvkUmhg" name="jasper_document" id="_BbNEQKMWEeSm47SsvkUmhg" label="jasper_document" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo_aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOo_qMWEeSm47SsvkUmhg" name="jasper_document_variables" id="_BbQHkKMWEeSm47SsvkUmhg" label="jasper_document_variables" tableType="TABLE">
+      <taggedValue xmi:id="_BfOo_6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpAKMWEeSm47SsvkUmhg" name="jasper_hard_copy" id="_BbSj0KMWEeSm47SsvkUmhg" label="jasper_hard_copy" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpAaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpAqMWEeSm47SsvkUmhg" name="jasper_template" id="_BbVnIKMWEeSm47SsvkUmhg" label="jasper_template" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpA6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpBKMWEeSm47SsvkUmhg" name="jasper_template_type" id="_BbYqcKMWEeSm47SsvkUmhg" label="jasper_template_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpBaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpBqMWEeSm47SsvkUmhg" name="jasper_template_variation" id="_BbbtwKMWEeSm47SsvkUmhg" label="jasper_template_variation" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpB6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpCKMWEeSm47SsvkUmhg" name="licence" id="_BbeKAKMWEeSm47SsvkUmhg" label="licence" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpCaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpCqMWEeSm47SsvkUmhg" name="licence_type" id="_BbgmQKMWEeSm47SsvkUmhg" label="licence_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpC6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpDKMWEeSm47SsvkUmhg" name="make" id="_BbjpkKMWEeSm47SsvkUmhg" label="make" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpDaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpDqMWEeSm47SsvkUmhg" name="map_approval_condition_appointment" id="_BbmF0KMWEeSm47SsvkUmhg" label="map_approval_condition_appointment" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpD6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfOpEKMWEeSm47SsvkUmhg" name="map_approval_site_role" id="_BboiEKMWEeSm47SsvkUmhg" label="map_approval_site_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfOpEaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPsKMWEeSm47SsvkUmhg" name="map_auth_examiner_application_auth_examiner_principal" id="_BbsMcKMWEeSm47SsvkUmhg" label="map_auth_examiner_application_auth_examiner_principal" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPsaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPsqMWEeSm47SsvkUmhg" name="map_authorised_examiner_person_as_principal" id="_BbvPwKMWEeSm47SsvkUmhg" label="map_authorised_examiner_person_as_principal" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPs6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPtKMWEeSm47SsvkUmhg" name="map_mot_test_rfr" id="_BbyTEKMWEeSm47SsvkUmhg" label="map_mot_test_rfr" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPtaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPtqMWEeSm47SsvkUmhg" name="map_organisation_contact_details" id="_Bb0vUKMWEeSm47SsvkUmhg" label="map_organisation_contact_details" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPt6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPuKMWEeSm47SsvkUmhg" name="map_person_contact_details" id="_Bb3yoKMWEeSm47SsvkUmhg" label="map_person_contact_details" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPuaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPuqMWEeSm47SsvkUmhg" name="map_rfr_vehicle_class" id="_Bb6O4KMWEeSm47SsvkUmhg" label="map_rfr_vehicle_class" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPu6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPvKMWEeSm47SsvkUmhg" name="map_role_mot_test_type" id="_Bb9SMKMWEeSm47SsvkUmhg" label="map_role_mot_test_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPvaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPvqMWEeSm47SsvkUmhg" name="map_role_permission" id="_Bb_ucKMWEeSm47SsvkUmhg" label="map_role_permission" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPv6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPwKMWEeSm47SsvkUmhg" name="map_site_comment" id="_BcCxwKMWEeSm47SsvkUmhg" label="map_site_comment" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPwaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPwqMWEeSm47SsvkUmhg" name="map_site_contact_details" id="_BcFOAKMWEeSm47SsvkUmhg" label="map_site_contact_details" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPw6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPxKMWEeSm47SsvkUmhg" name="map_site_role" id="_BcHqQKMWEeSm47SsvkUmhg" label="map_site_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPxaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPxqMWEeSm47SsvkUmhg" name="map_special_notice_content_role" id="_BcKGgKMWEeSm47SsvkUmhg" label="map_special_notice_content_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPx6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPyKMWEeSm47SsvkUmhg" name="map_test_item_selector_vehicle_class" id="_BcMiwKMWEeSm47SsvkUmhg" label="map_test_item_selector_vehicle_class" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPyaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPyqMWEeSm47SsvkUmhg" name="model" id="_BcPmEKMWEeSm47SsvkUmhg" label="model" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPy6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPzKMWEeSm47SsvkUmhg" name="model_detail" id="_BcSpYKMWEeSm47SsvkUmhg" label="model_detail" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPzaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPPzqMWEeSm47SsvkUmhg" name="mot_account_type" id="_BcVssKMWEeSm47SsvkUmhg" label="mot_account_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPPz6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP0KMWEeSm47SsvkUmhg" name="mot_test" id="_BcYI8KMWEeSm47SsvkUmhg" label="mot_test" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP0aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP0qMWEeSm47SsvkUmhg" name="mot_test_reason_for_cancel" id="_BcbzUKMWEeSm47SsvkUmhg" label="mot_test_reason_for_cancel" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP06MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP1KMWEeSm47SsvkUmhg" name="mot_test_stage" id="_Bce2oKMWEeSm47SsvkUmhg" label="mot_test_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP1aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP1qMWEeSm47SsvkUmhg" name="mot_test_status" id="_Bch58KMWEeSm47SsvkUmhg" label="mot_test_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP16MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP2KMWEeSm47SsvkUmhg" name="mot_test_type" id="_Bck9QKMWEeSm47SsvkUmhg" label="mot_test_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP2aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP2qMWEeSm47SsvkUmhg" name="notification" id="_BcoAkKMWEeSm47SsvkUmhg" label="notification" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP26MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP3KMWEeSm47SsvkUmhg" name="notification_action" id="_BcrD4KMWEeSm47SsvkUmhg" label="notification_action" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP3aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP3qMWEeSm47SsvkUmhg" name="notification_action_lookup" id="_BcuHMKMWEeSm47SsvkUmhg" label="notification_action_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP36MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP4KMWEeSm47SsvkUmhg" name="notification_field" id="_BcxxkKMWEeSm47SsvkUmhg" label="notification_field" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP4aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP4qMWEeSm47SsvkUmhg" name="notification_template" id="_Bc0N0KMWEeSm47SsvkUmhg" label="notification_template" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP46MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP5KMWEeSm47SsvkUmhg" name="notification_template_action" id="_Bc3RIKMWEeSm47SsvkUmhg" label="notification_template_action" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP5aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP5qMWEeSm47SsvkUmhg" name="odometer_reading" id="_Bc6UcKMWEeSm47SsvkUmhg" label="odometer_reading" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP56MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP6KMWEeSm47SsvkUmhg" name="odometer_reading_stage" id="_Bc8wsKMWEeSm47SsvkUmhg" label="odometer_reading_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP6aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP6qMWEeSm47SsvkUmhg" name="openam_permission" id="_Bc_M8KMWEeSm47SsvkUmhg" label="openam_permission" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP66MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP7KMWEeSm47SsvkUmhg" name="openam_role" id="_BdCQQKMWEeSm47SsvkUmhg" label="openam_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP7aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP7qMWEeSm47SsvkUmhg" name="openam_role_permission" id="_BdEsgKMWEeSm47SsvkUmhg" label="openam_role_permission" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP76MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP8KMWEeSm47SsvkUmhg" name="openam_user" id="_BdHIwKMWEeSm47SsvkUmhg" label="openam_user" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP8aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP8qMWEeSm47SsvkUmhg" name="openam_user_role" id="_BdJlAKMWEeSm47SsvkUmhg" label="openam_user_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP86MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP9KMWEeSm47SsvkUmhg" name="organisation" id="_BdMBQKMWEeSm47SsvkUmhg" label="organisation" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP9aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP9qMWEeSm47SsvkUmhg" name="organisation_contact_type" id="_BdOdgKMWEeSm47SsvkUmhg" label="organisation_contact_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP96MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP-KMWEeSm47SsvkUmhg" name="organisation_position" id="_BdQ5wKMWEeSm47SsvkUmhg" label="organisation_position" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP-aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP-qMWEeSm47SsvkUmhg" name="organisation_position_history" id="_BdT9EKMWEeSm47SsvkUmhg" label="organisation_position_history" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP-6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP_KMWEeSm47SsvkUmhg" name="organisation_role" id="_BdXAYKMWEeSm47SsvkUmhg" label="organisation_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP_aMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPP_qMWEeSm47SsvkUmhg" name="organisation_type" id="_BdZcoKMWEeSm47SsvkUmhg" label="organisation_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPP_6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQAKMWEeSm47SsvkUmhg" name="payment" id="_Bdb44KMWEeSm47SsvkUmhg" label="payment" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQAaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQAqMWEeSm47SsvkUmhg" name="payment_status" id="_BdeVIKMWEeSm47SsvkUmhg" label="payment_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQA6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQBKMWEeSm47SsvkUmhg" name="payment_type" id="_BdgKUKMWEeSm47SsvkUmhg" label="payment_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQBaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQBqMWEeSm47SsvkUmhg" name="permission" id="_BdjNoKMWEeSm47SsvkUmhg" label="permission" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQB6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQCKMWEeSm47SsvkUmhg" name="person" id="_Bdlp4KMWEeSm47SsvkUmhg" label="person" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQCaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQCqMWEeSm47SsvkUmhg" name="person_contact_type" id="_BdotMKMWEeSm47SsvkUmhg" label="person_contact_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQC6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQDKMWEeSm47SsvkUmhg" name="phone" id="_BdrJcKMWEeSm47SsvkUmhg" label="phone" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQDaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQDqMWEeSm47SsvkUmhg" name="position_status" id="_Bduz0KMWEeSm47SsvkUmhg" label="position_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQD6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQEKMWEeSm47SsvkUmhg" name="qualification" id="_BdxQEKMWEeSm47SsvkUmhg" label="qualification" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQEaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQEqMWEeSm47SsvkUmhg" name="qualification_award" id="_BdzsUKMWEeSm47SsvkUmhg" label="qualification_award" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQE6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQFKMWEeSm47SsvkUmhg" name="qualification_type" id="_Bd2IkKMWEeSm47SsvkUmhg" label="qualification_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQFaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQFqMWEeSm47SsvkUmhg" name="reason_for_refusal" id="_Bd5y8KMWEeSm47SsvkUmhg" label="reason_for_refusal" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQF6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQGKMWEeSm47SsvkUmhg" name="reason_for_rejection_type" id="_Bd8PMKMWEeSm47SsvkUmhg" label="reason_for_rejection_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQGaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQGqMWEeSm47SsvkUmhg" name="replacement_certificate_draft" id="_Bd_5kKMWEeSm47SsvkUmhg" label="replacement_certificate_draft" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQG6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQHKMWEeSm47SsvkUmhg" name="role" id="_BeCV0KMWEeSm47SsvkUmhg" label="role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQHaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQHqMWEeSm47SsvkUmhg" name="session" id="_BeELAKMWEeSm47SsvkUmhg" label="session" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQH6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQIKMWEeSm47SsvkUmhg" name="site" id="_BeGnQKMWEeSm47SsvkUmhg" label="site" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQIaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQIqMWEeSm47SsvkUmhg" name="site_condition_approval" id="_BeJDgKMWEeSm47SsvkUmhg" label="site_condition_approval" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQI6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQJKMWEeSm47SsvkUmhg" name="site_contact_type" id="_BeLfwKMWEeSm47SsvkUmhg" label="site_contact_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQJaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQJqMWEeSm47SsvkUmhg" name="site_facility" id="_BeN8AKMWEeSm47SsvkUmhg" label="site_facility" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQJ6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQKKMWEeSm47SsvkUmhg" name="site_position" id="_BeQYQKMWEeSm47SsvkUmhg" label="site_position" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQKaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQKqMWEeSm47SsvkUmhg" name="site_position_history" id="_BeS0gKMWEeSm47SsvkUmhg" label="site_position_history" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQK6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQLKMWEeSm47SsvkUmhg" name="site_role" id="_BeUpsKMWEeSm47SsvkUmhg" label="site_role" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQLaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQLqMWEeSm47SsvkUmhg" name="site_search" id="_BeXF8KMWEeSm47SsvkUmhg" label="site_search" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQL6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQMKMWEeSm47SsvkUmhg" name="site_status" id="_BeZiMKMWEeSm47SsvkUmhg" label="site_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQMaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQMqMWEeSm47SsvkUmhg" name="site_testing_daily_schedule" id="_Beb-cKMWEeSm47SsvkUmhg" label="site_testing_daily_schedule" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQM6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQNKMWEeSm47SsvkUmhg" name="site_type" id="_BeeasKMWEeSm47SsvkUmhg" label="site_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQNaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQNqMWEeSm47SsvkUmhg" name="special_notice" id="_Beg28KMWEeSm47SsvkUmhg" label="special_notice" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQN6MWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQOKMWEeSm47SsvkUmhg" name="special_notice_content" id="_BejTMKMWEeSm47SsvkUmhg" label="special_notice_content" tableType="TABLE">
+      <taggedValue xmi:id="_BfPQOaMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfPQOqMWEeSm47SsvkUmhg" name="sva_emission_std_type" id="_BemWgKMWEeSm47SsvkUmhg" label="sva_emission_std_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2wKMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2waMWEeSm47SsvkUmhg" name="test_item_selector" id="_BeoywKMWEeSm47SsvkUmhg" label="test_item_selector" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2wqMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2w6MWEeSm47SsvkUmhg" name="test_item_selector_rfr" id="_BerPAKMWEeSm47SsvkUmhg" label="test_item_selector_rfr" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2xKMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2xaMWEeSm47SsvkUmhg" name="test_slot_transaction" id="_BetEMKMWEeSm47SsvkUmhg" label="test_slot_transaction" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2xqMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2x6MWEeSm47SsvkUmhg" name="test_slot_transaction_status" id="_BevgcKMWEeSm47SsvkUmhg" label="test_slot_transaction_status" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2yKMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2yaMWEeSm47SsvkUmhg" name="title" id="_Bex8sKMWEeSm47SsvkUmhg" label="title" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2yqMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2y6MWEeSm47SsvkUmhg" name="tmp_all_vehtest" id="_Bezx4KMWEeSm47SsvkUmhg" label="tmp_all_vehtest" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2zKMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2zaMWEeSm47SsvkUmhg" name="transmission_type" id="_Be2OIKMWEeSm47SsvkUmhg" label="transmission_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfP2zqMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP2z6MWEeSm47SsvkUmhg" name="vehicle" id="_Be4qYKMWEeSm47SsvkUmhg" label="vehicle" tableType="TABLE">
+      <taggedValue xmi:id="_BfP20KMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP20aMWEeSm47SsvkUmhg" name="vehicle_class" id="_Be7GoKMWEeSm47SsvkUmhg" label="vehicle_class" tableType="TABLE">
+      <taggedValue xmi:id="_BfP20qMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP206MWEeSm47SsvkUmhg" name="vehicle_hist" id="_Be9i4KMWEeSm47SsvkUmhg" label="vehicle_hist" tableType="TABLE">
+      <taggedValue xmi:id="_BfP21KMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP21aMWEeSm47SsvkUmhg" name="vehicle_hist_stage" id="_Be__IKMWEeSm47SsvkUmhg" label="vehicle_hist_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfP21qMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP216MWEeSm47SsvkUmhg" name="vehicle_stage" id="_BfCbYKMWEeSm47SsvkUmhg" label="vehicle_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfP22KMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP22aMWEeSm47SsvkUmhg" name="vehicle_v5_stage" id="_BfE3oKMWEeSm47SsvkUmhg" label="vehicle_v5_stage" tableType="TABLE">
+      <taggedValue xmi:id="_BfP22qMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP226MWEeSm47SsvkUmhg" name="vehicle_weight_source" id="_BfHT4KMWEeSm47SsvkUmhg" label="vehicle_weight_source" tableType="TABLE">
+      <taggedValue xmi:id="_BfP23KMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP23aMWEeSm47SsvkUmhg" name="visit" id="_BfJwIKMWEeSm47SsvkUmhg" label="visit" tableType="TABLE">
+      <taggedValue xmi:id="_BfP23qMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP236MWEeSm47SsvkUmhg" name="visit_reason_lookup" id="_BfLlUKMWEeSm47SsvkUmhg" label="visit_reason_lookup" tableType="TABLE">
+      <taggedValue xmi:id="_BfP24KMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_BfP24aMWEeSm47SsvkUmhg" name="wheelplan_type" id="_BfOBkKMWEeSm47SsvkUmhg" label="wheelplan_type" tableType="TABLE">
+      <taggedValue xmi:id="_BfP24qMWEeSm47SsvkUmhg" tag="Comment" value=""/>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

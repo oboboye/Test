@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_cW0yMKPoEeW9jODFVVtqYQ" name="MDM431_MOT_TEST" comment="connectionComment" label="MDM431_MOT_TEST" dataPackage="_D9pVUYSCEeW6vMhsDqlP3w" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_D9pVUYSCEeW6vMhsDqlP3w" dataManager="_cW0yMKPoEeW9jODFVVtqYQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_D9pVUoSCEeW6vMhsDqlP3w" comment="MDM431_MOT_TEST" label="MDM431_MOT_TEST">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sFyI8KPpEeW9jODFVVtqYQ" name="vehicle_id" label="vehicle_id" length="10" sourceType="INT UNSIGNED" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_sFyI8aPpEeW9jODFVVtqYQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sFyI8qPpEeW9jODFVVtqYQ" name="issued_date" label="issued_date" length="26" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSSSSS&quot;">
+        <initialValue xmi:id="_sFyI86PpEeW9jODFVVtqYQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sFyI9KPpEeW9jODFVVtqYQ" name="mot1_legacy_id" comment="Used to hold MOT1 associated primary key for migration purposes" label="mot1_legacy_id" length="80" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_sFyI9aPpEeW9jODFVVtqYQ" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

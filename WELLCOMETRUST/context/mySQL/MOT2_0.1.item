@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5rngwIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5rngwYJSEeerZtmujjxXKA" comment="" name="MOT2_AdditionalParams" prompt="MOT2_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rngwoJSEeerZtmujjxXKA" comment="" name="MOT2_Port" prompt="MOT2_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rngw4JSEeerZtmujjxXKA" comment="" name="MOT2_Server" prompt="MOT2_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rngxIJSEeerZtmujjxXKA" comment="" name="MOT2_Password" prompt="MOT2_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rngxYJSEeerZtmujjxXKA" comment="" name="MOT2_Database" prompt="MOT2_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rngxoJSEeerZtmujjxXKA" comment="" name="MOT2_Login" prompt="MOT2_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5rngx4JSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5rngyIJSEeerZtmujjxXKA" comment="" name="MOT2_AdditionalParams" prompt="MOT2_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rngyYJSEeerZtmujjxXKA" comment="" name="MOT2_Port" prompt="MOT2_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rngyoJSEeerZtmujjxXKA" comment="" name="MOT2_Server" prompt="MOT2_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rngy4JSEeerZtmujjxXKA" comment="" name="MOT2_Password" prompt="MOT2_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rngzIJSEeerZtmujjxXKA" comment="" name="MOT2_Database" prompt="MOT2_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rngzYJSEeerZtmujjxXKA" comment="" name="MOT2_Login" prompt="MOT2_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5rngzoJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5rngz4JSEeerZtmujjxXKA" comment="" name="MOT2_AdditionalParams" prompt="MOT2_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rng0IJSEeerZtmujjxXKA" comment="" name="MOT2_Port" prompt="MOT2_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rng0YJSEeerZtmujjxXKA" comment="" name="MOT2_Server" prompt="MOT2_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rng0oJSEeerZtmujjxXKA" comment="" name="MOT2_Password" prompt="MOT2_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rng04JSEeerZtmujjxXKA" comment="" name="MOT2_Database" prompt="MOT2_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rng1IJSEeerZtmujjxXKA" comment="" name="MOT2_Login" prompt="MOT2_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5rng1YJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5rng1oJSEeerZtmujjxXKA" comment="" name="MOT2_AdditionalParams" prompt="MOT2_AdditionalParams?" promptNeeded="false" type="id_String" value="zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rng14JSEeerZtmujjxXKA" comment="" name="MOT2_Port" prompt="MOT2_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rng2IJSEeerZtmujjxXKA" comment="" name="MOT2_Server" prompt="MOT2_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rng2YJSEeerZtmujjxXKA" comment="" name="MOT2_Password" prompt="MOT2_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rng2oJSEeerZtmujjxXKA" comment="" name="MOT2_Database" prompt="MOT2_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rng24JSEeerZtmujjxXKA" comment="" name="MOT2_Login" prompt="MOT2_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

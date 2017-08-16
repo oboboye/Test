@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5rF8UIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5rF8UYJSEeerZtmujjxXKA" comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" type="id_String" value="dme-mot1.mot.npm"/>
+    <contextParameter xmi:id="_5rF8UoJSEeerZtmujjxXKA" comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rF8U4JSEeerZtmujjxXKA" comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" type="id_String" value="mot1_mirror"/>
+    <contextParameter xmi:id="_5rF8VIJSEeerZtmujjxXKA" comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_5rF8VYJSEeerZtmujjxXKA" comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" type="id_Password" value="w4OGp+ZRn0Q6InrzqewdUzdeVtPC33Ky"/>
+    <contextParameter xmi:id="_5rF8VoJSEeerZtmujjxXKA" comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" type="id_String" value="mot1_mirror"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5rF8V4JSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5rF8WIJSEeerZtmujjxXKA" comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8WYJSEeerZtmujjxXKA" comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rF8WoJSEeerZtmujjxXKA" comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8W4JSEeerZtmujjxXKA" comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8XIJSEeerZtmujjxXKA" comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rF8XYJSEeerZtmujjxXKA" comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5rF8XoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5rF8X4JSEeerZtmujjxXKA" comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8YIJSEeerZtmujjxXKA" comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rF8YYJSEeerZtmujjxXKA" comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8YoJSEeerZtmujjxXKA" comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8Y4JSEeerZtmujjxXKA" comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rF8ZIJSEeerZtmujjxXKA" comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5rF8ZYJSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5rF8ZoJSEeerZtmujjxXKA" comment="" name="MIRROR_Server" prompt="MIRROR_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8Z4JSEeerZtmujjxXKA" comment="" name="MIRROR_AdditionalParams" prompt="MIRROR_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
+    <contextParameter xmi:id="_5rF8aIJSEeerZtmujjxXKA" comment="" name="MIRROR_Database" prompt="MIRROR_Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8aYJSEeerZtmujjxXKA" comment="" name="MIRROR_Port" prompt="MIRROR_Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5rF8aoJSEeerZtmujjxXKA" comment="" name="MIRROR_Password" prompt="MIRROR_Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5rF8a4JSEeerZtmujjxXKA" comment="" name="MIRROR_Login" prompt="MIRROR_Login?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

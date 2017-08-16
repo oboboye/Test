@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5oTuEIJSEeerZtmujjxXKA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_5oTuEYJSEeerZtmujjxXKA" comment="" name="ldapBaseDN" prompt="ldapBaseDN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuEoJSEeerZtmujjxXKA" comment="" name="ldapHost" prompt="ldapHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuE4JSEeerZtmujjxXKA" comment="" name="ldapPassword" prompt="ldapPassword?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5oTuFIJSEeerZtmujjxXKA" comment="" name="ldapPort" prompt="ldapPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuFYJSEeerZtmujjxXKA" comment="" name="ldapDirectory" prompt="ldapDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuFoJSEeerZtmujjxXKA" comment="" name="ldapUser" prompt="ldapUser?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuF4JSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuGIJSEeerZtmujjxXKA" comment="" name="ldapObjectClass" prompt="ldapObjectClass?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5oTuGYJSEeerZtmujjxXKA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_5oTuGoJSEeerZtmujjxXKA" comment="" name="ldapBaseDN" prompt="ldapBaseDN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuG4JSEeerZtmujjxXKA" comment="" name="ldapHost" prompt="ldapHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuHIJSEeerZtmujjxXKA" comment="" name="ldapPassword" prompt="ldapPassword?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5oTuHYJSEeerZtmujjxXKA" comment="" name="ldapPort" prompt="ldapPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuHoJSEeerZtmujjxXKA" comment="" name="ldapDirectory" prompt="ldapDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuH4JSEeerZtmujjxXKA" comment="" name="ldapUser" prompt="ldapUser?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuIIJSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuIYJSEeerZtmujjxXKA" comment="" name="ldapObjectClass" prompt="ldapObjectClass?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5oTuIoJSEeerZtmujjxXKA" confirmationNeeded="false" name="SIT">
+    <contextParameter xmi:id="_5oTuI4JSEeerZtmujjxXKA" comment="" name="ldapBaseDN" prompt="ldapBaseDN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuJIJSEeerZtmujjxXKA" comment="" name="ldapHost" prompt="ldapHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuJYJSEeerZtmujjxXKA" comment="" name="ldapPassword" prompt="ldapPassword?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5oTuJoJSEeerZtmujjxXKA" comment="" name="ldapPort" prompt="ldapPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuJ4JSEeerZtmujjxXKA" comment="" name="ldapDirectory" prompt="ldapDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuKIJSEeerZtmujjxXKA" comment="" name="ldapUser" prompt="ldapUser?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuKYJSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuKoJSEeerZtmujjxXKA" comment="" name="ldapObjectClass" prompt="ldapObjectClass?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5oTuK4JSEeerZtmujjxXKA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_5oTuLIJSEeerZtmujjxXKA" comment="" name="ldapBaseDN" prompt="ldapBaseDN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuLYJSEeerZtmujjxXKA" comment="" name="ldapHost" prompt="ldapHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuLoJSEeerZtmujjxXKA" comment="" name="ldapPassword" prompt="ldapPassword?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_5oTuL4JSEeerZtmujjxXKA" comment="" name="ldapPort" prompt="ldapPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuMIJSEeerZtmujjxXKA" comment="" name="ldapDirectory" prompt="ldapDirectory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuMYJSEeerZtmujjxXKA" comment="" name="ldapUser" prompt="ldapUser?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuMoJSEeerZtmujjxXKA" comment="" name="ldapOU" prompt="ldapOU?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_5oTuM4JSEeerZtmujjxXKA" comment="" name="ldapObjectClass" prompt="ldapObjectClass?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
