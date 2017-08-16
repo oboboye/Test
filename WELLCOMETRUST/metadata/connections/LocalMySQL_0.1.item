@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_MViTcOS5EeaaN4bqKCHblw" name="LocalMySQL" id="_u0pocOS4EeaaN4bqKCHblw" label="LocalMySQL" dataPackage="_MZHL4OS5EeaaN4bqKCHblw" ContextMode="true" ContextId="_E3M5oOS5EeaaN4bqKCHblw" contextName="Default" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/training?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="context.LocalMySQL_Port" Username="context.LocalMySQL_Login" Password="context.LocalMySQL_Password" ServerName="context.LocalMySQL_Server" DatasourceName="" FileFieldName="" SID="context.LocalMySQL_Database" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="context.LocalMySQL_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_MViTceS5EeaaN4bqKCHblw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_MXxIEOS5EeaaN4bqKCHblw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_MX65EOS5EeaaN4bqKCHblw" tag="Status" value=""/>
+    <taggedValue xmi:id="_MX65EeS5EeaaN4bqKCHblw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_MX65EuS5EeaaN4bqKCHblw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_MX65E-S5EeaaN4bqKCHblw" tag="Description" value=""/>
+    <taggedValue xmi:id="_MX65FOS5EeaaN4bqKCHblw" tag="Author" value=""/>
+    <taggedValue xmi:id="_MX65FeS5EeaaN4bqKCHblw" tag="otherParameter"/>
+    <taggedValue xmi:id="_MX65FuS5EeaaN4bqKCHblw" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_MX65F-S5EeaaN4bqKCHblw" tag="DB ProductVersion" value="5.6.25-log"/>
+    <taggedValue xmi:id="_MX65GOS5EeaaN4bqKCHblw" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_MViTcuS5EeaaN4bqKCHblw" key="CONN_PARA_KEY_USERNAME" value="context.LocalMySQL_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_MZHL4OS5EeaaN4bqKCHblw" name="training" dataManager="_MViTcOS5EeaaN4bqKCHblw"/>
+</xmi:XMI>
