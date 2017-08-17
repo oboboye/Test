@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_z2G0wacuEeac7rt9-5Nh_g" name="ParagonFileFormat" dataPackage="_z2G0wqcuEeac7rt9-5Nh_g" Server="Localhost 127.0.0.1" FilePath="//fileserv2/CW1/Talend/Paragon - Allport Revised Header File.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_z2G0wqcuEeac7rt9-5Nh_g" name="default" dataManager="_z2G0wacuEeac7rt9-5Nh_g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_z2G0w6cuEeac7rt9-5Nh_g" id="_3nd1QKcoEeac7rt9-5Nh_g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0xKcuEeac7rt9-5Nh_g" label="CALL_ID" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0xacuEeac7rt9-5Nh_g" label="CUST_ID" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0xqcuEeac7rt9-5Nh_g" label="CUST_NAME" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0x6cuEeac7rt9-5Nh_g" label="CUST_TEXT01" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0yKcuEeac7rt9-5Nh_g" label="CUST_TEXT02" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0yacuEeac7rt9-5Nh_g" label="CUST_TEXT03" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0yqcuEeac7rt9-5Nh_g" label="CALL_USER01" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0y6cuEeac7rt9-5Nh_g" label="CALL_USER02" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0zKcuEeac7rt9-5Nh_g" label="CALL_USER03" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0zacuEeac7rt9-5Nh_g" label="CALL_TEXT04" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0zqcuEeac7rt9-5Nh_g" label="CALL_TEXT05" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G0z6cuEeac7rt9-5Nh_g" label="CALL_TEXT06" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G00KcuEeac7rt9-5Nh_g" label="CALL_TEXT07" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G00acuEeac7rt9-5Nh_g" label="CALL_USER04" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G00qcuEeac7rt9-5Nh_g" label="CALL_USER05" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G006cuEeac7rt9-5Nh_g" label="CALL_TEXT10" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G01KcuEeac7rt9-5Nh_g" label="CALL_TEXT08" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G01acuEeac7rt9-5Nh_g" label="CALL_TEXT09" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G01qcuEeac7rt9-5Nh_g" label="CALL_TEXT11" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G016cuEeac7rt9-5Nh_g" label="CALL_TEXT12" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_z2G02KcuEeac7rt9-5Nh_g" label="CALL_TEXT13" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uyh6YCTiEeeGi4Y8LJitYw" name="CALL_TEXT14" label="CALL_TEXT14" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U6SvQCTiEeeGi4Y8LJitYw" name="CALL_TEXT15" label="CALL_TEXT15" length="255" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

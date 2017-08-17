@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_2dx88bI3EeaNyoeBVOekeQ" name="SupplierStatementFileData" dataPackage="_2dx88rI3EeaNyoeBVOekeQ" Server="Localhost 127.0.0.1" FilePath="//Fileserv2/cw1/Talend/DEV_Working_Location/Working/CARFARHKG.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="2" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_2dx88rI3EeaNyoeBVOekeQ" name="default" dataManager="_2dx88bI3EeaNyoeBVOekeQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_2dx887I3EeaNyoeBVOekeQ" id="_QKuRsLI3EeaNyoeBVOekeQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2dx89LI3EeaNyoeBVOekeQ" label="invoice_date" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2dx89bI3EeaNyoeBVOekeQ" label="invoice_number" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2dx89rI3EeaNyoeBVOekeQ" label="invoice_amount" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2dx897I3EeaNyoeBVOekeQ" label="currency" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

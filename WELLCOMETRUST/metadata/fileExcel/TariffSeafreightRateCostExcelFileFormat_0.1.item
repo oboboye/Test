@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_XAnoEPnsEeaTyIn_cOtGLA" name="TariffSeafreightRateCostExcelFileFormat" dataPackage="_XAnoEfnsEeaTyIn_cOtGLA" Server="Localhost 127.0.0.1" FilePath="//fileserv2/CW1/Talend/DEV_Working_Location/Working/Tariff_Seafreight_Rate_Cost_FAK.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="4" FirstLineCaption="true" SheetName="Rates" firstColumn="1" lastColumn="12" thousandSeparator="','" decimalSeparator="'.'" advancedSpearator="true" sheetList="Rates:w&#xA;" generationMode="USER_MODE">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+    <sheetColumns>T</sheetColumns>
+    <sheetColumns>U</sheetColumns>
+    <sheetColumns>V</sheetColumns>
+    <sheetColumns>W</sheetColumns>
+    <sheetColumns>X</sheetColumns>
+    <sheetColumns>Y</sheetColumns>
+    <sheetColumns>Z</sheetColumns>
+    <sheetColumns>AA</sheetColumns>
+    <sheetColumns>AB</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_XAnoEfnsEeaTyIn_cOtGLA" name="default" dataManager="_XAnoEPnsEeaTyIn_cOtGLA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XAnoEvnsEeaTyIn_cOtGLA" id="_lK3VsPnrEeaTyIn_cOtGLA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoE_nsEeaTyIn_cOtGLA" label="OriginCountry" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoFPnsEeaTyIn_cOtGLA" label="POL" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoFfnsEeaTyIn_cOtGLA" label="Carrier" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoFvnsEeaTyIn_cOtGLA" label="Tier" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoF_nsEeaTyIn_cOtGLA" label="Account" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoGPnsEeaTyIn_cOtGLA" label="BK_Ref" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoGfnsEeaTyIn_cOtGLA" label="POD" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoGvnsEeaTyIn_cOtGLA" label="RateValue20" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoG_nsEeaTyIn_cOtGLA" label="RateValue40" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoHPnsEeaTyIn_cOtGLA" label="RateValueHC" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoHfnsEeaTyIn_cOtGLA" label="RateValidFrom" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XAnoHvnsEeaTyIn_cOtGLA" label="RateValidUntil" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

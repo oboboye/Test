@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_COOb8EYDEee4EKIP0O_IaA" name="CW1_GL_Trans_Report" dataPackage="_COOb8UYDEee4EKIP0O_IaA" Server="Localhost 127.0.0.1" FilePath="E:/Docs/Allport/01-NorthStar/01-Projects/03-Integration/CW1_CommaInCsv/GL Transaction Report_Header.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_COOb8UYDEee4EKIP0O_IaA" name="default" dataManager="_COOb8EYDEee4EKIP0O_IaA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_COOb8kYDEee4EKIP0O_IaA" id="_cejnEEYBEee4EKIP0O_IaA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb80YDEee4EKIP0O_IaA" label="Report_ID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb9EYDEee4EKIP0O_IaA" label="End_Date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb9UYDEee4EKIP0O_IaA" label="Start_Date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb9kYDEee4EKIP0O_IaA" label="Freight_Type" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb90YDEee4EKIP0O_IaA" label="Freight_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb-EYDEee4EKIP0O_IaA" label="Charge_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb-UYDEee4EKIP0O_IaA" label="GL_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb-kYDEee4EKIP0O_IaA" label="Route_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5w-tYEYDEee4EKIP0O_IaA" name="Surcharge_Name" label="Surcharge_Name" length="-1" talendType="id_String">
+        <initialValue xmi:id="_ATvPwEYEEee4EKIP0O_IaA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb-0YDEee4EKIP0O_IaA" label="Surcharge_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb_EYDEee4EKIP0O_IaA" label="Transport_Month" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb_UYDEee4EKIP0O_IaA" label="Transport_Cost" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb_kYDEee4EKIP0O_IaA" label="Add_Cost" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOb_0YDEee4EKIP0O_IaA" label="Sub_Total" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcAEYDEee4EKIP0O_IaA" label="Desc1" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcAUYDEee4EKIP0O_IaA" label="Carrier_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcAkYDEee4EKIP0O_IaA" label="Currency" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcA0YDEee4EKIP0O_IaA" label="Multiplier" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcBEYDEee4EKIP0O_IaA" label="Add_Charge1" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcBUYDEee4EKIP0O_IaA" label="Add_Charge2" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcBkYDEee4EKIP0O_IaA" label="Desc2" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcB0YDEee4EKIP0O_IaA" label="Desc3" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcCEYDEee4EKIP0O_IaA" label="Origin" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COOcCUYDEee4EKIP0O_IaA" label="Destination" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

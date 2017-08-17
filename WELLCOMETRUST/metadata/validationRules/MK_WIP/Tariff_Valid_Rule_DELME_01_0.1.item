@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:ValidationRulesConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_OknlgOb7EeaDgrbCG22osA" name="repository.metadataValidationRules" isInsert="true" type="BASIC" baseSchema="_nEJIcGXjEeaaPNoSHQD7OQ - tariff_seafreight_rate_testing" isDisallow="true" isRejectLink="true">
+  <baseColumnNames>Tariff_Type</baseColumnNames>
+  <baseColumnNames>Rate_Cat</baseColumnNames>
+  <baseColumnNames>INCL_RATE_20</baseColumnNames>
+  <baseColumnNames>INCL_RATE_40</baseColumnNames>
+  <baseColumnNames>INCL_RATE_HC</baseColumnNames>
+  <baseColumnNames>BASE_RATE_VALID_FROM</baseColumnNames>
+  <baseColumnNames>BASE_RATE_VALID_UNTIL</baseColumnNames>
+  <conditions xmi:id="_a-O9cO4VEeatm7hWAMY7ZA" inputColumn="Tariff_Type" operator="!="/>
+  <conditions xmi:id="_bTifEO4VEeatm7hWAMY7ZA" inputColumn="Rate_Cat" operator="!="/>
+  <conditions xmi:id="_fABX4O4VEeatm7hWAMY7ZA" inputColumn="INCL_RATE_20" function="$source == null? false : $source.matches($target) $operator true" operator="!=" value="0"/>
+  <conditions xmi:id="_gHsxoO4VEeatm7hWAMY7ZA" inputColumn="INCL_RATE_40" function="$source == null? false : $source.matches($target) $operator true" operator="!=" value="0"/>
+  <conditions xmi:id="_gY-u4O4VEeatm7hWAMY7ZA" inputColumn="INCL_RATE_HC" function="$source == null? false : $source.matches($target) $operator true" operator="!=" value="0"/>
+</TalendMetadata:ValidationRulesConnection>

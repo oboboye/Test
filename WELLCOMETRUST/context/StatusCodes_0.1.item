@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KT-W4IMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KT-W4YMTEeetafVnIQX_4g" comment="" name="Status_Complete" prompt="Status_Complete?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT-W4oMTEeetafVnIQX_4g" comment="" name="Status_Failed" prompt="Status_Failed?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT-W44MTEeetafVnIQX_4g" comment="" name="Status_PartialLoadFail" prompt="Status_PartialLoadFail?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT-W5IMTEeetafVnIQX_4g" comment="" name="Status_CompleteWithErrors" prompt="Status_CompleteWithErrors?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT-W5YMTEeetafVnIQX_4g" comment="" name="Status_Running" prompt="Status_Running?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT-W5oMTEeetafVnIQX_4g" comment="" name="Status_FileMoveFail" prompt="Status_FileMoveFail?" promptNeeded="false" type="id_Long" value=""/>
+</talendfile:ContextType>

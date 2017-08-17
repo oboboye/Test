@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="BatchControl_BatchID" prompt="BatchControl_BatchID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_BatchRepairedID" prompt="BatchControl_BatchRepairedID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_BatchStatus" prompt="BatchControl_BatchStatus?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_CatalogueID" prompt="BatchControl_CatalogueID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceArchiveFilePath" prompt="BatchControl_DataSourceArchiveFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceErrorFilePath" prompt="BatchControl_DataSourceErrorFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceInputFilePath" prompt="BatchControl_DataSourceInputFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_FileName" prompt="BatchControl_FileName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_PartialLoad" prompt="BatchControl_PartialLoad?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_RootPID" prompt="BatchControl_RootPID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_StartBatch" prompt="BatchControl_StartBatch?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="FileSystem_WorkingFolder" prompt="FileSystem_WorkingFolder?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_FailedRows" prompt="ProcessControl_FailedRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_JobPID" prompt="ProcessControl_JobPID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessID" prompt="ProcessControl_ProcessID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessStatus" prompt="ProcessControl_ProcessStatus?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_StartProcess" prompt="ProcessControl_StartProcess?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_SuccessRows" prompt="ProcessControl_SuccessRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_TotalRows" prompt="ProcessControl_TotalRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Talend_Staging_AdditionalParams" prompt="Talend_Staging_AdditionalParams?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Database" prompt="Talend_Staging_Database?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Login" prompt="Talend_Staging_Login?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Password" prompt="Talend_Staging_Password?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Port" prompt="Talend_Staging_Port?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Schema" prompt="Talend_Staging_Schema?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Server" prompt="Talend_Staging_Server?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="FileSystem_ReportFilePath" prompt="FileSystem_ReportFilePath?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_RelatedStagingTable" prompt="ProcessControl_RelatedStagingTable?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Schema" prompt="Talend_AMC_Schema?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_ReRun" prompt="BatchControl_ReRun?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_EmailGroupID" prompt="BatchControl_EmailGroupID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_CompleteWithErrors" prompt="Status_CompleteWithErrors?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Failed" prompt="Status_Failed?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Complete" prompt="Status_Complete?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_PartialLoadFail" prompt="Status_PartialLoadFail?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Running" prompt="Status_Running?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessGroupID" prompt="ProcessControl_ProcessGroupID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_LastProcessOfGroup" prompt="ProcessControl_LastProcessOfGroup?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_FirstProcessOfGroup" prompt="ProcessControl_FirstProcessOfGroup?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessGroupStatus" prompt="ProcessControl_ProcessGroupStatus?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesToMove" prompt="ProcessControl_FilesToMove?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesMoved" prompt="ProcessControl_FilesMoved?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesFailedToMove" prompt="ProcessControl_FilesFailedToMove?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Status_FileMoveFail" prompt="Status_FileMoveFail?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_LookupTableID" prompt="BatchControl_LookupTableID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_SenderID" prompt="CargoWiseOneConfig_SenderID?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterServiceEndpoint" prompt="CargoWiseOneConfig_EAdapterServiceEndpoint?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_RecipientID" prompt="CargoWiseOneConfig_RecipientID?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="FileSystem_RootFileDropFolder" prompt="FileSystem_RootFileDropFolder?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_CatalogueName" prompt="BatchControl_CatalogueName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Debug_DebuggingOn" prompt="Debug_DebuggingOn?" promptNeeded="false" repositoryContextId="_sCHKsOhuEeaXmqAh0zeTxQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_ReportJob" prompt="BatchControl_ReportJob?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_OutputFolder" prompt="CargoWiseOneConfig_OutputFolder?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_ReportFileName" prompt="BatchControl_ReportFileName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_InputFolder" prompt="CargoWiseOneConfig_InputFolder?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_NativeServiceEndpoint" prompt="CargoWiseOneConfig_NativeServiceEndpoint?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Logs_On" prompt="Talend_AMC_Logs_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Talend_AMC_Flows_On" prompt="Talend_AMC_Flows_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Stats_On" prompt="Talend_AMC_Stats_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_XmlBucketSize" prompt="CargoWiseOneConfig_XmlBucketSize?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterPassword" prompt="CargoWiseOneConfig_EAdapterPassword?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterUsername" prompt="CargoWiseOneConfig_EAdapterUsername?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="13" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextHost&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextPort&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextDbName&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextAdditionalParams&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextUser&quot;,rootPid,pid)"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="H3dPaI+z82DZMG+nSMylCTAOIpvF93163DlYfsTyanFfPv1zHabbNxAzqKLT4IQJdkwg8STkuezl0lEMFAojWRexu/vfgtM0YVs+7dUgwubICbiDLRr8SMb6meeE+x1pIJVgjkPQgDs="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;Context_Variables&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextEnvironment&quot;,rootPid,pid)"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.1.1/cmdline/studio/commandline-workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_NWUu0EKWEeaTGMc8oIRLZg" name="DQTechnical"/>
+    <routinesParameter id="_NBWkYEKWEeaTGMc8oIRLZg" name="DataOperation"/>
+    <routinesParameter id="_NTCxUEKWEeaTGMc8oIRLZg" name="DataQualityDependencies"/>
+    <routinesParameter id="_NRjjkEKWEeaTGMc8oIRLZg" name="DataQuality"/>
+    <routinesParameter id="_NUrwEEKWEeaTGMc8oIRLZg" name="DqStringHandling"/>
+    <routinesParameter id="_NDQB0EKWEeaTGMc8oIRLZg" name="Mathematical"/>
+    <routinesParameter id="_NFL7gEKWEeaTGMc8oIRLZg" name="Numeric"/>
+    <routinesParameter id="_NHRmMEKWEeaTGMc8oIRLZg" name="Relational"/>
+    <routinesParameter id="_M68aYEKWEeaTGMc8oIRLZg" name="SQLike"/>
+    <routinesParameter id="_NJDu4EKWEeaTGMc8oIRLZg" name="StringHandling"/>
+    <routinesParameter id="_NLJZkEKWEeaTGMc8oIRLZg" name="TalendDataGenerator"/>
+    <routinesParameter id="_NN06IEKWEeaTGMc8oIRLZg" name="TalendDate"/>
+    <routinesParameter id="_NPnp4EKWEeaTGMc8oIRLZg" name="TalendString"/>
+    <routinesParameter id="_4hyEAGrFEeavHP2vEAlcVw" name="AllportCargoUtils"/>
+    <routinesParameter id="_FzBjIG9REeaBmeWwKyR_Tg" name="EncryptionTools"/>
+    <routinesParameter id="_ETCaQG9VEeaBmeWwKyR_Tg" name="ImplicitContextLoadUtils"/>
+    <routinesParameter id="_G8FU8oDAEeaaW_qbfGyeTg" name="DataMasking"/>
+  </parameters>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//context.TotalRows already set &#xA;System.out.println(&quot;********************** Tariff_Airfreight_Rate_Source is about to complete **********************&quot;);&#xA;int iXmlFileCount = ((Integer)globalMap.get(&quot;iTotalXmlFilesCreated&quot;)).intValue();&#xA;context.ProcessControl_SuccessRows = ((Integer)globalMap.get(&quot;tHashInput_1_NB_LINE&quot;));&#xA;&#x9;&#x9;// context.ProcessControl_SuccessRows = context.ProcessControl_TotalRows - context.ProcessControl_FailedRows;&#xA;context.ProcessControl_FailedRows = context.ProcessControl_SuccessRows - iXmlFileCount;&#xA;&#xA;//Logic for deciding on status of process&#xA;if(context.ProcessControl_SuccessRows == iXmlFileCount) { //(context.ProcessControl_FailedRows.intValue()==0&amp;&amp;context.ProcessControl_SuccessRows.intValue()>0) {&#xA;&#x9;context.ProcessControl_ProcessStatus = context.Status_Complete;&#xA;}else{&#xA;&#x9;context.ProcessControl_ProcessStatus = context.Status_Failed;&#xA;}&#xA;&#xA;System.out.println(&quot;Tariff_Airfreight_Rate_Source ************&quot;);&#xA;System.out.println(&quot;TotalRows from context = &quot; + context.ProcessControl_TotalRows);&#xA;System.out.println(&quot;TotalRows from iTotalXmlFilesCreated = &quot; + iXmlFileCount   );&#xA;System.out.println(&quot;Total (or Success) Rows from HashInput with unique entries = &quot; + context.ProcessControl_SuccessRows);&#xA;System.out.println(&quot;FailedRows (difference b/w above two)= &quot; + context.ProcessControl_FailedRows);&#xA;System.out.println(&quot;ProcessStatus = &quot; + context.ProcessControl_ProcessStatus);&#xA;&#xA;System.out.println(&quot;context.Status_PartialLoadFail = &quot; + context.Status_PartialLoadFail);&#xA;System.out.println(&quot;context.Status_CompleteWithErrors = &quot; + context.Status_CompleteWithErrors);&#xA;System.out.println(&quot;context.Status_Running = &quot; + context.Status_Running);&#xA;System.out.println(&quot;context.Status_Complete = &quot; + context.Status_Complete);&#xA;System.out.println(&quot;context.Status_Failed = &quot; + context.Status_Failed);&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="StartProcess" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StartProcess_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartProcess"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="EndProcess" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StopProcess_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="EndProcess"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;String currDateTime = TalendDate.getDate(&quot;CCYYMMDD_hhmmss&quot;);&#xA;// Set Debugging to ON&#xA;context.Debug_DebuggingOn = true;&#xA;Integer iTotalXmlFilesCreated = new Integer(0);&#xA;globalMap.put(&quot;iTotalXmlFilesCreated&quot;,   iTotalXmlFilesCreated);&#xA;&#xA;// Debugging Code&#xA;if(context.Debug_DebuggingOn){&#xA;&#x9;//java.io.File outputFile = new java.io.File(&quot;E:/Docs/Allport/Projects/Talend/Eclipse_Temp/Studio.out&quot;);&#xA;&#x9;//System.setOut(new java.io.PrintStream(new java.io.FileOutputStream(outputFile, true), true));&#xA;}&#xA;if(context.Debug_DebuggingOn){&#xA;&#x9;context.ProcessControl_ProcessID = 65L;&#xA;&#x9;context.BatchControl_CatalogueID = 12L;&#x9;&#x9;// 12L;&#xA;&#x9;context.BatchControl_BatchID = 52L;  // 19L  20L  21L  49L  50L  51L&#xA;&#x9;context.BatchControl_LookupTableID = 9L;&#x9;// 4L  5L;&#xA;&#x9;context.FileSystem_WorkingFolder = &quot;//fileserv2/CW1/Talend/DEV_Working_Location/Tariff/Airfreight/Incoming&quot;;&#xA;&#xA;&#x9;context.BatchControl_DataSourceInputFilePath =&quot;//fileserv2/CW1/Talend/DEV_Working_Location/Tariff/Airfreight&quot;;&#xA;&#x9;context.BatchControl_FileName = &quot;WCN_Rates_&quot; + currDateTime + &quot;_&quot;;&#xA;&#x9;&#xA;&#x9;System.out.println(&quot;********************* Tariff_Airfreight_Rate_Source job *********************&quot;);&#xA;&#x9;System.out.println(&quot;CatalogueID = &quot; + context.BatchControl_CatalogueID &#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;, BatchID = &quot;+context.BatchControl_BatchID&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;, BatchControl_DataSourceInputFilePath = &quot;+context.BatchControl_DataSourceInputFilePath&#xA;&#x9;&#x9;&#x9;&#x9;+ &quot;, BatchControl_FileName = &quot;+context.BatchControl_FileName);&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FileSystem_WorkingFolder + &quot;/&quot; + context.BatchControl_FileName"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
+    <elementParameter field="TABLE" name="SHEETLIST">
+      <elementValue elementRef="SHEETNAME" value="&quot;Rates&quot;"/>
+      <elementValue elementRef="USE_REGEX" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="4"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value="11"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_u9w8UOO0EeajuvewYT81rg - TariffSeafreightExcelFileFormatSchema" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Origin_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Carrier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BK_REF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_40"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_HC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Base_Rate_Valid_From"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Base_Rate_Valid_Until"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="true"/>
+    <elementParameter field="TABLE" name="DATESELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Origin_Country"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="StringHandling.UPCASE(&quot;Hello&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POL"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Carrier"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_TYPE"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BK_REF"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POD"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_20"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_40"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_HC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Base_Rate_Valid_From"/>
+      <elementValue elementRef="CONVERTDATE" value="true"/>
+      <elementValue elementRef="PATTERN" value="&quot;dd/MM/yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Base_Rate_Valid_Until"/>
+      <elementValue elementRef="CONVERTDATE" value="true"/>
+      <elementValue elementRef="PATTERN" value="&quot;dd/MM/yyyy&quot;"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="TariffSeafreightExcelFileFormatSchema" name="tFileInputExcel_1">
+      <column comment="" key="false" length="-1" name="Origin_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RATE_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BK_REF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INCL_RATE_20" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INCL_RATE_40" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INCL_RATE_HC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Base_Rate_Valid_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Base_Rate_Valid_Until" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="TariffSeafreightExcelFileFormatSchema" name="REJECT">
+      <column comment="" key="false" length="-1" name="Origin_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RATE_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BK_REF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INCL_RATE_20" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INCL_RATE_40" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INCL_RATE_HC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Base_Rate_Valid_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Base_Rate_Valid_Until" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GNFtYA_NEeeJfO86W1Rdpw-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata comment="" connector="FLOW" label="tariff_seafreight_rate_source" name="row8">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Origin_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Carrier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tariff_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Rate_Cat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BK_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_40" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_HC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_FROM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_UNTIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="FclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclClientRate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="InternalNote" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="row8" expressionFilter="row1.POL!=null &amp;&amp; row1.POL.trim().compareToIgnoreCase(&quot;&quot;)!=0" activateExpressionFilter="true" activateCondensedTool="true" id="_nEJIcGXjEeaaPNoSHQD7OQ - tariff_seafreight_rate_source">
+        <mapperTableEntries name="id" type="id_Long"/>
+        <mapperTableEntries name="filerownum" expression="routines.Numeric.sequence(&quot;source_seq&quot;,1,1).longValue() " type="id_Long"/>
+        <mapperTableEntries name="catalogue_id" expression="context.BatchControl_CatalogueID " type="id_Long"/>
+        <mapperTableEntries name="batch_id" expression="context.BatchControl_BatchID " type="id_Long"/>
+        <mapperTableEntries name="Origin_Country" expression="row1.Origin_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="POL" expression="row1.POL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="POD" expression="row1.POD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Carrier" expression="row1.Carrier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Tariff_Type" expression="row1.RATE_TYPE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Rate_Cat" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Tier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BK_REF" expression="row1.BK_REF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCL_RATE_20" expression="row1.INCL_RATE_20" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCL_RATE_40" expression="row1.INCL_RATE_40" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCL_RATE_HC" expression="row1.INCL_RATE_HC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BASE_RATE_VALID_FROM" expression="row1.Base_Rate_Valid_From" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BASE_RATE_VALID_UNTIL" expression="row1.Base_Rate_Valid_Until" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LclTerms" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FclTerms" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LclClientRate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="InternalNote" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Origin_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="POL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Carrier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RATE_TYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BK_REF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="POD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCL_RATE_20" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCL_RATE_40" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INCL_RATE_HC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Base_Rate_Valid_From" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Base_Rate_Valid_Until" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;int totalTariffRows = 0;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#xA;// a piece of code executed in the row&#xA;// loop&#xA;totalTariffRows++;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;if((context.BatchControl_BatchRepairedID!=null &amp;&amp; !context.BatchControl_ReRun)){&#xA;&#x9;context.ProcessControl_TotalRows = totalTariffRows; &#xA;}&#xA;"/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tariff_seafreight_rate_source" name="tJavaFlex_3">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Origin_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Carrier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tariff_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Rate_Cat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BK_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_40" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_HC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_FROM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_UNTIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="FclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclClientRate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="InternalNote" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;tariff_seafreight_rate_source&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="filerownum" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ - tariff_seafreight_rate_source" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="filerownum"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="catalogue_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Origin_Country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Carrier"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tariff_Type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate_Cat"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tier"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BK_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCL_RATE_HC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BASE_RATE_VALID_FROM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BASE_RATE_VALID_UNTIL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LclTerms"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FclTerms"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LclClientRate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InternalNote"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="true"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tariff_seafreight_rate_source" name="tMSSqlOutput_1">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Origin_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Carrier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tariff_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Rate_Cat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BK_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_40" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_HC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_FROM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_UNTIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="FclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclClientRate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="InternalNote" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="tariff_seafreight_rate_source" name="REJECT">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Origin_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="POD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Carrier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tariff_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Rate_Cat" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Tier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Account" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BK_REF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_40" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="INCL_RATE_HC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_FROM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="BASE_RATE_VALID_UNTIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="FclTerms" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="LclClientRate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="InternalNote" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Main processing of Tariff_Airfreight_Rate_Source job is terminated abnormally&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Airline"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="Airline" value="&quot;11&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;9W&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;AA&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;AC&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;AY&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;BA&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;BR&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;CV&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;EK&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;EY&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;IB&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;ICA&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;KU&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;MB&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;ME&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;MS&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;MU&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;NZ&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;PK&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;PR&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;QT&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;SV&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;UA&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;UL&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;VN&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;VS&quot;"/>
+      <elementValue elementRef="Airline" value="&quot;Z9&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="Airline" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.BatchControl_DataSourceInputFilePath + &quot;/Airline_Codes_GBCR05055.xlsx&quot;"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
+    <elementParameter field="TABLE" name="SHEETLIST">
+      <elementValue elementRef="SHEETNAME" value="&quot;Worksheet&quot;"/>
+      <elementValue elementRef="USE_REGEX" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="3"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value="4"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_oT6SYBLmEeehUO36rbqlEg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_TKXfEBLhEeehUO36rbqlEg - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Airline"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Airline"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="true"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_2">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Airline"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Airline"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Airline"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="FUNCTION" value="max"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tAggregateRow_1">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GNFtYA_NEeeJfO86W1Rdpw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="AirlinesUnique">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="AirlinesUnique">
+        <mapperTableEntries name="Airline" expression="row12.Airline" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AirlineName" expression="row12.AirlineName" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Airline" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AirlineName" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tHashOutput_1">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_oT6SYBLmEeehUO36rbqlEg - metadata" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tHashInput_1">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Airline"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="9999" name="Airline" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9999" name="AirlineName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;https://www.webcargonet.com/sync/rates-v2.php?k1=6Q50e8HAC3BQUV25UTaIyQLfLxaWIB&amp;k2=gb&amp;ratetype=CTR&amp;airline=&quot;+((String)globalMap.get(&quot;row10.Airline&quot;))"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
+    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" value="" show="false"/>
+    <elementParameter field="CHECK" name="OUT_TO_FILE" value="false"/>
+    <elementParameter field="FILE" name="OUT_FILE_NAME" value="" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_DIRS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="false"/>
+    <elementParameter field="TEXT" name="USR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PWD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="true"/>
+    <elementParameter field="TEXT" name="CONNECT_TIMEOUT" value="90"/>
+    <elementParameter field="TEXT" name="READ_TIMEOUT" value="0"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHttpRequest_1">
+      <column key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// pupulate output_row at the end to avoid an old bug in tJavaRow (which may or may not have been fixed in this version of Talend)&#xD;&#xA;String strResponseXml = input_row.ResponseContent;&#xA;String strErrorMsg = (String) globalMap.get(&quot;tHttpRequest_1_ERROR_MESSAGE&quot;); &#xA;String strAirlineCode = ((String)globalMap.get(&quot;row10.Airline&quot;));  // ((String)globalMap.get(&quot;row2.AirlineCode&quot;))&#xA;&#xA;System.out.println(&quot;**************** Airline Code [[&quot; + strAirlineCode + &quot;]] ****************&quot;);&#xA;&#xA;if ( (strErrorMsg !=null  &amp;&amp; strErrorMsg.compareToIgnoreCase(&quot;&quot;)!=0)&#xA;    || strResponseXml == null || strResponseXml.compareToIgnoreCase(&quot;&quot;)==0 ) {&#xA;&#x9;System.out.println(&quot;Non-zero Error Code is received or NULL or empty string received from REST Service. Error_Message = &quot; + strErrorMsg);&#xA;&#x9;System.out.println(&quot;XML received from REST Service:\r\n&quot; + strResponseXml);&#xA;&#x9;strResponseXml = &quot;&lt;rates>NULL or blank XML received from REST Service, setting it to this string.&lt;/rates>&quot;;&#xA;} else {&#xA;&#x9;&#xA;&#x9;globalMap.put(   &quot;iTotalXmlFilesCreated&quot;,   1+((Integer)globalMap.get(&quot;iTotalXmlFilesCreated&quot;))    );&#xA;&#x9;System.out.println(&quot;Valid XML received from Rest Service for Airline Code &quot; + strAirlineCode  ); // ((String)globalMap.get(&quot;row2.AirlineCode&quot;))  );   OR row6.Airline&#xA;}&#xA;&#xA;if(context.Debug_DebuggingOn) {&#xA;&#x9;System.out.println(&quot;XML received from REST Service:\r\n&quot; + strResponseXml);&#xA;}&#xA;&#xD;&#xA;&#xA;output_row.ResponseContent = strResponseXml;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="row4" name="tJavaRow_1">
+      <column key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tConvertType_1">
+      <column key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputRaw_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FileSystem_WorkingFolder + &quot;/&quot; + context.BatchControl_FileName + ((String)globalMap.get(&quot;row10.Airline&quot;)) + &quot;.xml&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputRaw_1">
+      <column key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="StopProcess_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnSubjobOk (TRIGGER_OUTPUT_1)" lineStyle="1" metaname="StartProcess_1" offsetLabelX="0" offsetLabelY="0" source="StartProcess_1" target="tJava_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFileInputExcel_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="row8" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tJavaFlex_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tJavaFlex_3" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_3" target="tMSSqlOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Account"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BASE_RATE_VALID_UNTIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BASE_RATE_VALID_FROM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Tier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Origin_Country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BK_REF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INCL_RATE_40"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INCL_RATE_HC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Tariff_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INCL_RATE_20"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Carrier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Rate_Cat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tHashInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Airline"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AirlineName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="AirlinesUnique" lineStyle="0" metaname="AirlinesUnique" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tHashOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="AirlinesUnique" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tHttpRequest_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tHttpRequest_1" offsetLabelX="0" offsetLabelY="0" source="tHttpRequest_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tFileOutputRaw_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileOutputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputRaw_1" target="tDie_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String) globalMap.get(&quot;tHttpRequest_1_ERROR_MESSAGE&quot;)) != null &amp;&amp; ((String) globalMap.get(&quot;tHttpRequest_1_ERROR_MESSAGE&quot;)).compareToIgnoreCase(&quot;&quot;) != 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <note opaque="true" posX="192" posY="576" sizeHeight="65" sizeWidth="321" text="After receiving XML from WCN and creating &#xD;&#xA;files for all Airlines, move all XML files to &#xD;&#xA;Processing folder">
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note opaque="true" posX="544" posY="576" sizeHeight="65" sizeWidth="321" text="Read all XML files from Processing folder, &#xD;&#xA;flatten data-structure, and then save it in &#xD;&#xA;Source Table.">
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <note opaque="true" posX="896" posY="576" sizeHeight="65" sizeWidth="321" text="Move data from Source to SCD Table, then push it out to CargoWise1 via SOAP Service.">
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StartProcess_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StopProcess_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Get Rates from WCN REST Service for all Airlines"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

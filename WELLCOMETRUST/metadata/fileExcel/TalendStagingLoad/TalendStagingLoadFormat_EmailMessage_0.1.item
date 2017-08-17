@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_XAYZwAy_EeercpVxSq6myA" name="TalendStagingLoadFormat_EmailMessage" dataPackage="_9LTFYQyuEeercpVxSq6myA" Server="Localhost 127.0.0.1" FilePath="//fileserv2/CW1/Talend/Talend DB Config.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Email Message" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Email Message:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_9LTFYQyuEeercpVxSq6myA" name="default" dataManager="_XAYZwAy_EeercpVxSq6myA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9LTFYgyuEeercpVxSq6myA" id="_jceMMAytEeercpVxSq6myA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VVaEsAzKEeeMD5p3FIByNA" name="Email" label="Email" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_VVaEsQzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VVaEsgzKEeeMD5p3FIByNA" name="Message" label="Message" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_VVaEswzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VVaEtAzKEeeMD5p3FIByNA" name="Address_Field" label="Address_Field" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_VVaEtQzKEeeMD5p3FIByNA"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

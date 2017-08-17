@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="InputFileForNexusUpload_Encoding" prompt="InputFileForNexusUpload_Encoding?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_FieldSeparator" prompt="InputFileForNexusUpload_FieldSeparator?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_File" prompt="InputFileForNexusUpload_File?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_File" value="C:/Temp/Test.csv"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_Header" prompt="InputFileForNexusUpload_Header?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_RowSeparator" prompt="InputFileForNexusUpload_RowSeparator?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CurlCommand" prompt="CurlCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="C:/Temp/curl-7.53.1/src/curl.exe"/>
+    <contextParameter comment="" name="Date" prompt="Date?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DownLoadFileLocation" prompt="DownLoadFileLocation?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" \Temp\"/>
+    <contextParameter comment="" name="DownLoadPrefix" prompt="DownLoadPrefix?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" -o "/>
+    <contextParameter comment="" name="File" prompt="File?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" C:/Temp/GetElastic_CheckClusterState-0.1.0-SNAPSHOT.zip "/>
+    <contextParameter comment="" name="FileDownLoadLocation" prompt="FileDownLoadLocation?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Folder" prompt="Folder?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="GetCommand" prompt="GetCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="--GET "/>
+    <contextParameter comment="" name="NexusPassword" prompt="NexusPassword?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="Talend123"/>
+    <contextParameter comment="" name="NexusUploadDestination" prompt="NexusUploadDestination?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="\\esb-deploy.allportltd.net\c$\Talend/6.2.1/tac/Artifact-Repository-Nexus-V2.11.3-01/sonatype-work/nexus/storage/repoTest"/>
+    <contextParameter comment="" name="NexusURL" prompt="NexusURL?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/repoTest/content"/>
+    <contextParameter comment="" name="NexusURLDownload" prompt="NexusURLDownload?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/snapshots/content/"/>
+    <contextParameter comment="" name="NexusUserName" prompt="NexusUserName?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="admin:"/>
+    <contextParameter comment="" name="Space" prompt="Space?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" "/>
+    <contextParameter comment="" name="UploadFileCommand" prompt="UploadFileCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" --upload-file "/>
+    <contextParameter comment="" name="UserNamePrefix" prompt="UserNamePrefix?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" -u "/>
+    <contextParameter comment="" name="Version" prompt="Version?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="InputFileForNexusUpload_Encoding" prompt="InputFileForNexusUpload_Encoding?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_FieldSeparator" prompt="InputFileForNexusUpload_FieldSeparator?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_File" prompt="InputFileForNexusUpload_File?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_File" value="C:/Talend/Data/Test.csv"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_Header" prompt="InputFileForNexusUpload_Header?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_RowSeparator" prompt="InputFileForNexusUpload_RowSeparator?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CurlCommand" prompt="CurlCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="C:/Talend/Data/curl-7.53.1/src/curl.exe"/>
+    <contextParameter comment="" name="Date" prompt="Date?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DownLoadFileLocation" prompt="DownLoadFileLocation?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" \Talend\Data\"/>
+    <contextParameter comment="" name="DownLoadPrefix" prompt="DownLoadPrefix?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="-o "/>
+    <contextParameter comment="" name="File" prompt="File?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" C:/Talend/Data/GetElastic_CheckClusterState-0.1.0-SNAPSHOT.zip "/>
+    <contextParameter comment="" name="FileDownLoadLocation" prompt="FileDownLoadLocation?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Folder" prompt="Folder?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="GetCommand" prompt="GetCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="--GET "/>
+    <contextParameter comment="" name="NexusPassword" prompt="NexusPassword?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="Talend123"/>
+    <contextParameter comment="" name="NexusUploadDestination" prompt="NexusUploadDestination?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="NexusURL" prompt="NexusURL?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/repoTest/content"/>
+    <contextParameter comment="" name="NexusURLDownload" prompt="NexusURLDownload?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/snapshots/content"/>
+    <contextParameter comment="" name="NexusUserName" prompt="NexusUserName?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="admin:"/>
+    <contextParameter comment="" name="Space" prompt="Space?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="   "/>
+    <contextParameter comment="" name="UploadFileCommand" prompt="UploadFileCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" --upload-file"/>
+    <contextParameter comment="" name="UserNamePrefix" prompt="UserNamePrefix?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" -u "/>
+    <contextParameter comment="" name="Version" prompt="Version?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="InputFileForNexusUpload_Encoding" prompt="InputFileForNexusUpload_Encoding?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_FieldSeparator" prompt="InputFileForNexusUpload_FieldSeparator?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_File" prompt="InputFileForNexusUpload_File?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_File" value="C:/Talend/Data/Test.csv"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_Header" prompt="InputFileForNexusUpload_Header?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="InputFileForNexusUpload_RowSeparator" prompt="InputFileForNexusUpload_RowSeparator?" promptNeeded="false" repositoryContextId="_dm7vMECBEeeZ4LxEqfkKqQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="CurlCommand" prompt="CurlCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="C:/Talend/Data/curl-7.53.1/src/curl.exe"/>
+    <contextParameter comment="" name="Date" prompt="Date?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="DownLoadFileLocation" prompt="DownLoadFileLocation?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" \Talend\Data\"/>
+    <contextParameter comment="" name="DownLoadPrefix" prompt="DownLoadPrefix?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="-o "/>
+    <contextParameter comment="" name="File" prompt="File?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" C:/Talend/Data/GetElastic_CheckClusterState-0.1.0-SNAPSHOT.zip"/>
+    <contextParameter comment="" name="FileDownLoadLocation" prompt="FileDownLoadLocation?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Folder" prompt="Folder?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="GetCommand" prompt="GetCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="--GET "/>
+    <contextParameter comment="" name="NexusPassword" prompt="NexusPassword?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="Talend123"/>
+    <contextParameter comment="" name="NexusUploadDestination" prompt="NexusUploadDestination?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+    <contextParameter comment="" name="NexusURL" prompt="NexusURL?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/repoTest/content"/>
+    <contextParameter comment="" name="NexusURLDownload" prompt="NexusURLDownload?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/snapshots/content"/>
+    <contextParameter comment="" name="NexusUserName" prompt="NexusUserName?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="admin:"/>
+    <contextParameter comment="" name="Space" prompt="Space?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value="   "/>
+    <contextParameter comment="" name="UploadFileCommand" prompt="UploadFileCommand?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" --upload-file "/>
+    <contextParameter comment="" name="UserNamePrefix" prompt="UserNamePrefix?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=" -u "/>
+    <contextParameter comment="" name="Version" prompt="Version?" promptNeeded="false" repositoryContextId="_essygECDEeeZ4LxEqfkKqQ" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xmx4096M&quot;,&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;]}" show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextHost&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextPort&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextDbName&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextAdditionalParams&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextUser&quot;,rootPid,pid)"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="H3dPaI+z82DZMG+nSMylCTAOIpvF93163DlYfsTyanFfPv1zHabbNxAzqKLT4IQJdkwg8STkuezl0lEMFAojWRexu/vfgtM0YVs+7dUgwubICbiDLRr8SMb6meeE+x1pIJVgjkPQgDs="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;Context_Variables&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextEnvironment&quot;,rootPid,pid)"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.1.1/cmdline/studio/commandline-workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_5Spn0LWLEeOkcsnRpiRdzg" name="DQTechnical"/>
+    <routinesParameter id="_5JqD4LWLEeOkcsnRpiRdzg" name="DataOperation"/>
+    <routinesParameter id="_5O6XULWLEeOkcsnRpiRdzg" name="DataQuality"/>
+    <routinesParameter id="_5RiNgLWLEeOkcsnRpiRdzg" name="DqStringHandling"/>
+    <routinesParameter id="_5KM2cLWLEeOkcsnRpiRdzg" name="Mathematical"/>
+    <routinesParameter id="_5Kw3ILWLEeOkcsnRpiRdzg" name="Numeric"/>
+    <routinesParameter id="_5La-cLWLEeOkcsnRpiRdzg" name="Relational"/>
+    <routinesParameter id="_5HF4ELWLEeOkcsnRpiRdzg" name="SQLike"/>
+    <routinesParameter id="_5MANQLWLEeOkcsnRpiRdzg" name="StringHandling"/>
+    <routinesParameter id="_5MrisLWLEeOkcsnRpiRdzg" name="TalendDataGenerator"/>
+    <routinesParameter id="_5NYtULWLEeOkcsnRpiRdzg" name="TalendDate"/>
+    <routinesParameter id="_5OI7QLWLEeOkcsnRpiRdzg" name="TalendString"/>
+    <routinesParameter id="_b9xFECGQEeKD7Og2nzf47Q" name="ONS"/>
+    <routinesParameter id="_bwpjoBuNEeeWiOCziUVheQ" name="DataMasking"/>
+    <routinesParameter id="_bw1w4BuNEeeWiOCziUVheQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_bxLIEBuNEeeWiOCziUVheQ" name="MDM"/>
+    <routinesParameter id="_ETCaQG9VEeaBmeWwKyR_Tg" name="ImplicitContextLoadUtils"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_i_TiEECBEeeZ4LxEqfkKqQ" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.InputFileForNexusUpload_File"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.InputFileForNexusUpload_RowSeparator"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.InputFileForNexusUpload_RowSeparator" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.InputFileForNexusUpload_FieldSeparator"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.InputFileForNexusUpload_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_i_TiEECBEeeZ4LxEqfkKqQ - UploadFileToNexus" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_i_TiEECBEeeZ4LxEqfkKqQ - UploadFileToNexus" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;E:/Talend/6.2.1/studio/workspace4&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="File"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FilePath"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusUploadDestination"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Folder"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.InputFileForNexusUpload_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="File"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FilePath"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusUploadDestination"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Folder"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="InputFileForNexusUpload"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="UploadFileToNexus" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="255" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FilePath" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NexusUploadDestination" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Folder" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Version" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="UploadFileToNexus" name="REJECT">
+      <column comment="" key="false" length="255" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FilePath" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NexusUploadDestination" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Folder" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Version" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Creating Service:&quot; +(String)globalMap.get(&quot;inputServer.label&quot;)"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Artifacts URL is  &quot; +context.NexusURLDownload+(String)globalMap.get(&quot;inputServer.FilePath&quot;));&#xA;&#xA;System.out.println(&quot;Routing File types:  &quot;+(String)globalMap.get(&quot;inputServer.File&quot;));&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.printf(&quot;Artifacts failed to Upload to NexusRepo&quot; +context.NexusURL);&#xA;System.out.printf(&quot;ResponseCode&quot; + ((Integer)globalMap.get(&quot;tHttpRequest_1_RESPONSE_CODE&quot;)));&#xA;System.out.printf(&quot;ErrorMessage&quot; + ((String)globalMap.get(&quot;tHttpRequest_1_ERROR_MESSAGE&quot;)));&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_8"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusURL"/>
+      <elementValue elementRef="VALUE" value="context.NexusURL"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;inputServer.File&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusUploadDestination"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;inputServer.NexusUploadDestination&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Folder"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;inputServer.Folder&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;inputServer.Version&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FilePath"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;inputServer.FilePath&quot;)"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="parameters"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_3">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_5" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusURL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusUploadDestination"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Folder"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FilePath"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_5">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yig_UEtYEeezFbpXhNDI9w-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="ZipFiles">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="JarFiles">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="row1.File.endsWith(&quot;.zip&quot;) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="var2" expression="row1.File.endsWith(&quot;.jar&quot;) " type="id_Boolean" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="ZipFiles" expressionFilter="Var.var1.equals(true)" activateExpressionFilter="true">
+        <mapperTableEntries name="NexusURL" expression="row1.NexusURL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="File" expression="row1.File" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NexusUploadDestination" expression="row1.NexusUploadDestination" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Folder" expression="row1.Folder" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Version" expression="row1.Version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FilePath" expression="row1.FilePath" type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="JarFiles" expressionFilter="Var.var2.equals(true)" activateExpressionFilter="true">
+        <mapperTableEntries name="NexusURL" expression="row1.NexusURL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="File" expression="row1.File" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NexusUploadDestination" expression="row1.NexusUploadDestination" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Folder" expression="row1.Folder" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Version" expression="row1.Version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FilePath" expression="row1.FilePath" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="NexusURL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="File" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NexusUploadDestination" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Folder" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FilePath" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace4/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_1">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace4/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_2">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.Date=TalendDate.getDate(&quot;YYYY-MM-dd_HH_mm_ss&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SetDate"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_9"/>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace4/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="URI" value="context.NexusURLDownload+(String)globalMap.get(&quot;inputServer.FilePath&quot;)"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
+    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" value="" show="false"/>
+    <elementParameter field="CHECK" name="OUT_TO_FILE" value="true"/>
+    <elementParameter field="FILE" name="OUT_FILE_NAME" value="context.NexusUploadDestination+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.NexusUploadDestination&quot;)+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Version&quot;)+&quot;-&quot;+context.Date+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;-&quot;+context.Date+(&quot;.zip&quot;)"/>
+    <elementParameter field="CHECK" name="CREATE_DIRS" value="true"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="true"/>
+    <elementParameter field="TEXT" name="USR" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PWD" value="iGTTaeaaaAsYINgKiHoukg=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECT_TIMEOUT" value="30" show="false"/>
+    <elementParameter field="TEXT" name="READ_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Upload_Artefacts"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHttpRequest_1">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusURL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusUploadDestination"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Folder"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FilePath"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResponseContent"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace4/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_2">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_2" show="false"/>
+    <elementParameter field="TEXT" name="URI" value="context.NexusURLDownload+(String)globalMap.get(&quot;inputServer.FilePath&quot;)"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
+    <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" value="" show="false"/>
+    <elementParameter field="CHECK" name="OUT_TO_FILE" value="true"/>
+    <elementParameter field="FILE" name="OUT_FILE_NAME" value="context.NexusUploadDestination+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.NexusUploadDestination&quot;)+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Version&quot;)+&quot;-&quot;+context.Date+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;-&quot;+context.Date+(&quot;.jar&quot;)"/>
+    <elementParameter field="CHECK" name="CREATE_DIRS" value="true"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="CHECK" name="NEED_AUTHENTICATION" value="true"/>
+    <elementParameter field="TEXT" name="USR" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PWD" value="iGTTaeaaaAsYINgKiHoukg=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TIMEOUT_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECT_TIMEOUT" value="30" show="false"/>
+    <elementParameter field="TEXT" name="READ_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Upload_Artefacts"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHttpRequest_2">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusURL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NexusUploadDestination"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Folder"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FilePath"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResponseContent"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="NexusURL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NexusUploadDestination" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Folder" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FilePath" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Artifacts URL is  &quot; +context.NexusURLDownload+(String)globalMap.get(&quot;inputServer.FilePath&quot;));&#xA;&#xA;System.out.println(&quot;Write Contexts to location:  &quot;+ context.NexusUploadDestination+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.NexusUploadDestination&quot;)+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Version&quot;)+&quot;-&quot;+context.Date+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;-&quot;+context.Date+(&quot;.zip&quot;));&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.printf(&quot;Artifacts failed to Upload to NexusRepo&quot; +context.NexusURL);&#xA;System.out.printf(&quot;ResponseCode&quot; + ((Integer)globalMap.get(&quot;tHttpRequest_1_RESPONSE_CODE&quot;)));&#xA;System.out.printf(&quot;ErrorMessage&quot; + ((String)globalMap.get(&quot;tHttpRequest_1_ERROR_MESSAGE&quot;)));&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Artifacts URL is  &quot; +context.NexusURLDownload+(String)globalMap.get(&quot;inputServer.FilePath&quot;));&#xA;&#xA;System.out.println(&quot;Write Contexts to location:  &quot;+ context.NexusUploadDestination+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.NexusUploadDestination&quot;)+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Version&quot;)+&quot;-&quot;+context.Date+&quot;/&quot;+(String)globalMap.get(&quot;inputServer.Folder&quot;)+&quot;-&quot;+context.Date+(&quot;.jar&quot;));&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.printf(&quot;Artifacts failed to Upload to NexusRepo&quot; +context.NexusURL);&#xA;System.out.printf(&quot;ResponseCode&quot; + ((Integer)globalMap.get(&quot;tHttpRequest_2_RESPONSE_CODE&quot;)));&#xA;System.out.printf(&quot;ErrorMessage&quot; + ((String)globalMap.get(&quot;tHttpRequest_2_ERROR_MESSAGE&quot;)));&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <connection connectorName="FLOW" label="inputServer" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFlowToIterate_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="inputServer" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tWarn_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tFixedFlowInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_7" target="tHashInput_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tHashOutput_1_NB_LINE&quot;))>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_7" target="tHashInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tHashOutput_2_NB_LINE&quot;))>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tLogRow_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="FilePath"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tJava_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tJava_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_5" offsetLabelX="0" offsetLabelY="0" source="tLogRow_5" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="ZipFiles" lineStyle="0" metaname="ZipFiles" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tHashOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ZipFiles" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="JarFiles" lineStyle="0" metaname="JarFiles" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tHashOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JarFiles" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tHttpRequest_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tHttpRequest_1" offsetLabelX="0" offsetLabelY="0" source="tHttpRequest_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tHttpRequest_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tHttpRequest_2" offsetLabelX="0" offsetLabelY="0" source="tHttpRequest_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Process InputFile"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Download Artefact to Location"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Upload Zip Files to Nexus"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Upload jar Files to Nexus"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

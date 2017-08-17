@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KTUPkIMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KTUPkYMTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_Login" prompt="CargoWiseOne_ODS_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTUPkoMTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_Server" prompt="CargoWiseOne_ODS_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTUPk4MTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_Database" prompt="CargoWiseOne_ODS_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTUPlIMTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_Schema" prompt="CargoWiseOne_ODS_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTUPlYMTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_AdditionalParams" prompt="CargoWiseOne_ODS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTUPloMTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_Port" prompt="CargoWiseOne_ODS_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTUPl4MTEeetafVnIQX_4g" comment="" name="CargoWiseOne_ODS_Password" prompt="CargoWiseOne_ODS_Password?" promptNeeded="false" type="id_Password" value=""/>
+</talendfile:ContextType>

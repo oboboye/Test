@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KT2bEIMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KT2bEYMTEeetafVnIQX_4g" comment="" name="ProcessControl_ProcessID" prompt="ProcessControl_ProcessID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT2bEoMTEeetafVnIQX_4g" comment="" name="ProcessControl_TotalRows" prompt="ProcessControl_TotalRows?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_KT2bE4MTEeetafVnIQX_4g" comment="" name="ProcessControl_SuccessRows" prompt="ProcessControl_SuccessRows?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_KT2bFIMTEeetafVnIQX_4g" comment="" name="ProcessControl_FailedRows" prompt="ProcessControl_FailedRows?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_KT2bFYMTEeetafVnIQX_4g" comment="" name="ProcessControl_ProcessStatus" prompt="ProcessControl_ProcessStatus?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT2bFoMTEeetafVnIQX_4g" comment="" name="ProcessControl_StartProcess" prompt="ProcessControl_StartProcess?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_KT2bF4MTEeetafVnIQX_4g" comment="" name="ProcessControl_JobPID" prompt="ProcessControl_JobPID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KT2bGIMTEeetafVnIQX_4g" comment="" name="ProcessControl_RelatedStagingTable" prompt="ProcessControl_RelatedStagingTable?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KT2bGYMTEeetafVnIQX_4g" comment="" name="ProcessControl_ProcessGroupID" prompt="ProcessControl_ProcessGroupID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT2bGoMTEeetafVnIQX_4g" comment="" name="ProcessControl_LastProcessOfGroup" prompt="ProcessControl_LastProcessOfGroup?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_KT2bG4MTEeetafVnIQX_4g" comment="" name="ProcessControl_FirstProcessOfGroup" prompt="ProcessControl_FirstProcessOfGroup?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_KT2bHIMTEeetafVnIQX_4g" comment="" name="ProcessControl_ProcessGroupStatus" prompt="ProcessControl_ProcessGroupStatus?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KT2bHYMTEeetafVnIQX_4g" comment="" name="ProcessControl_FilesToMove" prompt="ProcessControl_FilesToMove?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_KT2bHoMTEeetafVnIQX_4g" comment="" name="ProcessControl_FilesMoved" prompt="ProcessControl_FilesMoved?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_KT2bH4MTEeetafVnIQX_4g" comment="" name="ProcessControl_FilesFailedToMove" prompt="ProcessControl_FilesFailedToMove?" promptNeeded="false" type="id_Integer" value=""/>
+</talendfile:ContextType>

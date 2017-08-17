@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_kfzxIAywEeercpVxSq6myA" name="TalendStagingLoadFormat_Process" dataPackage="_9LTFYQyuEeercpVxSq6myA" Server="Localhost 127.0.0.1" FilePath="//fileserv2/CW1/Talend/Talend DB Config.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Process" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Process:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_9LTFYQyuEeercpVxSq6myA" name="default" dataManager="_kfzxIAywEeercpVxSq6myA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9LTFYgyuEeercpVxSq6myA" id="_jceMMAytEeercpVxSq6myA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9gAzLEeeMD5p3FIByNA" name="Name" label="Name" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9gQzLEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9ggzLEeeMD5p3FIByNA" name="Description" label="Description" length="63" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9gwzLEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9hAzLEeeMD5p3FIByNA" name="Job_Name" label="Job_Name" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9hQzLEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9hgzLEeeMD5p3FIByNA" name="Related_Stage_Table" label="Related_Stage_Table" length="38" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9hwzLEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9iAzLEeeMD5p3FIByNA" name="Sequence" label="Sequence" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9iQzLEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9igzLEeeMD5p3FIByNA" name="Process_Group" label="Process_Group" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9iwzLEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_StS9jAzLEeeMD5p3FIByNA" name="File_Output_Group" label="File_Output_Group" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_StS9jQzLEeeMD5p3FIByNA"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

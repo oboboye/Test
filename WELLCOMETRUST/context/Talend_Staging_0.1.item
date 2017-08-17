@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KUTHAIMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KUTHAYMTEeetafVnIQX_4g" comment="" name="Talend_Staging_Database" prompt="Talend_Staging_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUTHAoMTEeetafVnIQX_4g" comment="" name="Talend_Staging_Schema" prompt="Talend_Staging_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUTHA4MTEeetafVnIQX_4g" comment="" name="Talend_Staging_Login" prompt="Talend_Staging_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUTHBIMTEeetafVnIQX_4g" comment="" name="Talend_Staging_AdditionalParams" prompt="Talend_Staging_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUTHBYMTEeetafVnIQX_4g" comment="" name="Talend_Staging_Port" prompt="Talend_Staging_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUTHBoMTEeetafVnIQX_4g" comment="" name="Talend_Staging_Server" prompt="Talend_Staging_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUTHB4MTEeetafVnIQX_4g" comment="" name="Talend_Staging_Password" prompt="Talend_Staging_Password?" promptNeeded="false" type="id_Password" value=""/>
+</talendfile:ContextType>

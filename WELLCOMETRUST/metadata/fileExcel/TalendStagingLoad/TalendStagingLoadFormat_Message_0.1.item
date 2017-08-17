@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_vkeQEAy-EeercpVxSq6myA" name="TalendStagingLoadFormat_Message" dataPackage="_9LTFYQyuEeercpVxSq6myA" Server="Localhost 127.0.0.1" FilePath="//fileserv2/CW1/Talend/Talend DB Config.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Message" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Message:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_9LTFYQyuEeercpVxSq6myA" name="default" dataManager="_vkeQEAy-EeercpVxSq6myA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_9LTFYgyuEeercpVxSq6myA" id="_jceMMAytEeercpVxSq6myA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98kAzKEeeMD5p3FIByNA" name="Name" label="Name" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98kQzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98kgzKEeeMD5p3FIByNA" name="Message" label="Message" length="57" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98kwzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98lAzKEeeMD5p3FIByNA" name="Email_Group" label="Email_Group" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98lQzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98lgzKEeeMD5p3FIByNA" name="Status" label="Status" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98lwzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98mAzKEeeMD5p3FIByNA" name="Subject" label="Subject" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98mQzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98mgzKEeeMD5p3FIByNA" name="Attach_Original_File" label="Attach_Original_File" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98mwzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__O98nAzKEeeMD5p3FIByNA" name="Attach_Report" label="Attach_Report" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="__O98nQzKEeeMD5p3FIByNA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XYjHQB6IEee2XMZpidxlDQ" name="Attach_Output_File" label="Attach_Output_File" length="1" talendType="id_Integer"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

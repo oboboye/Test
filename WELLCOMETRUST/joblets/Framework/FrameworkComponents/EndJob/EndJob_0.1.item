@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/6.1.1/studio/workspace/Richard/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_NWUu0EKWEeaTGMc8oIRLZg" name="DQTechnical"/>
+      <routinesParameter id="_NBWkYEKWEeaTGMc8oIRLZg" name="DataOperation"/>
+      <routinesParameter id="_NTCxUEKWEeaTGMc8oIRLZg" name="DataQualityDependencies"/>
+      <routinesParameter id="_NRjjkEKWEeaTGMc8oIRLZg" name="DataQuality"/>
+      <routinesParameter id="_NUrwEEKWEeaTGMc8oIRLZg" name="DqStringHandling"/>
+      <routinesParameter id="_NDQB0EKWEeaTGMc8oIRLZg" name="Mathematical"/>
+      <routinesParameter id="_NFL7gEKWEeaTGMc8oIRLZg" name="Numeric"/>
+      <routinesParameter id="_NHRmMEKWEeaTGMc8oIRLZg" name="Relational"/>
+      <routinesParameter id="_M68aYEKWEeaTGMc8oIRLZg" name="SQLike"/>
+      <routinesParameter id="_NJDu4EKWEeaTGMc8oIRLZg" name="StringHandling"/>
+      <routinesParameter id="_NLJZkEKWEeaTGMc8oIRLZg" name="TalendDataGenerator"/>
+      <routinesParameter id="_NN06IEKWEeaTGMc8oIRLZg" name="TalendDate"/>
+      <routinesParameter id="_NPnp4EKWEeaTGMc8oIRLZg" name="TalendString"/>
+      <routinesParameter id="_4hyEAGrFEeavHP2vEAlcVw" name="AllportCargoUtils"/>
+    </parameters>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;****&quot;+jobName + &quot; ended at &quot; + routines.TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;)+&quot;****&quot; );"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="Job End Sys Out Log"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_1"/>
+    </node>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="0" input="true" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

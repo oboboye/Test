@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KTDw4IMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KTDw4YMTEeetafVnIQX_4g" comment="" name="BatchControl_BatchID" prompt="BatchControl_BatchID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KTDw4oMTEeetafVnIQX_4g" comment="" name="BatchControl_RootPID" prompt="BatchControl_RootPID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw44MTEeetafVnIQX_4g" comment="" name="BatchControl_StartBatch" prompt="BatchControl_StartBatch?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_KTDw5IMTEeetafVnIQX_4g" comment="" name="BatchControl_FileName" prompt="BatchControl_FileName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw5YMTEeetafVnIQX_4g" comment="" name="BatchControl_BatchStatus" prompt="BatchControl_BatchStatus?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KTDw5oMTEeetafVnIQX_4g" comment="" name="BatchControl_CatalogueID" prompt="BatchControl_CatalogueID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KTDw54MTEeetafVnIQX_4g" comment="" name="BatchControl_BatchRepairedID" prompt="BatchControl_BatchRepairedID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KTDw6IMTEeetafVnIQX_4g" comment="" name="BatchControl_DataSourceErrorFilePath" prompt="BatchControl_DataSourceErrorFilePath?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw6YMTEeetafVnIQX_4g" comment="" name="BatchControl_DataSourceArchiveFilePath" prompt="BatchControl_DataSourceArchiveFilePath?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw6oMTEeetafVnIQX_4g" comment="" name="BatchControl_DataSourceInputFilePath" prompt="BatchControl_DataSourceInputFilePath?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw64MTEeetafVnIQX_4g" comment="" name="BatchControl_PartialLoad" prompt="BatchControl_PartialLoad?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_KTDw7IMTEeetafVnIQX_4g" comment="" name="BatchControl_ReRun" prompt="BatchControl_ReRun?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_KTDw7YMTEeetafVnIQX_4g" comment="" name="BatchControl_EmailGroupID" prompt="BatchControl_EmailGroupID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KTDw7oMTEeetafVnIQX_4g" comment="" name="BatchControl_LookupTableID" prompt="BatchControl_LookupTableID?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_KTDw74MTEeetafVnIQX_4g" comment="" name="BatchControl_ReportJob" prompt="BatchControl_ReportJob?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw8IMTEeetafVnIQX_4g" comment="" name="BatchControl_CatalogueName" prompt="BatchControl_CatalogueName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTDw8YMTEeetafVnIQX_4g" comment="" name="BatchControl_ReportFileName" prompt="BatchControl_ReportFileName?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

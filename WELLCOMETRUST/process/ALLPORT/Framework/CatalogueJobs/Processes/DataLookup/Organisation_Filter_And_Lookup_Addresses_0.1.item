@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="BatchControl_BatchID" prompt="BatchControl_BatchID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_BatchRepairedID" prompt="BatchControl_BatchRepairedID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_BatchStatus" prompt="BatchControl_BatchStatus?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_CatalogueID" prompt="BatchControl_CatalogueID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceArchiveFilePath" prompt="BatchControl_DataSourceArchiveFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceErrorFilePath" prompt="BatchControl_DataSourceErrorFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceInputFilePath" prompt="BatchControl_DataSourceInputFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_FileName" prompt="BatchControl_FileName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_PartialLoad" prompt="BatchControl_PartialLoad?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_RootPID" prompt="BatchControl_RootPID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_StartBatch" prompt="BatchControl_StartBatch?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="FileSystem_WorkingFolder" prompt="FileSystem_WorkingFolder?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value="C:/ACS/Working"/>
+    <contextParameter comment="" name="ProcessControl_FailedRows" prompt="ProcessControl_FailedRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_JobPID" prompt="ProcessControl_JobPID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessID" prompt="ProcessControl_ProcessID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessStatus" prompt="ProcessControl_ProcessStatus?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_StartProcess" prompt="ProcessControl_StartProcess?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_SuccessRows" prompt="ProcessControl_SuccessRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_TotalRows" prompt="ProcessControl_TotalRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Talend_Staging_AdditionalParams" prompt="Talend_Staging_AdditionalParams?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Database" prompt="Talend_Staging_Database?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Login" prompt="Talend_Staging_Login?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Password" prompt="Talend_Staging_Password?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Port" prompt="Talend_Staging_Port?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Schema" prompt="Talend_Staging_Schema?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Server" prompt="Talend_Staging_Server?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="FileSystem_ReportFilePath" prompt="FileSystem_ReportFilePath?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_RelatedStagingTable" prompt="ProcessControl_RelatedStagingTable?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Logs_On" prompt="Talend_AMC_Logs_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Schema" prompt="Talend_AMC_Schema?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_ReRun" prompt="BatchControl_ReRun?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_EmailGroupID" prompt="BatchControl_EmailGroupID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_CompleteWithErrors" prompt="Status_CompleteWithErrors?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Failed" prompt="Status_Failed?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Complete" prompt="Status_Complete?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_PartialLoadFail" prompt="Status_PartialLoadFail?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Running" prompt="Status_Running?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessGroupID" prompt="ProcessControl_ProcessGroupID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_LastProcessOfGroup" prompt="ProcessControl_LastProcessOfGroup?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_FirstProcessOfGroup" prompt="ProcessControl_FirstProcessOfGroup?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessGroupStatus" prompt="ProcessControl_ProcessGroupStatus?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesToMove" prompt="ProcessControl_FilesToMove?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesMoved" prompt="ProcessControl_FilesMoved?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesFailedToMove" prompt="ProcessControl_FilesFailedToMove?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Status_FileMoveFail" prompt="Status_FileMoveFail?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_LookupTableID" prompt="BatchControl_LookupTableID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_ReportJob" prompt="BatchControl_ReportJob?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_SenderID" prompt="CargoWiseOneConfig_SenderID?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterServiceEndpoint" prompt="CargoWiseOneConfig_EAdapterServiceEndpoint?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_RecipientID" prompt="CargoWiseOneConfig_RecipientID?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="FileSystem_RootFileDropFolder" prompt="FileSystem_RootFileDropFolder?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_CatalogueName" prompt="BatchControl_CatalogueName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Debug_DebuggingOn" prompt="Debug_DebuggingOn?" promptNeeded="false" repositoryContextId="_sCHKsOhuEeaXmqAh0zeTxQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_OutputFolder" prompt="CargoWiseOneConfig_OutputFolder?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_ReportFileName" prompt="BatchControl_ReportFileName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_InputFolder" prompt="CargoWiseOneConfig_InputFolder?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Flows_On" prompt="Talend_AMC_Flows_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Stats_On" prompt="Talend_AMC_Stats_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_NativeServiceEndpoint" prompt="CargoWiseOneConfig_NativeServiceEndpoint?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterPassword" prompt="CargoWiseOneConfig_EAdapterPassword?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterUsername" prompt="CargoWiseOneConfig_EAdapterUsername?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;,&quot;-Djavax.net.ssl.trustStore=C:\\\&quot;ProgramFiles\&quot;\\java\\jdk1.8.0_91\\jre\\lib\\security\\cacerts&quot;,&quot;-Djavax.net.ssl.trustStorePassword=changeit&quot;,&quot;-Djavax.net.debug=SSL&quot;]}" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextHost&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextPort&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextDbName&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextAdditionalParams&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextUser&quot;,rootPid,pid)"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="H3dPaI+z82DZMG+nSMylCTAOIpvF93163DlYfsTyanFfPv1zHabbNxAzqKLT4IQJdkwg8STkuezl0lEMFAojWRexu/vfgtM0YVs+7dUgwubICbiDLRr8SMb6meeE+x1pIJVgjkPQgDs="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;Context_Variables&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextEnvironment&quot;,rootPid,pid)"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.1.1/cmdline/studio/commandline-workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_NWUu0EKWEeaTGMc8oIRLZg" name="DQTechnical"/>
+    <routinesParameter id="_NBWkYEKWEeaTGMc8oIRLZg" name="DataOperation"/>
+    <routinesParameter id="_NTCxUEKWEeaTGMc8oIRLZg" name="DataQualityDependencies"/>
+    <routinesParameter id="_NRjjkEKWEeaTGMc8oIRLZg" name="DataQuality"/>
+    <routinesParameter id="_NUrwEEKWEeaTGMc8oIRLZg" name="DqStringHandling"/>
+    <routinesParameter id="_NDQB0EKWEeaTGMc8oIRLZg" name="Mathematical"/>
+    <routinesParameter id="_NFL7gEKWEeaTGMc8oIRLZg" name="Numeric"/>
+    <routinesParameter id="_NHRmMEKWEeaTGMc8oIRLZg" name="Relational"/>
+    <routinesParameter id="_M68aYEKWEeaTGMc8oIRLZg" name="SQLike"/>
+    <routinesParameter id="_NJDu4EKWEeaTGMc8oIRLZg" name="StringHandling"/>
+    <routinesParameter id="_NLJZkEKWEeaTGMc8oIRLZg" name="TalendDataGenerator"/>
+    <routinesParameter id="_NN06IEKWEeaTGMc8oIRLZg" name="TalendDate"/>
+    <routinesParameter id="_NPnp4EKWEeaTGMc8oIRLZg" name="TalendString"/>
+    <routinesParameter id="_4hyEAGrFEeavHP2vEAlcVw" name="AllportCargoUtils"/>
+    <routinesParameter id="_FzBjIG9REeaBmeWwKyR_Tg" name="EncryptionTools"/>
+    <routinesParameter id="_ETCaQG9VEeaBmeWwKyR_Tg" name="ImplicitContextLoadUtils"/>
+    <routinesParameter id="_G8FU8oDAEeaaW_qbfGyeTg" name="DataMasking"/>
+    <routinesParameter id="_IVY4kIo0Eeal2qElelYRlA" name="LookupUtils"/>
+  </parameters>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="StartProcess" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StartProcess_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartProcess"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="EndProcess" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StopProcess_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="EndProcess"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Debugging Code&#xA;if(context.Debug_DebuggingOn){&#xA;&#xA;&#x9;//context.BatchControl_CatalogueID = 17L;&#xA;&#x9;//context.BatchControl_BatchID = 1000L;&#xA;&#x9;//context.ProcessControl_ProcessID = 41L;&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ - organisation_require_loading" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;organisation_require_loading&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;organisation_require_loading.id,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.filerownum,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.catalogue_id,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.batch_id,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_FullName,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgAddressCollection_OrgAddress_Code,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgAddressCollection_OrgAddress_Address1,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgAddressCollection_OrgAddress_Address2,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgAddressCollection_OrgAddress_City,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgAddressCollection_OrgAddress_PostCode,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2,&#xD;&#xA;&#x9;&#x9;organisation_require_loading.OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2&#xD;&#xA;FROM&#x9;organisation_require_loading&#xD;&#xA;WHERE batch_id  = &quot;+context.BatchControl_BatchID&#xD;&#xA;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="filerownum"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="catalogue_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_FullName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_PostCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="organisation_require_loading" name="tMSSqlInput_2">
+      <column comment="" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tREST_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://maps.googleapis.com/maps/api/geocode/json?address=&quot;+java.net.URLEncoder.encode(((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Address1&quot;)), &quot;UTF-8&quot;)+&quot;&amp;key=AIzaSyCXBy1oym_t0G1u4fYAmeRkehFkKentxUg&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="MEMO" name="BODY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tREST_1">
+      <column defaultValue="" key="false" length="0" name="Body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="Body"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;/&quot;" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="QUERY" value="&quot;./results/formatted_address&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_json"/>
+      <elementValue elementRef="QUERY" value="&quot;/&quot;"/>
+      <elementValue elementRef="NODECHECK" value="true"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="QUERY" value="&quot;./status&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="QUERY" value="&quot;./results/formatted_address&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_json"/>
+      <elementValue elementRef="QUERY" value="&quot;/&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="QUERY" value="&quot;./status&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="full_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="full_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_0B3UwLumEeawi6FvKDUsSg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="AddressFound">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="full_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata comment="" connector="FLOW" label="organisation_address_lookup" name="AddressNotFound">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Address_Found" expression="row5.status != null &amp;&amp; row5.status.compareToIgnoreCase(&quot;ZERO_RESULTS&quot;)!=0 " type="id_Boolean"/>
+        <mapperTableEntries name="ConcatenatedAddresses" expression="&quot;NO ADD FND:&quot;+routines.AllportCargoUtils.convertNullStringToEmptyString(((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Address1&quot;)))+&quot; &quot;+routines.AllportCargoUtils.convertNullStringToEmptyString(((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Address2&quot;))) " type="id_String"/>
+        <mapperTableEntries name="AddressArray" expression="routines.AllportCargoUtils.splitStringIntoSizeChunksToNearestSeparator(Var.ConcatenatedAddresses, &quot; &quot;, 50, 2) " type="id_Object"/>
+        <mapperTableEntries name="Address1" expression="((String[])Var.AddressArray)[0] " type="id_String"/>
+        <mapperTableEntries name="Address2" expression="((String[])Var.AddressArray)[1] " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="AddressFound" expressionFilter="Var.Address_Found " activateExpressionFilter="true" activateCondensedTool="true">
+        <mapperTableEntries name="formatted_address" expression="row5.formatted_address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="full_json" expression="row5.full_json " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="AddressNotFound" expressionFilter="!Var.Address_Found " activateExpressionFilter="true" activateCondensedTool="true" id="_nEJIcGXjEeaaPNoSHQD7OQ - organisation_address_lookup">
+        <mapperTableEntries name="id" expression="((Long)globalMap.get(&quot;row1.id&quot;))" type="id_Long"/>
+        <mapperTableEntries name="filerownum" expression="((Long)globalMap.get(&quot;row1.filerownum&quot;))" type="id_Long"/>
+        <mapperTableEntries name="catalogue_id" expression="((Long)globalMap.get(&quot;row1.catalogue_id&quot;))" type="id_Long"/>
+        <mapperTableEntries name="batch_id" expression="((Long)globalMap.get(&quot;row1.batch_id&quot;))" type="id_Long"/>
+        <mapperTableEntries name="OrgHeader_FullName" expression="((String)globalMap.get(&quot;row1.OrgHeader_FullName&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_Code" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Code&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" expression="Var.Address1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" expression="Var.Address2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_City" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_City&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_PostCode&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2&quot;))" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="formatted_address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="full_json" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;organisation_address_lookup&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="id" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ - organisation_address_lookup" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="filerownum"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="catalogue_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_FullName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_City"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_PostCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="organisation_address_lookup" name="tMSSqlOutput_2">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="organisation_address_lookup" name="REJECT">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_json"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="full_json" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="full_json"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/results/address_components&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;/results/address_components/&quot;" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="long_name"/>
+      <elementValue elementRef="QUERY" value="&quot;./long_name&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="short_name"/>
+      <elementValue elementRef="QUERY" value="&quot;./short_name&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="QUERY" value="&quot;./types&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="long_name"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="short_name"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_2">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="long_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="short_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="long_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="short_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="long_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="short_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="formatted_address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="long_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="short_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_0B3UwLumEeawi6FvKDUsSg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata comment="" connector="FLOW" label="organisation_address_lookup" name="out1">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Is_Formatted_Address_Supplied" expression="row6.formatted_address!=null &amp;&amp; row6.formatted_address.trim().compareToIgnoreCase(&quot;&quot;)!=0 " type="id_Boolean"/>
+        <mapperTableEntries name="Row_Count" expression="Var.Row_Count+1 " type="id_Integer"/>
+        <mapperTableEntries name="Long_Name" expression="row6.long_name.replaceAll(&quot;\\[&quot;, &quot;&quot;).replaceAll(&quot;\\]&quot;, &quot;&quot;).replaceAll(&quot;\&quot;&quot;, &quot;&quot;) " type="id_String"/>
+        <mapperTableEntries name="Short_Name" expression="row6.short_name.replaceAll(&quot;\\[&quot;, &quot;&quot;).replaceAll(&quot;\\]&quot;, &quot;&quot;).replaceAll(&quot;\&quot;&quot;, &quot;&quot;) " type="id_String"/>
+        <mapperTableEntries name="Formatted_Address" expression="Var.Row_Count == 1 ? routines.AllportCargoUtils.replaceExactMatch(row6.formatted_address, Var.Short_Name, Var.Long_Name) : routines.AllportCargoUtils.replaceExactMatch(Var.Formatted_Address, Var.Short_Name, Var.Long_Name) " type="id_String"/>
+        <mapperTableEntries name="Type" expression="row6.type.replaceAll(&quot;\\[&quot;, &quot;&quot;).replaceAll(&quot;\\]&quot;, &quot;&quot;).replaceAll(&quot;\&quot;&quot;, &quot;&quot;) " type="id_String"/>
+        <mapperTableEntries name="Is_PostCode" expression="Var.Type.indexOf(&quot;postal_code&quot;)>-1 " type="id_Boolean"/>
+        <mapperTableEntries name="PostCode" expression="Var.Is_PostCode ?  Var.Long_Name : Var.PostCode" type="id_String"/>
+        <mapperTableEntries name="Is_PostTown" expression="Var.Type.indexOf(&quot;postal_town&quot;)>-1 " type="id_Boolean"/>
+        <mapperTableEntries name="City_Found" expression="routines.AllportCargoUtils.findValueInReplaceValue(((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_City&quot;)), Var.Long_Name) ? Var.Long_Name : Var.City_Found " type="id_String"/>
+        <mapperTableEntries name="City_Best_Guess" expression="Var.Is_PostTown ?  Var.Long_Name : Var.City_Best_Guess " type="id_String"/>
+        <mapperTableEntries name="Address" expression="Var.Is_Formatted_Address_Supplied ? Var.Formatted_Address : (&quot;NO ADD FND:&quot; + routines.AllportCargoUtils.convertNullStringToEmptyString(((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Address1&quot;))) + &quot; &quot; + routines.AllportCargoUtils.convertNullStringToEmptyString(((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Address2&quot;)))).trim() " type="id_String"/>
+        <mapperTableEntries name="AddressArray" expression="routines.AllportCargoUtils.splitStringIntoSizeChunksToNearestSeparator(Var.Address, &quot;,&quot;, 50, 2) " type="id_Object"/>
+        <mapperTableEntries name="Address1" expression="routines.AllportCargoUtils.convertNullStringToEmptyString(((String[])Var.AddressArray)[0]) " type="id_String"/>
+        <mapperTableEntries name="Address2" expression="routines.AllportCargoUtils.convertNullStringToEmptyString(((String[])Var.AddressArray)[1]) " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1" activateCondensedTool="true" id="_nEJIcGXjEeaaPNoSHQD7OQ - organisation_address_lookup">
+        <mapperTableEntries name="id" expression="((Long)globalMap.get(&quot;row1.id&quot;))" type="id_Long"/>
+        <mapperTableEntries name="filerownum" expression="((Long)globalMap.get(&quot;row1.filerownum&quot;))" type="id_Long"/>
+        <mapperTableEntries name="catalogue_id" expression="((Long)globalMap.get(&quot;row1.catalogue_id&quot;))" type="id_Long"/>
+        <mapperTableEntries name="batch_id" expression="((Long)globalMap.get(&quot;row1.batch_id&quot;))" type="id_Long"/>
+        <mapperTableEntries name="OrgHeader_FullName" expression="((String)globalMap.get(&quot;row1.OrgHeader_FullName&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_Code" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgAddressCollection_OrgAddress_Code&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" expression="Var.Address1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" expression="Var.Address2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_City" expression="Var.City_Found!=null ? Var.City_Found : Var.City_Best_Guess " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" expression="Var.PostCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2&quot;))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" expression="((String)globalMap.get(&quot;row1.OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2&quot;))" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="formatted_address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="long_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="short_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="batch_id"/>
+      <elementValue elementRef="INPUT_COLUMN" value="batch_id"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="id"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="id"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="filerownum"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="filerownum"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="catalogue_id"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="catalogue_id"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_FullName"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_FullName"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Code"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Code"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address1"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address1"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address2"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_City"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_City"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_PostCode"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_PostCode"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="organisation_address_lookup" name="tAggregateRow_1">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;organisation_address_lookup&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="id" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ - organisation_address_lookup" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="filerownum"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="catalogue_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_FullName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_Address2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_City"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgAddressCollection_OrgAddress_PostCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="organisation_address_lookup" name="tMSSqlOutput_1">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="organisation_address_lookup" name="REJECT">
+      <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="filerownum" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="batch_id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_FullName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgAddressCollection_OrgAddress_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_Address2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="OrgHeader_OrgAddressCollection_OrgAddress_PostCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CustomsRegNo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="OrgHeader_OrgCusCodeCollection_OrgCusCode_CodeType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.ProcessControl_TotalRows = ((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;));&#xA;&#xA;&#xA;&#xA;//Logic for deciding on status of process&#xA;&#xA;context.ProcessControl_ProcessStatus = context.Status_Complete;&#xA;/*&#xA;if(context.ProcessControl_TotalRows.intValue()==context.ProcessControl_SuccessRows.intValue()){&#xA;&#xA;&#x9;context.ProcessControl_ProcessStatus = context.Status_Complete;&#xA;&#xA;}else if(context.ProcessControl_FailedRows.intValue()>0 &amp;&amp; ((context.ProcessControl_FailedRows.intValue()+context.ProcessControl_SuccessRows.intValue())==context.ProcessControl_TotalRows.intValue()) &amp;&amp; context.BatchControl_PartialLoad){&#xA;&#xA;&#x9;if(context.ProcessControl_SuccessRows.intValue()!=0){&#xA;&#x9;&#xA;&#x9;&#x9;context.ProcessControl_ProcessStatus = context.Status_CompleteWithErrors;&#xA;&#x9;&#xA;&#x9;}else{&#xA;&#x9;&#xA;&#x9;&#x9;context.ProcessControl_ProcessStatus = context.Status_Failed;&#xA;&#x9;&#xA;&#x9;}&#xA;&#xA;}else if(context.ProcessControl_FailedRows.intValue()>0 &amp;&amp; ((context.ProcessControl_FailedRows.intValue()+context.ProcessControl_SuccessRows.intValue())==context.ProcessControl_TotalRows.intValue()) &amp;&amp; !context.BatchControl_PartialLoad){&#xA;&#xA;&#x9;context.ProcessControl_ProcessStatus = context.Status_PartialLoadFail;&#xA;&#xA;}else{&#xA;&#xA;&#x9;context.ProcessControl_ProcessStatus = context.Status_Failed;&#xA;&#xA;}&#xA;&#xA;*/&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.ProcessControl_FailedRows = (context.ProcessControl_FailedRows!=null ? context.ProcessControl_FailedRows+1 : 1); &#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Row Count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1792" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.ProcessControl_SuccessRows = (context.ProcessControl_SuccessRows!=null ? context.ProcessControl_SuccessRows+1 : 1); "/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Row Count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="StopProcess_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnSubjobOk (TRIGGER_OUTPUT_1)" lineStyle="1" metaname="StartProcess_1" offsetLabelX="0" offsetLabelY="0" source="StartProcess_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tMSSqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tREST_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tExtractJSONFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="AddressFound" lineStyle="0" metaname="AddressFound" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="AddressFound" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="AddressNotFound" lineStyle="0" metaname="AddressNotFound" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tMSSqlOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="AddressNotFound" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tMSSqlOutput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlOutput_2" target="tJava_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tMSSqlOutput_2_NB_LINE_INSERTED&quot;))>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tExtractJSONFields_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="short_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMSSqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tMSSqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlOutput_1" target="tJava_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;))>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StartProcess_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StopProcess_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

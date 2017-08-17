@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_dDaDILFtEeaYv9ql8z204g" name="RateOfExchange" dataPackage="_dDaDIbFtEeaYv9ql8z204g" Server="Localhost 127.0.0.1" FilePath="//Fileserv2/cw1/Talend/DEV_Working_Location/SupplierStatement/UXB Currency Exchange Rate Report - Mon (2016-11-21 11-04-12).CSV" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_dDaDIbFtEeaYv9ql8z204g" name="default" dataManager="_dDaDILFtEeaYv9ql8z204g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dDaDIrFtEeaYv9ql8z204g" id="__2hPALFoEeaYv9ql8z204g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDI7FtEeaYv9ql8z204g" label="code" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDJLFtEeaYv9ql8z204g" label="description" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDJbFtEeaYv9ql8z204g" label="sell_start_date" length="-1" talendType="id_Date" pattern="&quot;dd-MMM-yy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDJrFtEeaYv9ql8z204g" label="sell_expiry_date" length="-1" talendType="id_Date" pattern="&quot;dd-MMM-yy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDJ7FtEeaYv9ql8z204g" label="sell_rate" length="-1" precision="4" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDKLFtEeaYv9ql8z204g" label="buy_start_date" length="-1" talendType="id_Date" pattern="&quot;dd-MMM-yy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDKbFtEeaYv9ql8z204g" label="buy_expiry_date" length="-1" talendType="id_Date" pattern="&quot;dd-MMM-yy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dDaDKrFtEeaYv9ql8z204g" label="buy_rate" length="-1" precision="4" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

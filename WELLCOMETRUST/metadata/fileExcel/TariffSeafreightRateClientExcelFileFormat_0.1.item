@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_Z8kCsAi8EeeIQeiM-lxHFQ" name="TariffSeafreightRateClientExcelFileFormat" dataPackage="_Z8kCsQi8EeeIQeiM-lxHFQ" Server="Localhost 127.0.0.1" FilePath="//fileserv2/CW1/Talend/DEV_Working_Location/Tariff/SeafreightRateClient/Landing/Tariff_Seafreight_Client_Rate_2017May17.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Rates" firstColumn="2" lastColumn="25" thousandSeparator="','" decimalSeparator="'.'" advancedSpearator="true" sheetList="Rates:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+    <sheetColumns>T</sheetColumns>
+    <sheetColumns>U</sheetColumns>
+    <sheetColumns>V</sheetColumns>
+    <sheetColumns>W</sheetColumns>
+    <sheetColumns>X</sheetColumns>
+    <sheetColumns>Y</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Z8kCsQi8EeeIQeiM-lxHFQ" name="default" dataManager="_Z8kCsAi8EeeIQeiM-lxHFQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Z8kCsgi8EeeIQeiM-lxHFQ" id="_1dViAAi6EeeIQeiM-lxHFQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCswi8EeeIQeiM-lxHFQ" label="RDM" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCtAi8EeeIQeiM-lxHFQ" label="Valid_From" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCtQi8EeeIQeiM-lxHFQ" label="Valid_To" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCtgi8EeeIQeiM-lxHFQ" label="Client_Code_Org_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCtwi8EeeIQeiM-lxHFQ" label="Client_Name" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCuAi8EeeIQeiM-lxHFQ" label="Origin_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCuQi8EeeIQeiM-lxHFQ" label="Origin_Location" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCugi8EeeIQeiM-lxHFQ" label="Destination_Code" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCuwi8EeeIQeiM-lxHFQ" label="Destination_Location" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCvAi8EeeIQeiM-lxHFQ" label="Service_Level_Tariff_Type" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCvQi8EeeIQeiM-lxHFQ" label="LCL_Terms" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCvwi8EeeIQeiM-lxHFQ" label="LCL_Client_Rate" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCvgi8EeeIQeiM-lxHFQ" label="FCL_Terms" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ptvLYDsPEee-BbJCTOmFog" name="Carrier_TransportProvider" label="Carrier_TransportProvider" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCwAi8EeeIQeiM-lxHFQ" label="RateValue20" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCwQi8EeeIQeiM-lxHFQ" label="RateValue40" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCwgi8EeeIQeiM-lxHFQ" label="RateValueHC" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCwwi8EeeIQeiM-lxHFQ" label="Uplift_Rate_20GP" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCxAi8EeeIQeiM-lxHFQ" label="Uplift_Rate_40GP" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCxQi8EeeIQeiM-lxHFQ" label="Uplift_Rate_40HC" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCxgi8EeeIQeiM-lxHFQ" label="Min_Sell_Rate_20GP" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCxwi8EeeIQeiM-lxHFQ" label="Min_Sell_Rate_40GP" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCyAi8EeeIQeiM-lxHFQ" label="Min_Sell_Rate_40HC" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z8kCyQi8EeeIQeiM-lxHFQ" label="Comments_Internal_Note" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_KUbp4IMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_KUbp4YMTEeetafVnIQX_4g" comment="" name="CurlCommand" prompt="CurlCommand?" promptNeeded="false" type="id_String" value="C:/Temp/curl-7.53.1/src/curl.exe"/>
+    <contextParameter xmi:id="_KUbp4oMTEeetafVnIQX_4g" comment="" name="NexusUserName" prompt="NexusUserName?" promptNeeded="false" type="id_String" value="admin:"/>
+    <contextParameter xmi:id="_KUbp44MTEeetafVnIQX_4g" comment="" name="NexusPassword" prompt="NexusPassword?" promptNeeded="false" type="id_String" value="Talend123"/>
+    <contextParameter xmi:id="_KUbp5IMTEeetafVnIQX_4g" comment="" name="NexusURL" prompt="NexusURL?" promptNeeded="false" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/repoTest/content"/>
+    <contextParameter xmi:id="_KUbp5YMTEeetafVnIQX_4g" comment="" name="UserNamePrefix" prompt="UserNamePrefix?" promptNeeded="false" type="id_String" value=" -u "/>
+    <contextParameter xmi:id="_KUbp5oMTEeetafVnIQX_4g" comment="" name="UploadFileCommand" prompt="UploadFileCommand?" promptNeeded="false" type="id_String" value=" --upload-file "/>
+    <contextParameter xmi:id="_KUbp54MTEeetafVnIQX_4g" comment="" name="File" prompt="File?" promptNeeded="false" type="id_String" value=" C:/Temp/GetElastic_CheckClusterState-0.1.0-SNAPSHOT.zip "/>
+    <contextParameter xmi:id="_KUbp6IMTEeetafVnIQX_4g" comment="" name="Space" prompt="Space?" promptNeeded="false" type="id_String" value=" "/>
+    <contextParameter xmi:id="_KUbp6YMTEeetafVnIQX_4g" comment="" name="Date" prompt="Date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbp6oMTEeetafVnIQX_4g" comment="" name="DownLoadPrefix" prompt="DownLoadPrefix?" promptNeeded="false" type="id_String" value=" -o "/>
+    <contextParameter xmi:id="_KUbp64MTEeetafVnIQX_4g" comment="" name="GetCommand" prompt="GetCommand?" promptNeeded="false" type="id_String" value="--GET "/>
+    <contextParameter xmi:id="_KUbp7IMTEeetafVnIQX_4g" comment="" name="DownLoadFileLocation" prompt="DownLoadFileLocation?" promptNeeded="false" type="id_String" value=" \Temp\"/>
+    <contextParameter xmi:id="_KUbp7YMTEeetafVnIQX_4g" comment="" name="NexusURLDownload" prompt="NexusURLDownload?" promptNeeded="false" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/snapshots/content/"/>
+    <contextParameter xmi:id="_KUbp7oMTEeetafVnIQX_4g" comment="" name="Folder" prompt="Folder?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbp74MTEeetafVnIQX_4g" comment="" name="Version" prompt="Version?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbp8IMTEeetafVnIQX_4g" comment="" name="NexusUploadDestination" prompt="NexusUploadDestination?" promptNeeded="false" type="id_String" value="\\esb-deploy.allportltd.net\c$\Talend/6.2.1/tac/Artifact-Repository-Nexus-V2.11.3-01/sonatype-work/nexus/storage/repoTest"/>
+    <contextParameter xmi:id="_KUbp8YMTEeetafVnIQX_4g" comment="" name="FileDownLoadLocation" prompt="FileDownLoadLocation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbp8oMTEeetafVnIQX_4g" comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_KUbp84MTEeetafVnIQX_4g" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_KUbp9IMTEeetafVnIQX_4g" comment="" name="CurlCommand" prompt="CurlCommand?" promptNeeded="false" type="id_String" value="C:/Talend/Data/curl-7.53.1/src/curl.exe"/>
+    <contextParameter xmi:id="_KUbp9YMTEeetafVnIQX_4g" comment="" name="NexusUserName" prompt="NexusUserName?" promptNeeded="false" type="id_String" value="admin:"/>
+    <contextParameter xmi:id="_KUbp9oMTEeetafVnIQX_4g" comment="" name="NexusPassword" prompt="NexusPassword?" promptNeeded="false" type="id_String" value="Talend123"/>
+    <contextParameter xmi:id="_KUbp94MTEeetafVnIQX_4g" comment="" name="NexusURL" prompt="NexusURL?" promptNeeded="false" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/repoTest/content"/>
+    <contextParameter xmi:id="_KUbp-IMTEeetafVnIQX_4g" comment="" name="UserNamePrefix" prompt="UserNamePrefix?" promptNeeded="false" type="id_String" value=" -u "/>
+    <contextParameter xmi:id="_KUbp-YMTEeetafVnIQX_4g" comment="" name="UploadFileCommand" prompt="UploadFileCommand?" promptNeeded="false" type="id_String" value=" --upload-file "/>
+    <contextParameter xmi:id="_KUbp-oMTEeetafVnIQX_4g" comment="" name="File" prompt="File?" promptNeeded="false" type="id_String" value=" C:/Talend/Data/GetElastic_CheckClusterState-0.1.0-SNAPSHOT.zip"/>
+    <contextParameter xmi:id="_KUbp-4MTEeetafVnIQX_4g" comment="" name="Space" prompt="Space?" promptNeeded="false" type="id_String" value="   "/>
+    <contextParameter xmi:id="_KUbp_IMTEeetafVnIQX_4g" comment="" name="Date" prompt="Date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbp_YMTEeetafVnIQX_4g" comment="" name="DownLoadPrefix" prompt="DownLoadPrefix?" promptNeeded="false" type="id_String" value="-o "/>
+    <contextParameter xmi:id="_KUbp_oMTEeetafVnIQX_4g" comment="" name="GetCommand" prompt="GetCommand?" promptNeeded="false" type="id_String" value="--GET "/>
+    <contextParameter xmi:id="_KUbp_4MTEeetafVnIQX_4g" comment="" name="DownLoadFileLocation" prompt="DownLoadFileLocation?" promptNeeded="false" type="id_String" value=" \Talend\Data\"/>
+    <contextParameter xmi:id="_KUbqAIMTEeetafVnIQX_4g" comment="" name="NexusURLDownload" prompt="NexusURLDownload?" promptNeeded="false" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/snapshots/content"/>
+    <contextParameter xmi:id="_KUbqAYMTEeetafVnIQX_4g" comment="" name="Folder" prompt="Folder?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqAoMTEeetafVnIQX_4g" comment="" name="Version" prompt="Version?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqA4MTEeetafVnIQX_4g" comment="" name="NexusUploadDestination" prompt="NexusUploadDestination?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqBIMTEeetafVnIQX_4g" comment="" name="FileDownLoadLocation" prompt="FileDownLoadLocation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqBYMTEeetafVnIQX_4g" comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_KUbqBoMTEeetafVnIQX_4g" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_KUbqB4MTEeetafVnIQX_4g" comment="" name="CurlCommand" prompt="CurlCommand?" promptNeeded="false" type="id_String" value="C:/Talend/Data/curl-7.53.1/src/curl.exe"/>
+    <contextParameter xmi:id="_KUbqCIMTEeetafVnIQX_4g" comment="" name="NexusUserName" prompt="NexusUserName?" promptNeeded="false" type="id_String" value="admin:"/>
+    <contextParameter xmi:id="_KUbqCYMTEeetafVnIQX_4g" comment="" name="NexusPassword" prompt="NexusPassword?" promptNeeded="false" type="id_String" value="Talend123"/>
+    <contextParameter xmi:id="_KUbqCoMTEeetafVnIQX_4g" comment="" name="NexusURL" prompt="NexusURL?" promptNeeded="false" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/repoTest/content"/>
+    <contextParameter xmi:id="_KUbqC4MTEeetafVnIQX_4g" comment="" name="UserNamePrefix" prompt="UserNamePrefix?" promptNeeded="false" type="id_String" value=" -u "/>
+    <contextParameter xmi:id="_KUbqDIMTEeetafVnIQX_4g" comment="" name="UploadFileCommand" prompt="UploadFileCommand?" promptNeeded="false" type="id_String" value=" --upload-file"/>
+    <contextParameter xmi:id="_KUbqDYMTEeetafVnIQX_4g" comment="" name="File" prompt="File?" promptNeeded="false" type="id_String" value=" C:/Talend/Data/GetElastic_CheckClusterState-0.1.0-SNAPSHOT.zip "/>
+    <contextParameter xmi:id="_KUbqDoMTEeetafVnIQX_4g" comment="" name="Space" prompt="Space?" promptNeeded="false" type="id_String" value="   "/>
+    <contextParameter xmi:id="_KUbqD4MTEeetafVnIQX_4g" comment="" name="Date" prompt="Date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqEIMTEeetafVnIQX_4g" comment="" name="DownLoadPrefix" prompt="DownLoadPrefix?" promptNeeded="false" type="id_String" value="-o "/>
+    <contextParameter xmi:id="_KUbqEYMTEeetafVnIQX_4g" comment="" name="GetCommand" prompt="GetCommand?" promptNeeded="false" type="id_String" value="--GET "/>
+    <contextParameter xmi:id="_KUbqEoMTEeetafVnIQX_4g" comment="" name="DownLoadFileLocation" prompt="DownLoadFileLocation?" promptNeeded="false" type="id_String" value=" \Talend\Data\"/>
+    <contextParameter xmi:id="_KUbqE4MTEeetafVnIQX_4g" comment="" name="NexusURLDownload" prompt="NexusURLDownload?" promptNeeded="false" type="id_String" value="http://esb-deploy.allportltd.net:8081/nexus/service/local/repositories/snapshots/content"/>
+    <contextParameter xmi:id="_KUbqFIMTEeetafVnIQX_4g" comment="" name="Folder" prompt="Folder?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqFYMTEeetafVnIQX_4g" comment="" name="Version" prompt="Version?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqFoMTEeetafVnIQX_4g" comment="" name="NexusUploadDestination" prompt="NexusUploadDestination?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqF4MTEeetafVnIQX_4g" comment="" name="FileDownLoadLocation" prompt="FileDownLoadLocation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KUbqGIMTEeetafVnIQX_4g" comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

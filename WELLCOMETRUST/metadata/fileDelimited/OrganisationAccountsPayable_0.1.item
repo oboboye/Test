@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_2Ea6QbikEeawi6FvKDUsSg" name="OrganisationAccountsPayable" dataPackage="_2Ea6QrikEeawi6FvKDUsSg" Server="Localhost 127.0.0.1" FilePath="//Fileserv2/cw1/Talend/AP Profile Report (2016-11-12 10-19-09).CSV" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_2Ea6QrikEeawi6FvKDUsSg" name="default" dataManager="_2Ea6QbikEeawi6FvKDUsSg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_2Ea6Q7ikEeawi6FvKDUsSg" id="_BVKEILikEeawi6FvKDUsSg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6RLikEeawi6FvKDUsSg" label="code" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6RbikEeawi6FvKDUsSg" label="name" length="49" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6RrikEeawi6FvKDUsSg" label="port" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6R7ikEeawi6FvKDUsSg" label="group" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6SLikEeawi6FvKDUsSg" label="relation" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6SbikEeawi6FvKDUsSg" label="consol" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6SrikEeawi6FvKDUsSg" label="curr" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6S7ikEeawi6FvKDUsSg" label="bank_acc" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6TLikEeawi6FvKDUsSg" label="charge_code" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6TbikEeawi6FvKDUsSg" label="settlement_grp" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6TrikEeawi6FvKDUsSg" label="credit_limit" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6T7ikEeawi6FvKDUsSg" label="pmt_term" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6ULikEeawi6FvKDUsSg" label="pmt_days" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6UbikEeawi6FvKDUsSg" label="vat" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6UrikEeawi6FvKDUsSg" label="wht_tax" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6U7ikEeawi6FvKDUsSg" label="pay_inv" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6VLikEeawi6FvKDUsSg" label="quality_assured" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6VbikEeawi6FvKDUsSg" label="last_checked" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6VrikEeawi6FvKDUsSg" label="bank_name" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6V7ikEeawi6FvKDUsSg" label="account_name" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6WLikEeawi6FvKDUsSg" label="account_no" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6WbikEeawi6FvKDUsSg" label="bank_branch" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6WrikEeawi6FvKDUsSg" label="swift_no" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2Ea6W7ikEeawi6FvKDUsSg" label="auto_direct_debit" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

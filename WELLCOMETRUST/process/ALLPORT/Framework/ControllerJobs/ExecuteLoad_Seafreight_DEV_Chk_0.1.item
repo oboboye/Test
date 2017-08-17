@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="BatchControl_BatchID" prompt="BatchControl_BatchID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_BatchRepairedID" prompt="BatchControl_BatchRepairedID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_BatchStatus" prompt="BatchControl_BatchStatus?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_CatalogueID" prompt="BatchControl_CatalogueID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceArchiveFilePath" prompt="BatchControl_DataSourceArchiveFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceErrorFilePath" prompt="BatchControl_DataSourceErrorFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_DataSourceInputFilePath" prompt="BatchControl_DataSourceInputFilePath?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_FileName" prompt="BatchControl_FileName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_PartialLoad" prompt="BatchControl_PartialLoad?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_RootPID" prompt="BatchControl_RootPID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_StartBatch" prompt="BatchControl_StartBatch?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="FileSystem_WorkingFolder" prompt="FileSystem_WorkingFolder?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_FailedRows" prompt="ProcessControl_FailedRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_JobPID" prompt="ProcessControl_JobPID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessID" prompt="ProcessControl_ProcessID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessStatus" prompt="ProcessControl_ProcessStatus?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_StartProcess" prompt="ProcessControl_StartProcess?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_SuccessRows" prompt="ProcessControl_SuccessRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_TotalRows" prompt="ProcessControl_TotalRows?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Talend_Staging_AdditionalParams" prompt="Talend_Staging_AdditionalParams?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Database" prompt="Talend_Staging_Database?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Login" prompt="Talend_Staging_Login?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Password" prompt="Talend_Staging_Password?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Port" prompt="Talend_Staging_Port?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Schema" prompt="Talend_Staging_Schema?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_Staging_Server" prompt="Talend_Staging_Server?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    <contextParameter comment="" name="FileSystem_ReportFilePath" prompt="FileSystem_ReportFilePath?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessControl_RelatedStagingTable" prompt="ProcessControl_RelatedStagingTable?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_AdditionalParams" prompt="Talend_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Database" prompt="Talend_AMC_Database?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Login" prompt="Talend_AMC_Login?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Logs_On" prompt="Talend_AMC_Logs_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Talend_AMC_Password" prompt="Talend_AMC_Password?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Password" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Port" prompt="Talend_AMC_Port?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Schema" prompt="Talend_AMC_Schema?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Server" prompt="Talend_AMC_Server?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_ReRun" prompt="BatchControl_ReRun?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="BatchControl_EmailGroupID" prompt="BatchControl_EmailGroupID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_CompleteWithErrors" prompt="Status_CompleteWithErrors?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Failed" prompt="Status_Failed?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Complete" prompt="Status_Complete?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_PartialLoadFail" prompt="Status_PartialLoadFail?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="Status_Running" prompt="Status_Running?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessGroupID" prompt="ProcessControl_ProcessGroupID?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_LastProcessOfGroup" prompt="ProcessControl_LastProcessOfGroup?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_FirstProcessOfGroup" prompt="ProcessControl_FirstProcessOfGroup?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="ProcessControl_ProcessGroupStatus" prompt="ProcessControl_ProcessGroupStatus?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesToMove" prompt="ProcessControl_FilesToMove?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesMoved" prompt="ProcessControl_FilesMoved?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ProcessControl_FilesFailedToMove" prompt="ProcessControl_FilesFailedToMove?" promptNeeded="false" repositoryContextId="_O7cjwGhMEeaxpO541xvGHQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Status_FileMoveFail" prompt="Status_FileMoveFail?" promptNeeded="false" repositoryContextId="_I1WXUHmnEeasAJGVTiIG2w" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_LookupTableID" prompt="BatchControl_LookupTableID?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_Long" value=""/>
+    <contextParameter comment="" name="BatchControl_ReportJob" prompt="BatchControl_ReportJob?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_SenderID" prompt="CargoWiseOneConfig_SenderID?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterServiceEndpoint" prompt="CargoWiseOneConfig_EAdapterServiceEndpoint?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_RecipientID" prompt="CargoWiseOneConfig_RecipientID?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="FileSystem_RootFileDropFolder" prompt="FileSystem_RootFileDropFolder?" promptNeeded="false" repositoryContextId="_BjY_gGqnEeavHP2vEAlcVw" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_CatalogueName" prompt="BatchControl_CatalogueName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Debug_DebuggingOn" prompt="Debug_DebuggingOn?" promptNeeded="false" repositoryContextId="_sCHKsOhuEeaXmqAh0zeTxQ" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_OutputFolder" prompt="CargoWiseOneConfig_OutputFolder?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="BatchControl_ReportFileName" prompt="BatchControl_ReportFileName?" promptNeeded="false" repositoryContextId="_MnSHEGb_EeaxpO541xvGHQ" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_InputFolder" prompt="CargoWiseOneConfig_InputFolder?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Flows_On" prompt="Talend_AMC_Flows_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="Talend_AMC_Stats_On" prompt="Talend_AMC_Stats_On?" promptNeeded="false" repositoryContextId="__xtnQHAcEeaNOKmk4SmWog" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_NativeServiceEndpoint" prompt="CargoWiseOneConfig_NativeServiceEndpoint?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterPassword" prompt="CargoWiseOneConfig_EAdapterPassword?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_EAdapterUsername" prompt="CargoWiseOneConfig_EAdapterUsername?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_String" value=""/>
+    <contextParameter comment="" name="CargoWiseOneConfig_XmlBucketSize" prompt="CargoWiseOneConfig_XmlBucketSize?" promptNeeded="false" repositoryContextId="_m2TtgJHlEea4hLYF8fRu2A" type="id_Integer" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx4096M&quot;]}" show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="736" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextHost&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextPort&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextDbName&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextAdditionalParams&quot;,rootPid,pid)"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextUser&quot;,rootPid,pid)"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="H3dPaI+z82DZMG+nSMylCTAOIpvF93163DlYfsTyanFfPv1zHabbNxAzqKLT4IQJdkwg8STkuezl0lEMFAojWRexu/vfgtM0YVs+7dUgwubICbiDLRr8SMb6meeE+x1pIJVgjkPQgDs="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;Context_Variables&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="routines.ImplicitContextLoadUtils.getImplicitContextParameterValue(&quot;TalendContextEnvironment&quot;,rootPid,pid)"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/6.1.1/cmdline/studio/commandline-workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_NWUu0EKWEeaTGMc8oIRLZg" name="DQTechnical"/>
+    <routinesParameter id="_NBWkYEKWEeaTGMc8oIRLZg" name="DataOperation"/>
+    <routinesParameter id="_NTCxUEKWEeaTGMc8oIRLZg" name="DataQualityDependencies"/>
+    <routinesParameter id="_NRjjkEKWEeaTGMc8oIRLZg" name="DataQuality"/>
+    <routinesParameter id="_NUrwEEKWEeaTGMc8oIRLZg" name="DqStringHandling"/>
+    <routinesParameter id="_NDQB0EKWEeaTGMc8oIRLZg" name="Mathematical"/>
+    <routinesParameter id="_NFL7gEKWEeaTGMc8oIRLZg" name="Numeric"/>
+    <routinesParameter id="_NHRmMEKWEeaTGMc8oIRLZg" name="Relational"/>
+    <routinesParameter id="_M68aYEKWEeaTGMc8oIRLZg" name="SQLike"/>
+    <routinesParameter id="_NJDu4EKWEeaTGMc8oIRLZg" name="StringHandling"/>
+    <routinesParameter id="_NLJZkEKWEeaTGMc8oIRLZg" name="TalendDataGenerator"/>
+    <routinesParameter id="_NN06IEKWEeaTGMc8oIRLZg" name="TalendDate"/>
+    <routinesParameter id="_NPnp4EKWEeaTGMc8oIRLZg" name="TalendString"/>
+    <routinesParameter id="_4hyEAGrFEeavHP2vEAlcVw" name="AllportCargoUtils"/>
+    <routinesParameter id="_FzBjIG9REeaBmeWwKyR_Tg" name="EncryptionTools"/>
+    <routinesParameter id="_ETCaQG9VEeaBmeWwKyR_Tg" name="ImplicitContextLoadUtils"/>
+    <routinesParameter id="_G8FU8oDAEeaaW_qbfGyeTg" name="DataMasking"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="BatchControl"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_rKOxMGbtEeaxpO541xvGHQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="BatchControl_StartBatch"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1">
+      <column comment="" key="false" length="19" name="id" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="catalogue_id" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="datasource" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="root_talend_process_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="rerun" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="batch_repaired" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="inputfolder" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="archivefolder" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="errorfolder" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="'((0))'" key="false" length="1" name="partial_load" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="batch_control_error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="emailgroupid" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lookup_table_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="report_job" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="catalogue_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#xA;// a piece of code executed in the row&#xA;// loop&#xA;context.BatchControl_BatchID = row1.id;&#xA;context.BatchControl_CatalogueID = row1.catalogue_id;&#xA;context.BatchControl_BatchRepairedID = row1.batch_repaired;&#xA;context.BatchControl_CatalogueName = row1.catalogue_name;&#xA;&#xA;&#xA;context.BatchControl_ReportJob = row1.report_job;&#xA;&#xA;context.BatchControl_LookupTableID = row1.lookup_table_id;&#xA;&#xA;System.out.println(&quot;Lookup_Table_ID = &quot;+context.BatchControl_LookupTableID);&#xA;&#xA;context.BatchControl_DataSourceArchiveFilePath = row1.archivefolder;&#xA;&#xA;&#xA;//Only adjust these if there are no errors or the error is that the file is Complete already&#xA;if(row1.batch_control_error==null || row1.batch_control_error.compareToIgnoreCase(&quot;Complete&quot;)==0){&#xA;&#x9;context.BatchControl_DataSourceErrorFilePath = row1.errorfolder;&#xA;&#x9;context.BatchControl_DataSourceInputFilePath = row1.inputfolder;&#xA;&#x9;context.BatchControl_FileName = row1.datasource;&#xA;}&#xA;&#xA;//Default email group for batch&#xA;if(row1.emailgroupid!=null){&#xA;&#x9;context.BatchControl_EmailGroupID = row1.emailgroupid;&#xA;}&#xA;&#xA;context.BatchControl_PartialLoad = row1.partial_load;&#xA;context.BatchControl_ReRun = row1.rerun;&#xA;&#xA;globalMap.put(&quot;batch_control_error&quot;,row1.batch_control_error);&#xA;&#xA;System.out.println(&quot;Partial Load = &quot;+context.BatchControl_PartialLoad);&#xA;System.out.println(&quot;Batch ID = &quot;+context.BatchControl_BatchID);&#xA;&#xA;//System.out.println(context.BatchID);&#xA;//System.out.println(context.BatchControl_CatalogueID);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="BatchControl"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_rKOxMGbtEeaxpO541xvGHQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="BatchControl_BatchID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_BatchID"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="BatchControl_BatchStatus"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_BatchStatus"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="BatchControl_StartBatch"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// Send output log to a log file &#xA;java.io.File outputFile = new java.io.File(&quot;E:/Docs/Allport/Projects/Talend/Eclipse_Temp/ExecuteLoad_Seafreight.log&quot;);&#xA;System.setOut(new java.io.PrintStream(new java.io.FileOutputStream(outputFile, true), true));&#xA;&#xA;//Debugging Code&#xA;context.Debug_DebuggingOn = true;&#xA;if(context.Debug_DebuggingOn){&#xA;&#xA;// Either provide filename and path for Non-Scheduled jobs' file @@@@@@@@@@@@@@@@@@@@@@@&#xA;// OR supply CatalogueID for a Scheduled job/file&#x9;&#x9;&#x9;&#x9; @@@@@@@@@@@@@@@@@@@@@@@&#xA;//////////////////////////////// context.BatchControl_FileName = &quot;MASTER SLX FAK TARIFF 1ST JAN 2017 KST_No_BK_REF_Dev_01.xlsx&quot;; // &quot;Tariff_Seafreight_Rate_Client_FCL_LCL_Terms_2017Apr24_1230_007.xlsx&quot;; // &quot;UK Tariff - Week 15 - W.C 10.04.17_Test_2017Apr26_1526.xlsx&quot;; // &quot;Master SLX NAC Tariff 1st April FV_Test_2017Apr26_1515.xlsx&quot;;  // &quot;Named Account Protected Tariff - No. 14 - 04 - 17.xlsx&quot;; // &quot;Tariff_Cost_Rate_Testing_2017Apr20_01.xlsx&quot;; //&quot;TARIFF_Seafreight_Rate_COST_09_02_2017.xlsx&quot;;&#xA;////////////////////// context.BatchControl_DataSourceInputFilePath = &quot;//Fileserv2/CW1/IIS Inbound/QA/Function/SeafreightCompanyRateLoad&quot;; // &quot;//fileserv2/CW1/Talend/DEV_Working_Location/Tariff/SeafreightRateClient/Landing&quot;; // &quot;//fileserv2/CW1/Talend/DEV_Working_Location/Tariff/SeafreightRateCost/Landing&quot;; // &quot;//fileserv2/CW1/Talend/DEV_Working_Location/Tariff/Seafreight/Landing&quot;; &#xA;&#x9;//fileserv2/CW1/Talend/DEV_Working_Location/Vision/Landing&quot;;&#xA;&#xA;&#x9;context.ProcessControl_ProcessID = 11L;&#xA;&#x9;context.BatchControl_CatalogueID = 12L;&#xA;&#x9;context.BatchControl_BatchID = 9L;&#x9;// 8L  7L  6L  19L  20L  21L  49L  50L  51L&#xA;&#x9;//context.OverwriteBatch = true;&#xA;&#x9;// Cataloge Lookup Table ID = 4 for Rate (Tariff Seafreight Rate, Origin, n Destination Port Lookup logic + other)&#xA;&#x9;// Cataloge Lookup Table ID = 5 for Rate_Cost (Tariff Seafreight Rate Cost integration)&#xA;&#x9;context.BatchControl_LookupTableID = 4L;&#x9;// 4L  5L;&#xA;&#x9;&#xA;}&#xA;&#xA;&#xA;/*IMPORTANT - DO NOT CHANGE. Convert Unix-styled forward slashes in path to Windows-style backslashes which is then compared with database entry */&#xA;context.BatchControl_RootPID = rootPid;&#xA;context.BatchControl_DataSourceInputFilePath = routines.AllportCargoUtils.reverseFilePathForJSONContext(context.BatchControl_DataSourceInputFilePath);&#xA;context.BatchControl_BatchStatus = context.Status_Failed;&#xA;&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Job order query&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;p.sequence,&#xD;&#xA;p.process_group_id,&#xD;&#xA;p.id,&#xD;&#xA;p.job_name,&#xD;&#xA;p.related_staging_table,&#xD;&#xA;(SELECT max(sequence) FROM Process WHERE process_group_id = p.process_group_id) AS  last_sequence,&#xD;&#xA;(SELECT min(sequence) FROM Process WHERE process_group_id = p.process_group_id)  AS first_sequence&#xD;&#xA;FROM Batch bat INNER JOIN Catalogue cat ON bat.catalogue_id = cat.id&#xD;&#xA;INNER JOIN Catalogue_Process_Group cpg ON cat.id = cpg.catalogue_id&#xD;&#xA;INNER JOIN Process_Group pg ON cpg.process_group_id = pg.id&#xD;&#xA;INNER JOIN Process p ON pg.id = p.process_group_id&#xD;&#xA;WHERE bat.id = &quot; + context.BatchControl_BatchID + &#xD;&#xA;(context.BatchControl_BatchRepairedID!=null ? &quot; AND p.process_group_id IN  (SELECT Batch_Process_Group.process_group_id&#xD;&#xA;FROM [talend_staging].[dbo].[Batch_Process_Group] JOIN Status ON Batch_Process_Group.status_id  = Status.id&#xD;&#xA;WHERE Status.name != 'Complete' AND &#xD;&#xA;Batch_Process_Group.batch_id = &quot;+context.BatchControl_BatchRepairedID+&quot;) &quot; : &quot; &quot;) +&#xD;&#xA;&quot;ORDER BY cpg.sequence, p.sequence&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sequence"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="process_group_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="related_staging_table"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_sequence"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_sequence"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="sequence" nullable="false" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="process_group_id" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="id" nullable="false" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="related_staging_table" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="last_sequence" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="first_sequence" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.ProcessControl_ProcessID = ((Long)globalMap.get(&quot;row2.id&quot;));&#xA;context.ProcessControl_RelatedStagingTable = ((String)globalMap.get(&quot;row2.related_staging_table&quot;));&#xA;context.ProcessControl_ProcessGroupID = ((Long)globalMap.get(&quot;row2.process_group_id&quot;));&#xA;&#xA;//Fix to issue with NULL values being passed to child job&#xA;if(globalMap.get(&quot;row2.related_staging_table&quot;)==null){&#xA;&#x9;context.ProcessControl_RelatedStagingTable = &quot;&quot;;&#xA;}&#xA;&#xA;if(((Integer)globalMap.get(&quot;row2.sequence&quot;)).intValue()==((Integer)globalMap.get(&quot;row2.last_sequence&quot;)).intValue()){&#xA;&#x9;context.ProcessControl_LastProcessOfGroup = true;&#xA;}else{&#xA;&#x9;context.ProcessControl_LastProcessOfGroup = false;&#xA;}&#xA;&#xA;if(((Integer)globalMap.get(&quot;row2.sequence&quot;)).intValue()==((Integer)globalMap.get(&quot;row2.first_sequence&quot;)).intValue()){&#xA;&#x9;context.ProcessControl_FirstProcessOfGroup = true;&#xA;}else{&#xA;&#x9;context.ProcessControl_FirstProcessOfGroup = false;&#xA;}&#xA;&#xA;System.out.println(&quot;Process ID = &quot;+context.ProcessControl_ProcessID);&#xA;System.out.println(&quot;Related Staging Table = &quot;+context.ProcessControl_RelatedStagingTable);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_13" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="true"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="((String)globalMap.get(&quot;row2.job_name&quot;))"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Tariff_Seafreight_Rate_Build_XML;Tariff_Seafreight_Rate_Client_Lookup;Tariff_Seafreight_Rate_Lookup;Tariff_Seafreight_Rate_Client_SCD;Tariff_Seafreight_Rate_SCD;Tariff_Seafreight_Rate_Client_Source;Tariff_Seafreight_Rate_Cost_Source;Tariff_Seafreight_Rate_Source;Tariff_Seafreight_Rate_Validate;Send_CargoWise_Native_Message_Batch;Send_CargoWise_Native_Message"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_uXqRQOkoEeaOiPeQ36PKsg;_iVpLMDsJEee-BbJCTOmFog;_ulrXUPNpEeaunMHB_dFCpQ;_KYqQAAppEeeJLNUddMEtag;_nfjDsOeYEea5HfiJyCCUNA;_eSHrYDsJEee-BbJCTOmFog;_otdRgPnREeaTyIn_cOtGLA;_rTm3oOMYEeazjdtviPrpsA;_1uiwsORxEeazZYgANKO4iw;_gr9KUDl5EeeABuK_61Kgpg;_fhtUcCp1Eeee__KxA-yuNA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_13"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the end is near&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error copying file: &quot;+context.BatchControl_FileName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.FileSystem_WorkingFolder = context.BatchControl_DataSourceInputFilePath;&#xA;&#xA;&#xA;context.BatchControl_BatchStatus = context.Status_Failed;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.BatchControl_BatchStatus = context.Status_Failed;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Batch_Process_Group&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;&#x9;&#x9;bpg.status_id,&#xD;&#xA;&#x9;&#x9;s.name&#xA;FROM&#x9;Batch_Process_Group bpg JOIN Status s ON bpg.status_id = s.id&#xD;&#xA;WHERE bpg.batch_id = &quot; +context.BatchControl_BatchID&#xD;&#xA;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_2">
+      <column comment="" defaultValue="" key="false" length="-1" name="status_id" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_4r71UEB7EeeoYYzbntfRpA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="FinalStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Complete" expression="row3.name.compareToIgnoreCase(&quot;Complete&quot;)==0 ? row3.status_id : Var.Complete " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Failed" expression="row3.name.compareToIgnoreCase(&quot;Failed&quot;)==0 ? row3.status_id : Var.Failed " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="PartialLoadFail" expression="row3.name.compareToIgnoreCase(&quot;Partial Load Fail&quot;)==0 ? row3.status_id : Var.PartialLoadFail" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CompleteWithErrors" expression="row3.name.compareToIgnoreCase(&quot;Complete With Errors&quot;)==0 ? row3.status_id : Var.CompleteWithErrors    " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="FileMoveFail" expression="row3.name.compareToIgnoreCase(&quot;File Move Fail&quot;)==0 ? row3.status_id : Var.FileMoveFail " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="FinalStatus" expression="Var.Failed!=null ? Var.Failed : Var.PartialLoadFail!=null ? Var.PartialLoadFail : Var.CompleteWithErrors!=null ? Var.CompleteWithErrors : Var.FileMoveFail!=null ? Var.FileMoveFail : Var.Complete !=null ? Var.Complete : null " type="id_Long" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="FinalStatus" expression="Var.FinalStatus " type="id_Long"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="status_id" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="name" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="FinalStatus"/>
+      <elementValue elementRef="FUNCTION" value="last"/>
+      <elementValue elementRef="INPUT_COLUMN" value="FinalStatus"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column comment="" key="false" length="-1" name="FinalStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#xA;// a piece of code executed in the row&#xA;// loop&#xA;&#xA;context.BatchControl_BatchStatus = row4.FinalStatus;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_2"/>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.BatchControl_DataSourceInputFilePath + &quot;\\&quot; +context.BatchControl_FileName"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/Talend/6.1.1/studio/workspace/Richard&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.FileSystem_WorkingFolder"/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <metadata connector="FLOW" name="tFileCopy_1"/>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_3" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FileSystem_WorkingFolder + &quot;\\&quot; + context.BatchControl_FileName"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/Talend/6.1.1/studio/workspace/Richard&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.BatchControl_DataSourceArchiveFilePath"/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <metadata connector="FLOW" name="tFileCopy_3"/>
+  </node>
+  <node componentName="StartJob" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StartJob_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartJob"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="EndJob" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="EndJob_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tRunJob_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="EndJob"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;&#xA;if(context.BatchControl_BatchStatus.longValue() != context.Status_Complete.longValue() &amp;&amp;&#xA;context.BatchControl_BatchStatus.longValue() != context.Status_CompleteWithErrors.longValue()){&#xA;&#x9;&#xA;&#x9;if(((String)globalMap.get(&quot;batch_control_error&quot;))!=null){&#xA;&#x9;&#x9;//If there is an issue with the Batch Control processing&#x9;&#xA;&#x9;&#x9;//&quot;No Catalogue&quot;&#xA;&#x9;&#x9;//&quot;Running&quot;&#xA;&#x9;&#x9;//&quot;Complete&quot;&#xA;&#x9;&#x9;//&quot;No File&quot;&#xA;&#x9;&#x9;System.out.println(&quot;EMAIL TYPE = &quot;+((String)globalMap.get(&quot;batch_control_error&quot;)));&#xA;&#x9;&#x9;globalMap.put(&quot;email_type&quot;, ((String)globalMap.get(&quot;batch_control_error&quot;)));&#xA;&#x9;}else{&#xA;&#x9;&#x9;//If there is an issue with processing of the records in the file&#xA;&#x9;&#x9;globalMap.put(&quot;email_type&quot;, &quot;Process Error&quot;);&#xA;&#x9;}&#xA;&#xA;}else{&#xA;&#xA;&#x9;//For success emails if needed&#xA;}&#xA;&#xA;&#xA;//Set Report Filename&#xA;if(context.BatchControl_FileName==null || context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)==0){&#xA;&#xA;&#x9;if(context.BatchControl_CatalogueName!=null &amp;&amp; context.BatchControl_CatalogueName.trim().compareToIgnoreCase(&quot;&quot;)!=0){&#xA;&#x9;&#xA;&#x9;&#x9;context.BatchControl_ReportFileName = context.BatchControl_CatalogueName.replaceAll(&quot;[^a-zA-Z0-9_-]&quot;, &quot;_&quot;)+&quot;_&quot;+routines.TalendDate.formatDateInUTC(&quot;yyyyMMddHHmmss&quot;, routines.TalendDate.getCurrentDate());&#xA;&#x9;&#x9;&#xA;&#x9;}else{&#xA;&#x9;&#xA;&#x9;&#x9;context.BatchControl_ReportFileName = &quot;UnknownFile_&quot;+routines.TalendDate.formatDateInUTC(&quot;yyyyMMddHHmmss&quot;, routines.TalendDate.getCurrentDate());&#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;&#xA;&#xA;}else{&#xA;&#x9;context.BatchControl_ReportFileName = context.BatchControl_FileName+&quot;_Report&quot;;&#xA;&#x9;&#xA;&#xA;}&#xA;&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SendEmail"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WBUMAHNJEeaWdq1VyqA7Mg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ReportPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_ReportJob!=null ? context.FileSystem_ReportFilePath +&quot;\\&quot;+context.BatchControl_ReportFileName+&quot;.xls&quot; : null"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="OriginalFilePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_DataSourceArchiveFilePath + &quot;\\&quot; + context.BatchControl_FileName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_7"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;BatchControl error: &quot;+((String)globalMap.get(&quot;batch_control_error&quot;))"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_9"/>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.BatchControl_DataSourceInputFilePath + &quot;\\&quot; +context.BatchControl_FileName"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.BatchControl_BatchStatus = context.Status_Failed;&#xA;globalMap.put(&quot;batch_control_error&quot;, &quot;No File&quot;);&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_10"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_4" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error file does not exist: &quot;+context.BatchControl_FileName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//If batch error&#xA;if(globalMap.get(&quot;batch_control_error&quot;)!=null){&#xA;&#x9;context.BatchControl_BatchStatus = context.Status_Failed;&#xA;}&#xA;&#xA;System.out.println(&quot;tJava_11 **************&quot;);&#xA;System.out.println(&quot;context.ProcessControl_ProcessID = &quot;+context.ProcessControl_ProcessID);&#xA;System.out.println(&quot;context.BatchControl_CatalogueID = &quot;+context.BatchControl_CatalogueID);&#xA;System.out.println(&quot;context.BatchControl_BatchID = &quot;+context.BatchControl_BatchID);&#xA;System.out.println(&quot;context.BatchControl_LookupTableID = &quot;+context.BatchControl_LookupTableID);&#xA;System.out.println(&quot;&quot;);&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_11"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE cat_loc&#xD;&#xA;FROM Catalogue_Lock cat_loc JOIN Catalogue cat ON cat.id = cat_loc.catalogue_id&#xD;&#xA;WHERE cat_loc.catalogue_id = &quot;+context.BatchControl_CatalogueID+&quot; AND&#xD;&#xA;((cat.successive IS NOT NULL AND&#xD;&#xA;cat.successive = 1 AND&#xD;&#xA;cat_loc.filename = 'ANYFILE') OR&#xD;&#xA;((cat.successive IS NULL OR&#xD;&#xA;cat.successive = 0) AND&#xD;&#xA;cat_loc.filename = '&quot;+(context.BatchControl_FileName !=null ? context.BatchControl_FileName.trim().toUpperCase() : &quot;&quot;)+&quot;'))&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete File Lock Row"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Produce_Report_File"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_pgttUJB8Eea3cphRfXOUow"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_5" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FileSystem_WorkingFolder + &quot;\\&quot; + context.BatchControl_FileName"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/Talend/6.1.1/studio/workspace/Richard&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.BatchControl_DataSourceErrorFilePath"/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <metadata connector="FLOW" name="tFileCopy_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SendEmail"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WBUMAHNJEeaWdq1VyqA7Mg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ReportPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_ReportJob!=null ? context.FileSystem_ReportFilePath +&quot;\\&quot;+context.BatchControl_ReportFileName+&quot;.xls&quot; : null"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="OriginalFilePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_DataSourceErrorFilePath + &quot;\\&quot; + context.BatchControl_FileName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SendEmail"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WBUMAHNJEeaWdq1VyqA7Mg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ReportPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_ReportJob!=null ? context.FileSystem_ReportFilePath +&quot;\\&quot;+context.BatchControl_ReportFileName+&quot;.xls&quot; : null"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="OriginalFilePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="null"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_11" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SendEmail"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WBUMAHNJEeaWdq1VyqA7Mg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ReportPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_ReportJob!=null ? context.FileSystem_ReportFilePath +&quot;\\&quot;+context.BatchControl_ReportFileName+&quot;.xls&quot; : null"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="OriginalFilePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="null"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_11"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="1056">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_14" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SendEmail"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WBUMAHNJEeaWdq1VyqA7Mg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ReportPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.BatchControl_ReportJob!=null ? context.FileSystem_ReportFilePath +&quot;\\&quot;+context.BatchControl_ReportFileName+&quot;.xls&quot; : null"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="OriginalFilePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="null"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_14"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tJavaFlex_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tJava_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="EndJob_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="related_staging_table"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="process_group_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMSSqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tJava_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tRunJob_13">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tRunJob_13" offsetLabelX="0" offsetLabelY="0" source="tRunJob_13" target="tJava_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tRunJob_13_CHILD_RETURN_CODE&quot;))!=0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tJavaFlex_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="FinalStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="error_copying_file" lineStyle="6" metaname="tFileCopy_1" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_1" target="tJava_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;tFileCopy_1_ERROR_MESSAGE&quot;)!=null"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="error_copying_file" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileCopy_3" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_3" target="tRunJob_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnSubjobOk (TRIGGER_OUTPUT_1)" lineStyle="1" metaname="StartJob_1" offsetLabelX="0" offsetLabelY="0" source="StartJob_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_5" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_5" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="filename_exists" lineStyle="6" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tFileCopy_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.BatchControl_FileName!=null &amp;&amp; context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)!=0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="filename_exists" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tMSSqlRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_9" offsetLabelX="0" offsetLabelY="0" source="tJava_9" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="file_exists" lineStyle="6" metaname="tJava_9" offsetLabelX="0" offsetLabelY="0" source="tJava_9" target="tFileExist_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.BatchControl_FileName!=null &amp;&amp; context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)!=0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="file_exists" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="file_does_not_exist" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tJava_10">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="file_does_not_exist" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_10" offsetLabelX="0" offsetLabelY="0" source="tJava_10" target="tDie_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="if_batch_error" lineStyle="6" metaname="tJava_11" offsetLabelX="0" offsetLabelY="0" source="tJava_11" target="tDie_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;batch_control_error&quot;)!=null"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="if_batch_error" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_11" offsetLabelX="0" offsetLabelY="0" source="tJava_11" target="tMSSqlInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_1" target="tJava_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="success_with_input_file" lineStyle="6" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRunJob_3" target="tFileCopy_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(context.BatchControl_BatchStatus.longValue()==context.Status_Complete.longValue() ||&#xA;context.BatchControl_BatchStatus.longValue()==context.Status_CompleteWithErrors.longValue()) &amp;&amp;&#xA;context.BatchControl_FileName!=null &amp;&amp; context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)!=0&#xA;"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="success_with_input_file" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Failure_with_input_file" lineStyle="6" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRunJob_3" target="tFileCopy_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.BatchControl_FileName!=null &amp;&amp; context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)!=0 &amp;&amp; globalMap.get(&quot;email_type&quot;)!=null &amp;&amp;&#xA;(((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;Running&quot;)==0 || &#xA;((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;Complete&quot;)==0 ||&#xA;((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;No Catalogue&quot;)==0 ||&#xA;((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;Process Error&quot;)==0)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Failure_with_input_file" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Failure_becuase_of_no_file" lineStyle="6" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tRunJob_3" target="tRunJob_6">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;email_type&quot;)!=null &amp;&amp; ((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;No File&quot;)==0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Failure_becuase_of_no_file" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Failure_starting_from_catalogue_id" lineStyle="6" metaname="tRunJob_3" offsetLabelX="-50" offsetLabelY="20" outputId="4" source="tRunJob_3" target="tRunJob_11">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(context.BatchControl_FileName==null || context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)==0) &amp;&amp; globalMap.get(&quot;email_type&quot;)!=null &amp;&amp;&#xA;(((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;Running&quot;)==0 || &#xA;((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;Complete&quot;)==0 ||&#xA;((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;No Catalogue&quot;)==0 ||&#xA;((String)globalMap.get(&quot;email_type&quot;)).compareToIgnoreCase(&quot;Process Error&quot;)==0)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Failure_starting_from_catalogue_id" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Success_From_Catalogue" lineStyle="6" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tRunJob_3" target="tRunJob_14">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(context.BatchControl_BatchStatus.longValue()==context.Status_Complete.longValue() ||&#xA;context.BatchControl_BatchStatus.longValue()==context.Status_CompleteWithErrors.longValue())&#xA; &amp;&amp;&#xA;(context.BatchControl_FileName==null || context.BatchControl_FileName.trim().compareToIgnoreCase(&quot;&quot;)==0)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Success_From_Catalogue" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileCopy_5" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_5" target="tRunJob_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
+  </connection>
+  <note opaque="true" posX="288" posY="0" sizeHeight="64" sizeWidth="96" text="&lt;-- Check moving this to later"/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="StartJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="EndJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_14" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

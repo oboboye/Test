@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="FilenamePrefix" prompt="FilenamePrefix?" promptNeeded="false" repositoryContextId="_Kcm3sMOjEeaQCIWAycQ7fA" type="id_String" value=""/>
+      <contextParameter comment="" name="Talend_Staging_Server" prompt="Talend_Staging_Server?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+      <contextParameter comment="" name="Talend_Staging_AdditionalParams" prompt="Talend_Staging_AdditionalParams?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+      <contextParameter comment="" name="Talend_Staging_Port" prompt="Talend_Staging_Port?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+      <contextParameter comment="" name="Talend_Staging_Password" prompt="Talend_Staging_Password?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_Password" value=""/>
+      <contextParameter comment="" name="Talend_Staging_Login" prompt="Talend_Staging_Login?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+      <contextParameter comment="" name="Talend_Staging_Schema" prompt="Talend_Staging_Schema?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+      <contextParameter comment="" name="Talend_Staging_Database" prompt="Talend_Staging_Database?" promptNeeded="false" repositoryContextId="_1s5aMGXmEeaaPNoSHQD7OQ" type="id_String" value=""/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="288" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_NWUu0EKWEeaTGMc8oIRLZg" name="DQTechnical"/>
+      <routinesParameter id="_G8FU8oDAEeaaW_qbfGyeTg" name="DataMasking"/>
+      <routinesParameter id="_NBWkYEKWEeaTGMc8oIRLZg" name="DataOperation"/>
+      <routinesParameter id="_NTCxUEKWEeaTGMc8oIRLZg" name="DataQualityDependencies"/>
+      <routinesParameter id="_NRjjkEKWEeaTGMc8oIRLZg" name="DataQuality"/>
+      <routinesParameter id="_NUrwEEKWEeaTGMc8oIRLZg" name="DqStringHandling"/>
+      <routinesParameter id="_NDQB0EKWEeaTGMc8oIRLZg" name="Mathematical"/>
+      <routinesParameter id="_NFL7gEKWEeaTGMc8oIRLZg" name="Numeric"/>
+      <routinesParameter id="_NHRmMEKWEeaTGMc8oIRLZg" name="Relational"/>
+      <routinesParameter id="_M68aYEKWEeaTGMc8oIRLZg" name="SQLike"/>
+      <routinesParameter id="_NJDu4EKWEeaTGMc8oIRLZg" name="StringHandling"/>
+      <routinesParameter id="_NLJZkEKWEeaTGMc8oIRLZg" name="TalendDataGenerator"/>
+      <routinesParameter id="_NN06IEKWEeaTGMc8oIRLZg" name="TalendDate"/>
+      <routinesParameter id="_NPnp4EKWEeaTGMc8oIRLZg" name="TalendString"/>
+      <routinesParameter id="_4hyEAGrFEeavHP2vEAlcVw" name="AllportCargoUtils"/>
+      <routinesParameter id="_IVY4kIo0Eeal2qElelYRlA" name="LookupUtils"/>
+      <routinesParameter id="_jsmUIJRiEeaeqdoT2df3DQ" name="CargoWiseSoapUtils"/>
+      <routinesParameter id="_kntHIMB4Eead752pCcGDeQ" name="EmailMessageReplaceUtils"/>
+      <routinesParameter id="_FzBjIG9REeaBmeWwKyR_Tg" name="EncryptionTools"/>
+      <routinesParameter id="_ETCaQG9VEeaBmeWwKyR_Tg" name="ImplicitContextLoadUtils"/>
+      <routinesParameter id="_usp-sJk4Eea4W-yNBiysVQ" name="SoapHeaderHandler"/>
+    </parameters>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-32">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="0"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_filename"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_location"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="file_extension"/>
+        <elementValue elementRef="VALUE" value=""/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tFixedFlowInput_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFixedFlowInput_1">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-32">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+      <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+      <elementParameter field="CHECK" name="APPEND" value="true"/>
+      <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Output Data"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashOutput_1">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+      <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ - File_Output" show="false"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;File_Output&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;[File_Output].[id]&#xD;&#xA;   ,[File_Output].[file_output_group_id]&#xD;&#xA;   ,[File_Output].[name]&#xD;&#xA;   ,[File_Output].[description]&#xD;&#xA;   ,[File_Output].[type]&#xD;&#xA;   ,[File_Output].[host]&#xD;&#xA;   ,[File_Output].[port]&#xD;&#xA;   ,[File_Output].[username]&#xD;&#xA;   ,[File_Output].[password]&#xD;&#xA;   ,[File_Output].[output_location]&#xD;&#xA;   ,[File_Output].[filename_prefix]&#xD;&#xA;   ,[File_Output].[separator]&#xD;&#xA;   ,[File_Output].[sequence_name]&#xD;&#xA;   ,[File_Output].[date_format_pattern]&#xD;&#xA;   ,[File_Output].[file_extension]&#xD;&#xA;FROM [Process] JOIN [File_Output] ON [Process].file_output_group_id = [File_Output].file_output_group_id&#xD;&#xA;WHERE [Process].id = &quot;+ context.ProcessControl_ProcessID"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="file_output_group_id"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="host"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="port"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="username"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="password"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_location"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="filename_prefix"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="separator"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="sequence_name"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="date_format_pattern"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="file_extension"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;File_Output&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="File_Output" name="tMSSqlInput_1">
+        <column comment="" key="false" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="19" name="file_output_group_id" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="type" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="host" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="port" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="username" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="password" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="output_location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="filename_prefix" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="separator" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="sequence_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="date_format_pattern" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_Kcm3sMOjEeaQCIWAycQ7fA-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="no_filename_change">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" name="filename_change">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="output_location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="filename_prefix" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="separator" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="sequence_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="date_format_pattern" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="FilenamePrefix" expression="context.FilenamePrefix!=null &amp;&amp; context.FilenamePrefix.trim().compareToIgnoreCase(&quot;&quot;)!=0 ?&#xD;&#xA;context.FilenamePrefix : settings.filename_prefix " type="id_String"/>
+        </varTables>
+        <outputTables sizeState="INTERMEDIATE" name="no_filename_change" expressionFilter="(Var.FilenamePrefix ==null || Var.FilenamePrefix.trim().compareToIgnoreCase(&quot;&quot;)==0) &amp;&amp; &#xA;(settings.sequence_name ==null || settings.sequence_name.trim().compareToIgnoreCase(&quot;&quot;)==0) &amp;&amp; (settings.date_format_pattern ==null || settings.date_format_pattern.trim().compareToIgnoreCase(&quot;&quot;)==0) &amp;&amp;&#xA;(settings.file_extension ==null || settings.file_extension.trim().compareToIgnoreCase(&quot;&quot;)==0)" activateExpressionFilter="true">
+          <mapperTableEntries name="id" expression="settings.id " type="id_Long" nullable="true"/>
+          <mapperTableEntries name="output_filename" expression="context.BatchControl_FileName" type="id_String" nullable="true"/>
+          <mapperTableEntries name="output_location" expression="settings.output_location " type="id_String" nullable="true"/>
+          <mapperTableEntries name="file_extension" expression="settings.file_extension " type="id_String" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="filename_change" expressionFilter="(Var.FilenamePrefix !=null &amp;&amp; Var.FilenamePrefix.trim().compareToIgnoreCase(&quot;&quot;)!=0) || &#xA;(settings.sequence_name !=null &amp;&amp; settings.sequence_name.trim().compareToIgnoreCase(&quot;&quot;)!=0) || (settings.date_format_pattern !=null &amp;&amp; settings.date_format_pattern.trim().compareToIgnoreCase(&quot;&quot;)!=0) ||&#xA;(settings.file_extension !=null &amp;&amp; settings.file_extension.trim().compareToIgnoreCase(&quot;&quot;)!=0)" activateExpressionFilter="true">
+          <mapperTableEntries name="id" expression="settings.id" type="id_Long" nullable="true"/>
+          <mapperTableEntries name="output_location" expression="settings.output_location" type="id_String" nullable="true"/>
+          <mapperTableEntries name="filename_prefix" expression="Var.FilenamePrefix " type="id_String"/>
+          <mapperTableEntries name="separator" expression="settings.separator" type="id_String" nullable="true"/>
+          <mapperTableEntries name="sequence_name" expression="settings.sequence_name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="date_format_pattern" expression="settings.date_format_pattern" type="id_String" nullable="true"/>
+          <mapperTableEntries name="file_extension" expression="settings.file_extension" type="id_String" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="settings" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="id" type="id_Long"/>
+          <mapperTableEntries name="file_output_group_id" type="id_Long" nullable="true"/>
+          <mapperTableEntries name="name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="description" type="id_String" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String"/>
+          <mapperTableEntries name="host" type="id_String" nullable="true"/>
+          <mapperTableEntries name="port" type="id_String" nullable="true"/>
+          <mapperTableEntries name="username" type="id_String" nullable="true"/>
+          <mapperTableEntries name="password" type="id_String" nullable="true"/>
+          <mapperTableEntries name="output_location" type="id_String" nullable="true"/>
+          <mapperTableEntries name="filename_prefix" type="id_String"/>
+          <mapperTableEntries name="separator" type="id_String" nullable="true"/>
+          <mapperTableEntries name="sequence_name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="date_format_pattern" type="id_String" nullable="true"/>
+          <mapperTableEntries name="file_extension" type="id_String" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+      <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+      <elementParameter field="CHECK" name="APPEND" value="true"/>
+      <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Process Data"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashOutput_2">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="output_location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="filename_prefix" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="separator" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="sequence_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="date_format_pattern" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+    </node>
+    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+      <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+      <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+      <elementParameter field="TABLE" name="LENGTHS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_filename"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_location"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="file_extension"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tLogRow_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogRow_1">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_3" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY" show="false"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+      <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL" show="false"/>
+      <elementParameter field="CHECK" name="APPEND" value="true" show="false"/>
+      <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Output Data"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashOutput_3">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+      <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+      <elementParameter field="TABLE" name="MAP" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tFlowToIterate_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFlowToIterate_1"/>
+    </node>
+    <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+      <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="(globalMap.get(&quot;row4.sequence_name&quot;)!=null ?&#xD;&#xA;&quot;select name&#xD;&#xA;FROM sys.objects&#xD;&#xA;WHERE name = '&quot;+((String)globalMap.get(&quot;row4.sequence_name&quot;))+&quot;'&quot;&#xD;&#xA;:&#xD;&#xA;&quot;Select 'void' as name&quot;)"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="tMSSqlInput_2"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tMSSqlInput_2">
+        <column comment="" key="false" length="-1" name="name" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE SEQUENCE &quot;+((String)globalMap.get(&quot;row4.sequence_name&quot;))+&quot; &#xD;&#xA; AS [bigint]&#xD;&#xA; START WITH 1&#xD;&#xA; INCREMENT BY 1&#xD;&#xA; MINVALUE -9223372036854775808&#xD;&#xA; MAXVALUE 9223372036854775807&#xD;&#xA; CACHE &quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+      <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+      <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+      <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMSSqlRow_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tMSSqlRow_1"/>
+      <metadata connector="REJECT" name="REJECT">
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="672">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+      <elementParameter field="CHECK" name="RELEASE_CACHE" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="tHashInput_2"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashInput_2">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="672">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+      <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+      <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+      <elementParameter field="TABLE" name="LENGTHS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_filename"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_location"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="file_extension"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tLogRow_2"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogRow_2">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="544">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+      <elementParameter field="CHECK" name="RELEASE_CACHE" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="tHashInput_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashInput_1">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="output_location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="filename_prefix" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="separator" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="sequence_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="date_format_pattern" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+    </node>
+    <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="416">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_3" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nEJIcGXjEeaaPNoSHQD7OQ" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.Talend_Staging_Server"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.Talend_Staging_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.Talend_Staging_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.Talend_Staging_Database"/>
+      <elementParameter field="TEXT" name="USER" value="context.Talend_Staging_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWOMAhgu+QZPjqJzZsSNUuv352xFzu/yE="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="(globalMap.get(&quot;sequence&quot;)!=null ? &#xD;&#xA;&quot;SELECT NEXT VALUE FOR &quot;+((String)globalMap.get(&quot;sequence&quot;))+&quot; as seqnum&quot; &#xD;&#xA;:&#xD;&#xA;&quot;SELECT null&quot;)"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.Talend_Staging_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="seqnum"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="tMSSqlInput_3"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tMSSqlInput_3">
+        <column comment="" defaultValue="" key="false" length="19" name="seqnum" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="544">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_Kcm3sMOjEeaQCIWAycQ7fA-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_2"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="out1">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="date_section" expression="row7.date_format_pattern!=null &amp;&amp; row7.date_format_pattern.trim().compareToIgnoreCase(&quot;&quot;)!=0 ? &#xD;&#xA;routines.TalendDate.formatDate(row7.date_format_pattern, routines.TalendDate.getCurrentDate()) : null " type="id_String" nullable="true"/>
+          <mapperTableEntries name="sequence" expression="(row8.seqnum!= null ? row8.seqnum +&quot;&quot; : null) " type="id_String" nullable="true"/>
+          <mapperTableEntries name="separator" expression="row7.separator!=null &amp;&amp; row7.separator.compareToIgnoreCase(&quot;&quot;)!=0 ?&#xD;&#xA;row7.separator : null " type="id_String" nullable="true"/>
+          <mapperTableEntries name="filename_prefix_tmp" expression="row7.filename_prefix!=null &amp;&amp; row7.filename_prefix.trim().compareToIgnoreCase(&quot;&quot;)!=0 ?&#xD;&#xA;row7.filename_prefix : context.BatchControl_FileName " type="id_String" nullable="true"/>
+          <mapperTableEntries name="filename_prefix" expression="Var.filename_prefix_tmp.lastIndexOf('.')>-1 &#xD;&#xA;? Var.filename_prefix_tmp.substring(0,Var.filename_prefix_tmp.lastIndexOf('.')-1) : Var.filename_prefix_tmp " type="id_String" nullable="true"/>
+          <mapperTableEntries name="extension" expression="row7.file_extension !=null &amp;&amp; row7.file_extension.trim().compareToIgnoreCase(&quot;&quot;)!=0 ?&#xD;&#xA;&quot;.&quot;+row7.file_extension &#xA;: &#xA;Var.filename_prefix_tmp!=null &amp;&amp; Var.filename_prefix_tmp.lastIndexOf('.')>-1 &#xA;? Var.filename_prefix_tmp.substring(Var.filename_prefix_tmp.lastIndexOf('.')) &#xA;: &#xA;null " type="id_String" nullable="true"/>
+          <mapperTableEntries name="output_filename_tmp1" expression="Var.sequence!=null ? Var.filename_prefix + (Var.separator!=null ? Var.separator : &quot;&quot;) + Var.sequence : Var.filename_prefix " type="id_String"/>
+          <mapperTableEntries name="output_filename_tmp2" expression="Var.date_section!=null ? Var.output_filename_tmp1 + (Var.separator!=null ? Var.separator : &quot;&quot;) + Var.date_section : Var.output_filename_tmp1 " type="id_String"/>
+          <mapperTableEntries name="output_filename_final" expression="Var.extension!=null ? Var.output_filename_tmp2 + Var.extension : Var.output_filename_tmp2 " type="id_String"/>
+        </varTables>
+        <outputTables sizeState="INTERMEDIATE" name="out1">
+          <mapperTableEntries name="id" expression="row7.id " type="id_Long" nullable="true"/>
+          <mapperTableEntries name="output_filename" expression="Var.output_filename_final " type="id_String" nullable="true"/>
+          <mapperTableEntries name="output_location" expression="row7.output_location" type="id_String" nullable="true"/>
+          <mapperTableEntries name="file_extension" expression="row7.file_extension " type="id_String" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="id" type="id_Long" nullable="true"/>
+          <mapperTableEntries name="output_location" type="id_String" nullable="true"/>
+          <mapperTableEntries name="filename_prefix" type="id_String"/>
+          <mapperTableEntries name="separator" type="id_String" nullable="true"/>
+          <mapperTableEntries name="sequence_name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="date_format_pattern" type="id_String" nullable="true"/>
+          <mapperTableEntries name="file_extension" type="id_String" nullable="true"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row8" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="RELOAD">
+          <mapperTableEntries name="seqnum" expression="" type="id_Long" nullable="true"/>
+          <globalMapKeysValues name="&quot;sequence&quot;" expression="row7.sequence_name "/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="544">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+      <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+      <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+      <elementParameter field="TABLE" name="LENGTHS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_filename"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="output_location"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="file_extension"/>
+        <elementValue elementRef="LENGTH" value="10"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tLogRow_3"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogRow_3">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="544">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_4" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY" show="false"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;E:/Talend/6.2.1/studio/workspace2/in.hash&quot;" show="false"/>
+      <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL" show="false"/>
+      <elementParameter field="CHECK" name="APPEND" value="true" show="false"/>
+      <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tHashOutput_4"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashOutput_4">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tHashOutput_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="id"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="file_extension"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMSSqlInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="settings" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="settings" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tHashInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="no_filename_change" lineStyle="0" metaname="no_filename_change" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="file_extension"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="no_filename_change" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="filename_change" lineStyle="0" metaname="filename_change" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tHashOutput_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="filename_change" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tHashOutput_2" offsetLabelX="0" offsetLabelY="0" source="tHashOutput_2" target="tFlowToIterate_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tHashOutput_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+    </connection>
+    <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tMSSqlInput_2">
+      <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+      <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlRow_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;))==null || ((Integer)globalMap.get(&quot;tMSSqlInput_2_NB_LINE&quot;))&lt;1"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tLogRow_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="id"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="file_extension"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="OUTPUT_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="output_location"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tFixedFlowInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="id"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tHashInput_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tMSSqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_3" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_3">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="output_filename"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="id"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="file_extension"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tHashOutput_4">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="672">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_filename" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="output_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="file_extension" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-224" input="true" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="800" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

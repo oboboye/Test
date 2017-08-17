@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KUFroIMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KUFroYMTEeetafVnIQX_4g" comment="" name="Talend_TACURL" prompt="Talend_TACURL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUFrooMTEeetafVnIQX_4g" comment="" name="Talend_Username" prompt="Talend_Username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KUFro4MTEeetafVnIQX_4g" comment="" name="Talend_Password" prompt="Talend_Password?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

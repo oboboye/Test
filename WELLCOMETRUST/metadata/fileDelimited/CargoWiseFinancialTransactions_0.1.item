@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_fbMAwbGXEeaYv9ql8z204g" name="CargoWiseFinancialTransactions" dataPackage="_fbMAwrGXEeaYv9ql8z204g" Server="Localhost 127.0.0.1" FilePath="//Fileserv2/cw1/Talend/DEV_Working_Location/Working/AP Transactions by Payable Account.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_fbMAwrGXEeaYv9ql8z204g" name="default" dataManager="_fbMAwbGXEeaYv9ql8z204g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fbMAw7GXEeaYv9ql8z204g" id="_zd2lMLGUEeaYv9ql8z204g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMAxLGXEeaYv9ql8z204g" name="posted_date" label="posted_date" length="-1" talendType="id_Date" pattern="&quot;dd-MMM-yy&quot;">
+        <initialValue xmi:id="_fbMAxbGXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMAxrGXEeaYv9ql8z204g" name="invoice_date" label="invoice_date" length="-1" talendType="id_Date" pattern="&quot;dd-MMM-yy&quot;">
+        <initialValue xmi:id="_fbMAx7GXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMAyLGXEeaYv9ql8z204g" name="branch" label="branch" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMAybGXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMAyrGXEeaYv9ql8z204g" name="dep" label="dep" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMAy7GXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMAzLGXEeaYv9ql8z204g" name="type" label="type" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMAzbGXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMAzrGXEeaYv9ql8z204g" name="transaction_ref_1" label="transaction_ref_1" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMAz7GXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMA0LGXEeaYv9ql8z204g" name="job_number" label="job_number" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMA0bGXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMA0rGXEeaYv9ql8z204g" name="creditor_code" label="creditor_code" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMA07GXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMA1LGXEeaYv9ql8z204g" name="invoiced" label="invoiced" length="-1" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMA1bGXEeaYv9ql8z204g" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMA1rGXEeaYv9ql8z204g" name="cur" label="cur" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMA17GXEeaYv9ql8z204g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fbMA2LGXEeaYv9ql8z204g" name="total_local" label="total_local" length="-1" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fbMA2bGXEeaYv9ql8z204g"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

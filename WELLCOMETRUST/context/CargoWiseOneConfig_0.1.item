@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KTMTwIMTEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_KTMTwYMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_SenderID" prompt="CargoWiseOneConfig_SenderID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTwoMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_RecipientID" prompt="CargoWiseOneConfig_RecipientID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTw4MTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_EAdapterServiceEndpoint" prompt="CargoWiseOneConfig_EAdapterServiceEndpoint?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTxIMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_OutputFolder" prompt="CargoWiseOneConfig_OutputFolder?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTxYMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_InputFolder" prompt="CargoWiseOneConfig_InputFolder?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTxoMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_NativeServiceEndpoint" prompt="CargoWiseOneConfig_NativeServiceEndpoint?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTx4MTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_EAdapterUsername" prompt="CargoWiseOneConfig_EAdapterUsername?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTyIMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_EAdapterPassword" prompt="CargoWiseOneConfig_EAdapterPassword?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_KTMTyYMTEeetafVnIQX_4g" comment="" name="CargoWiseOneConfig_XmlBucketSize" prompt="CargoWiseOneConfig_XmlBucketSize?" promptNeeded="false" type="id_Integer" value=""/>
+</talendfile:ContextType>
