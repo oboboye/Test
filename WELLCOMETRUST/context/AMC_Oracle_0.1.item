@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_saRFsIPiEeetafVnIQX_4g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_saRFsYPiEeetafVnIQX_4g" comment="" name="AMC_Oracle_Password" prompt="AMC_Oracle_Password?" promptNeeded="false" type="id_Password" value="4FNfsG3rke1RCQhezUKeEw=="/>
+  <contextParameter xmi:id="_saRFsoPiEeetafVnIQX_4g" comment="" name="AMC_Oracle_Schema" prompt="AMC_Oracle_Schema?" promptNeeded="false" type="id_String" value="TALENDAMC611"/>
+  <contextParameter xmi:id="_saRFs4PiEeetafVnIQX_4g" comment="" name="AMC_Oracle_Sid" prompt="AMC_Oracle_Sid?" promptNeeded="false" type="id_String" value="TALENDEV"/>
+  <contextParameter xmi:id="_saRFtIPiEeetafVnIQX_4g" comment="" name="AMC_Oracle_Login" prompt="AMC_Oracle_Login?" promptNeeded="false" type="id_String" value="talendamc611"/>
+  <contextParameter xmi:id="_saRFtYPiEeetafVnIQX_4g" comment="" name="AMC_Oracle_AdditionalParams" prompt="AMC_Oracle_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_saRFtoPiEeetafVnIQX_4g" comment="" name="AMC_Oracle_Port" prompt="AMC_Oracle_Port?" promptNeeded="false" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_saRFt4PiEeetafVnIQX_4g" comment="" name="AMC_Oracle_Server" prompt="AMC_Oracle_Server?" promptNeeded="false" type="id_String" value="10.129.231.99"/>
+</talendfile:ContextType>
