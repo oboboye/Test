@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_f3KXMIGBEeeIW-suiuViZg" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_f3KXMYGBEeeIW-suiuViZg" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="localhost"/>
-  <contextParameter xmi:id="_f3KXMoGBEeeIW-suiuViZg" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="8180"/>
-  <contextParameter xmi:id="_f3KXM4GBEeeIW-suiuViZg" comment="" name="user" prompt="user?" promptNeeded="false" type="id_String" value="administrator"/>
-  <contextParameter xmi:id="_f3KXNIGBEeeIW-suiuViZg" comment="" name="password" prompt="password?" promptNeeded="false" type="id_String" value="administrator"/>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_4Jo6QIZ8EeeHBvALo-HaJA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_4Jo6QYZ8EeeHBvALo-HaJA" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_4Jo6QoZ8EeeHBvALo-HaJA" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="8180"/>
+  <contextParameter xmi:id="_4Jo6Q4Z8EeeHBvALo-HaJA" comment="" name="user" prompt="user?" promptNeeded="false" type="id_String" value="administrator"/>
+  <contextParameter xmi:id="_4Jo6RIZ8EeeHBvALo-HaJA" comment="" name="password" prompt="password?" promptNeeded="false" type="id_String" value="administrator"/>
 </talendfile:ContextType>
