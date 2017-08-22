@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_29eVwIcDEeeHBvALo-HaJA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_29eVwYcDEeeHBvALo-HaJA" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_29eVwocDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eVw4cDEeeHBvALo-HaJA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_29eVxIcDEeeHBvALo-HaJA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_29eVxYcDEeeHBvALo-HaJA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_29eVxocDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_29eVx4cDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_29eVyIcDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_29eVyYcDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_29eVyocDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_29eVy4cDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_29eVzIcDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_29eVzYcDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_29eVzocDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_29eVz4cDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_29eV0IcDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_29eV0YcDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_29eV0ocDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_29eV04cDEeeHBvALo-HaJA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_29eV1IcDEeeHBvALo-HaJA" id="_JArxEIPNEeaVvNMlKwhL3Q" name="DQTechnical"/>
+    <routinesParameter xmi:id="_29eV1YcDEeeHBvALo-HaJA" id="_JAarUIPNEeaVvNMlKwhL3Q" name="DataMasking"/>
+    <routinesParameter xmi:id="_29eV1ocDEeeHBvALo-HaJA" id="_JBCWYIPNEeaVvNMlKwhL3Q" name="DataOperation"/>
+    <routinesParameter xmi:id="_29eV14cDEeeHBvALo-HaJA" id="_JAkcUIPNEeaVvNMlKwhL3Q" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_29eV2IcDEeeHBvALo-HaJA" id="_JAiAEIPNEeaVvNMlKwhL3Q" name="DataQuality"/>
+    <routinesParameter xmi:id="_29eV2YcDEeeHBvALo-HaJA" id="_JApU0IPNEeaVvNMlKwhL3Q" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_29eV2ocDEeeHBvALo-HaJA" id="_I5RhgIPNEeaVvNMlKwhL3Q" name="MDM"/>
+    <routinesParameter xmi:id="_29eV24cDEeeHBvALo-HaJA" id="_JBEyoIPNEeaVvNMlKwhL3Q" name="Mathematical"/>
+    <routinesParameter xmi:id="_29eV3IcDEeeHBvALo-HaJA" id="_JBQ_4IPNEeaVvNMlKwhL3Q" name="Numeric"/>
+    <routinesParameter xmi:id="_29eV3YcDEeeHBvALo-HaJA" id="_JBTcIIPNEeaVvNMlKwhL3Q" name="Relational"/>
+    <routinesParameter xmi:id="_29eV3ocDEeeHBvALo-HaJA" id="_JA_6IIPNEeaVvNMlKwhL3Q" name="SQLike"/>
+    <routinesParameter xmi:id="_29eV34cDEeeHBvALo-HaJA" id="_JBVRUIPNEeaVvNMlKwhL3Q" name="StringHandling"/>
+    <routinesParameter xmi:id="_29eV4IcDEeeHBvALo-HaJA" id="_JBXtkIPNEeaVvNMlKwhL3Q" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_29eV4YcDEeeHBvALo-HaJA" id="_JBissIPNEeaVvNMlKwhL3Q" name="TalendDate"/>
+    <routinesParameter xmi:id="_29eV4ocDEeeHBvALo-HaJA" id="_JBlI8IPNEeaVvNMlKwhL3Q" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_29eV44cDEeeHBvALo-HaJA" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter xmi:id="_29eV5IcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_29eV5YcDEeeHBvALo-HaJA" field="DIRECTORY" name="URI" value="&quot;C:/StudentFiles/routes/r12_loadBalance/input&quot;"/>
+    <elementParameter xmi:id="_29eV5ocDEeeHBvALo-HaJA" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_29eV54cDEeeHBvALo-HaJA" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_29eV6IcDEeeHBvALo-HaJA" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_29eV6YcDEeeHBvALo-HaJA" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_29eV6ocDEeeHBvALo-HaJA" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_29eV64cDEeeHBvALo-HaJA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_29eV7IcDEeeHBvALo-HaJA" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_29eV7YcDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_29eV7ocDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eV74cDEeeHBvALo-HaJA" componentName="cLoadBalancer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter xmi:id="_29eV8IcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cLoadBalancer_1" show="false"/>
+    <elementParameter xmi:id="_29eV8YcDEeeHBvALo-HaJA" field="CLOSED_LIST" name="STRATEGY" value="roundRobin"/>
+    <elementParameter xmi:id="_29eV8ocDEeeHBvALo-HaJA" field="CLOSED_LIST" name="LANGUAGES" value="constant" show="false"/>
+    <elementParameter xmi:id="_29eV84cDEeeHBvALo-HaJA" field="TEXT" name="EXPRESSION" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_29eV9IcDEeeHBvALo-HaJA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_29eV9YcDEeeHBvALo-HaJA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_29eV9ocDEeeHBvALo-HaJA" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_29eV94cDEeeHBvALo-HaJA" field="RADIO" name="BASIC_MODE" value="true" show="false"/>
+    <elementParameter xmi:id="_29eV-IcDEeeHBvALo-HaJA" field="RADIO" name="EXCEPTION_MODE" value="false" show="false"/>
+    <elementParameter xmi:id="_29eV-YcDEeeHBvALo-HaJA" field="RADIO" name="ROUND_ROBIN_MODE" value="false" show="false"/>
+    <elementParameter xmi:id="_29eV-ocDEeeHBvALo-HaJA" field="TABLE" name="EXCEPTIONS" show="false"/>
+    <elementParameter xmi:id="_29eV-4cDEeeHBvALo-HaJA" field="CLOSED_LIST" name="MAXFAILATTEMPT" value="ALWAYS" show="false"/>
+    <elementParameter xmi:id="_29eV_IcDEeeHBvALo-HaJA" field="TEXT" name="ATTEMPT_NUMBER" value="3" show="false"/>
+    <elementParameter xmi:id="_29eV_YcDEeeHBvALo-HaJA" field="CLOSED_LIST" name="INHERIT_ERROR_HANDLER" value="true" show="false"/>
+    <elementParameter xmi:id="_29eV_ocDEeeHBvALo-HaJA" field="CLOSED_LIST" name="USE_ROUND_ROBIN" value="false" show="false"/>
+    <elementParameter xmi:id="_29eV_4cDEeeHBvALo-HaJA" field="TEXT" name="CUSTOM_LOAD_BALANCER" value="MyCustomLoadBalancer" show="false"/>
+    <elementParameter xmi:id="_29eWAIcDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eWAYcDEeeHBvALo-HaJA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="32">
+    <elementParameter xmi:id="_29eWAocDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_29eWA4cDEeeHBvALo-HaJA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_3"/>
+    <elementParameter xmi:id="_29eWBIcDEeeHBvALo-HaJA" field="TEXT" name="NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_29eWBYcDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_29eWBocDEeeHBvALo-HaJA" field="TEXT" name="LABEL" value="toRoute1"/>
+    <elementParameter xmi:id="_29eWB4cDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eWCIcDEeeHBvALo-HaJA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter xmi:id="_29eWCYcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_29eWCocDEeeHBvALo-HaJA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_4"/>
+    <elementParameter xmi:id="_29eWC4cDEeeHBvALo-HaJA" field="TEXT" name="NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_29eWDIcDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_29eWDYcDEeeHBvALo-HaJA" field="TEXT" name="LABEL" value="toRoute2"/>
+    <elementParameter xmi:id="_29eWDocDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eWD4cDEeeHBvALo-HaJA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+    <elementParameter xmi:id="_29eWEIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+    <elementParameter xmi:id="_29eWEYcDEeeHBvALo-HaJA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_29eWEocDEeeHBvALo-HaJA" field="TEXT" name="NAME" value="&quot;route1&quot;"/>
+    <elementParameter xmi:id="_29eWE4cDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_29eWFIcDEeeHBvALo-HaJA" field="TEXT" name="LABEL" value="route1"/>
+    <elementParameter xmi:id="_29eWFYcDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eWFocDEeeHBvALo-HaJA" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+    <elementParameter xmi:id="_29eWF4cDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+    <elementParameter xmi:id="_29eWGIcDEeeHBvALo-HaJA" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_29eWGYcDEeeHBvALo-HaJA" field="TEXT" name="NAME" value="&quot;route2&quot;"/>
+    <elementParameter xmi:id="_29eWGocDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_29eWG4cDEeeHBvALo-HaJA" field="TEXT" name="LABEL" value="route2"/>
+    <elementParameter xmi:id="_29eWHIcDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eWHYcDEeeHBvALo-HaJA" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+    <elementParameter xmi:id="_29eWHocDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_29eWH4cDEeeHBvALo-HaJA" field="DIRECTORY" name="URI" value="&quot;C:/StudentFiles/routes/r12_loadBalance/output/route1&quot;"/>
+    <elementParameter xmi:id="_29eWIIcDEeeHBvALo-HaJA" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_29eWIYcDEeeHBvALo-HaJA" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_29eWIocDEeeHBvALo-HaJA" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_29eWI4cDEeeHBvALo-HaJA" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_29eWJIcDEeeHBvALo-HaJA" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_29eWJYcDEeeHBvALo-HaJA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_29eWJocDEeeHBvALo-HaJA" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_29eWJ4cDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_29eWKIcDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_29eWKYcDEeeHBvALo-HaJA" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter xmi:id="_29eWKocDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cFile_3" show="false"/>
+    <elementParameter xmi:id="_29eWK4cDEeeHBvALo-HaJA" field="DIRECTORY" name="URI" value="&quot;C:/StudentFiles/routes/r12_loadBalance/output/route2&quot;"/>
+    <elementParameter xmi:id="_29eWLIcDEeeHBvALo-HaJA" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_29eWLYcDEeeHBvALo-HaJA" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_29eWLocDEeeHBvALo-HaJA" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_29eWL4cDEeeHBvALo-HaJA" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_29eWMIcDEeeHBvALo-HaJA" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_29eWMYcDEeeHBvALo-HaJA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_29eWMocDEeeHBvALo-HaJA" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_29eWM4cDEeeHBvALo-HaJA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_29eWNIcDEeeHBvALo-HaJA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_29eWNYcDEeeHBvALo-HaJA" connectorName="ROUTE" label="route1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cLoadBalancer_1">
+    <elementParameter xmi:id="_29eWNocDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_29eWN4cDEeeHBvALo-HaJA" connectorName="LOADBALANCE" label="load_balance1" lineStyle="14" metaname="cLoadBalancer_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="cLoadBalancer_1" target="cDirect_1">
+    <elementParameter xmi:id="_29eWOIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="load_balance1" show="false"/>
+  </connection>
+  <connection xmi:id="_29eWOYcDEeeHBvALo-HaJA" connectorName="LOADBALANCE" label="load_balance2" lineStyle="14" metaname="cLoadBalancer_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="cLoadBalancer_1" target="cDirect_2">
+    <elementParameter xmi:id="_29eWOocDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="load_balance2" show="false"/>
+  </connection>
+  <connection xmi:id="_29eWO4cDEeeHBvALo-HaJA" connectorName="ROUTE" label="route2" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cDirect_3" target="cFile_2">
+    <elementParameter xmi:id="_29eWPIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_29eWPYcDEeeHBvALo-HaJA" connectorName="ROUTE" label="route3" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cDirect_4" target="cFile_3">
+    <elementParameter xmi:id="_29eWPocDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <subjob xmi:id="_29eWP4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWQIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_29eWQYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWQocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWQ4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWRIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cLoadBalancer_1" show="false"/>
+    <elementParameter xmi:id="_29eWRYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWRocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWR4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWSIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_29eWSYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWSocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWS4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWTIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_29eWTYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWTocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWT4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWUIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+    <elementParameter xmi:id="_29eWUYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWUocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWU4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWVIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+    <elementParameter xmi:id="_29eWVYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWVocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWV4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWWIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_29eWWYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWWocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_29eWW4cDEeeHBvALo-HaJA">
+    <elementParameter xmi:id="_29eWXIcDEeeHBvALo-HaJA" field="TEXT" name="UNIQUE_NAME" value="cFile_3" show="false"/>
+    <elementParameter xmi:id="_29eWXYcDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_29eWXocDEeeHBvALo-HaJA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
