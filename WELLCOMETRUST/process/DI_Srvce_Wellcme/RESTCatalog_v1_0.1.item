@@ -176,13 +176,13 @@
     <elementParameter field="TEXT" name="USER" value="context.Test_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuf9M145KnUoZM4cQqu2lZ8w"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_zLoMgIG4EeeclMM4duO8XA - flowmetercatcher" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;flowmetercatcher&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_zLoMgIG4EeeclMM4duO8XA - salesstaging" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;salesstaging&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select flowmetercatcher.moment,flowmetercatcher.pid,flowmetercatcher.father_pid,&#xA; flowmetercatcher.root_pid,flowmetercatcher.system_pid,flowmetercatcher.project,flowmetercatcher.job,&#xA; flowmetercatcher.job_repository_id,flowmetercatcher.job_version,flowmetercatcher.context,&#xA; flowmetercatcher.origin,flowmetercatcher.label,flowmetercatcher.count,flowmetercatcher.reference,&#xA; flowmetercatcher.thresholds &#xA;from flowmetercatcher&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select salesstaging.ShopName,salesstaging.CustID,salesstaging.ProductID,salesstaging.Quantity &#xA;from salesstaging&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -193,83 +193,28 @@
     <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopName"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustID"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductID"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="system_pid"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="job_repository_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="job_version"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="label"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="reference"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="thresholds"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Quantity"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="flowmetercatcher" name="tMysqlInput_1">
-      <column comment="" key="false" length="19" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+    <metadata connector="FLOW" label="salesstaging" name="tMysqlInput_1">
+      <column comment="" key="false" length="10" name="ShopName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CustID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ProductID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="system_pid" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="label" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="reference" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="thresholds" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="Quantity" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -281,39 +226,23 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="sendFlowmeter">
+    <metadata connector="FLOW" name="salesStaging">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="moment" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/moment"/>
-        <nodes name="pid" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/pid"/>
-        <nodes name="father_pid" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/father_pid"/>
-        <nodes name="root_pid" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/root_pid"/>
-        <nodes name="system_pid" type="id_Long" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/system_pid"/>
-        <nodes name="project" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/project"/>
-        <nodes name="job" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/job"/>
-        <nodes name="job_repository_id" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row1/job_repository_id"/>
-        <nodes name="job_version" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row1/job_version"/>
-        <nodes name="context" type="id_String" xpath="row1/context"/>
-        <nodes name="origin" type="id_String" xpath="row1/origin"/>
-        <nodes name="label" type="id_String" xpath="row1/label"/>
-        <nodes name="count" type="id_Integer" xpath="row1/count"/>
-        <nodes name="reference" type="id_Integer" xpath="row1/reference"/>
-        <nodes name="thresholds" type="id_String" xpath="row1/thresholds"/>
+        <nodes name="ShopName" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/ShopName"/>
+        <nodes name="CustID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/CustID"/>
+        <nodes name="ProductID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/ProductID"/>
+        <nodes name="Quantity" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/Quantity"/>
       </inputTrees>
-      <outputTrees name="sendFlowmeter">
-        <nodes name="body" expression="" type="id_Document" xpath="sendFlowmeter/body" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="sendFlowmeter.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="moment" expression="row1.moment" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="sendFlowmeter.body:/root/moment"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="pid" expression="row1.pid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="sendFlowmeter.body:/root/pid"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="father_pid" expression="row1.father_pid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="sendFlowmeter.body:/root/father_pid"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="root_pid" expression="row1.root_pid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="sendFlowmeter.body:/root/root_pid"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="system_pid" expression="row1.system_pid" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="sendFlowmeter.body:/root/system_pid"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="project" expression="row1.project" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="sendFlowmeter.body:/root/project"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="job" expression="row1.job" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="sendFlowmeter.body:/root/job"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="job_repository_id" expression="row1.job_repository_id" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="sendFlowmeter.body:/root/job_repository_id"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="job_version" expression="row1.job_version" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="sendFlowmeter.body:/root/job_version"/>
+      <outputTrees name="salesStaging">
+        <nodes name="body" expression="" type="id_Document" xpath="salesStaging/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="salesStaging.body:/root" loop="true" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ShopName" expression="row1.ShopName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="salesStaging.body:/root/ShopName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustID" expression="row1.CustID" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="salesStaging.body:/root/CustID"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ProductID" expression="row1.ProductID" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="salesStaging.body:/root/ProductID"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quantity" expression="row1.Quantity" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="salesStaging.body:/root/Quantity"/>
           </children>
         </nodes>
       </outputTrees>
@@ -322,11 +251,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
@@ -496,9 +420,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="sendFlowmeter" lineStyle="0" metaname="sendFlowmeter" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
+  <connection connectorName="FLOW" label="salesStaging" lineStyle="0" metaname="salesStaging" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendFlowmeter" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="salesStaging" show="false"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tMysqlInput_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
