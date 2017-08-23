@@ -13644,6 +13644,7 @@
       <relatedItems xmi:id="_TocXXocCEeeHBvALo-HaJA" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_TocXX4cCEeeHBvALo-HaJA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_TocXYIcCEeeHBvALo-HaJA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_HVr7cIfiEee4rL2wJiNCTQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_TodlcIcCEeeHBvALo-HaJA">
       <baseItem xmi:id="_TodlcYcCEeeHBvALo-HaJA" id="_oWo1cIpeEeaRuNzSQFNwJg" version="0.1" type="job"/>
