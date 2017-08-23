@@ -220,6 +220,27 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
+  <node componentName="tSampleRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSampleRow_1" show="false"/>
+    <elementParameter field="LABEL" name="INFO_RANGE" value="Range let you choose a list of line numbers and/or a list of ranges.&#xA;&#xA;- &quot;1,5&quot; : line 1 and 5&#xA;- &quot;10..20&quot; : lines 10 to 20&#xA;- &quot;23..45,48,50..54&quot; : lines 23 to 45, line 48 and lines 50 to 54&#xA;- &quot;1..10&quot; : 10 first lines&#xA;&#xA;&#x9;  "/>
+    <elementParameter field="MEMO_JAVA" name="RANGE" value="&quot;10..20&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="salesstaging" name="tSampleRow_1">
+      <column comment="" key="false" length="10" name="ShopName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CustID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProductID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Quantity" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -231,26 +252,26 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="ShopName" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/ShopName"/>
-        <nodes name="CustID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/CustID"/>
-        <nodes name="ProductID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/ProductID"/>
-        <nodes name="Quantity" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/Quantity"/>
+        <nodes name="ShopName" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="row1/ShopName"/>
+        <nodes name="CustID" type="id_Integer" outgoingConnections="//@node.4/@nodeData/@connections.1" xpath="row1/CustID"/>
+        <nodes name="ProductID" type="id_Integer" outgoingConnections="//@node.4/@nodeData/@connections.2" xpath="row1/ProductID"/>
+        <nodes name="Quantity" type="id_Integer" outgoingConnections="//@node.4/@nodeData/@connections.3" xpath="row1/Quantity"/>
       </inputTrees>
       <outputTrees name="salesStaging">
         <nodes name="body" expression="" type="id_Document" xpath="salesStaging/body" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="salesStaging.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ShopName" expression="row1.ShopName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="salesStaging.body:/root/ShopName"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustID" expression="row1.CustID" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="salesStaging.body:/root/CustID"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ProductID" expression="row1.ProductID" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="salesStaging.body:/root/ProductID"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quantity" expression="row1.Quantity" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="salesStaging.body:/root/Quantity"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ShopName" expression="row1.ShopName" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.0" xpath="salesStaging.body:/root/ShopName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustID" expression="row1.CustID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.1" xpath="salesStaging.body:/root/CustID"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ProductID" expression="row1.ProductID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.2" xpath="salesStaging.body:/root/ProductID"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quantity" expression="row1.Quantity" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.3" xpath="salesStaging.body:/root/Quantity"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.2" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.3" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="64">
@@ -407,7 +428,7 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="ShopName" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row2/ShopName"/>
+        <nodes name="ShopName" type="id_String" outgoingConnections="//@node.8/@nodeData/@connections.0" xpath="row2/ShopName"/>
         <nodes name="CustID" type="id_Integer" xpath="row2/CustID"/>
         <nodes name="ProductID" type="id_Integer" xpath="row2/ProductID"/>
         <nodes name="Quantity" type="id_Integer" xpath="row2/Quantity"/>
@@ -415,12 +436,12 @@
       <outputTrees name="out2">
         <nodes name="body" expression="" type="id_Document" xpath="out2/body" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out2.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ShopName" expression="&quot;ShopName &quot;+row2.ShopName+&quot; was inserted in the movie catalog&quot; " type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="out2.body:/root/ShopName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ShopName" expression="&quot;ShopName &quot;+row2.ShopName+&quot; was inserted in the movie catalog&quot; " type="id_String" incomingConnections="//@node.8/@nodeData/@connections.0" xpath="out2.body:/root/ShopName"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.0" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
@@ -446,9 +467,13 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="50" offsetLabelY="50" source="tMysqlInput_1" target="tSampleRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSampleRow_1" offsetLabelX="0" offsetLabelY="0" source="tSampleRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="salesStaging" lineStyle="0" metaname="salesStaging" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
