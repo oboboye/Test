@@ -8,6 +8,14 @@
     <contextParameter comment="" name="Test_Password" prompt="Test_Password?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_Password" value="NZNgK6DuncI="/>
     <contextParameter comment="" name="Test_Server" prompt="Test_Server?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_String" value="localhost"/>
   </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="Test_AdditionalParams" prompt="Test_AdditionalParams?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="Test_Port" prompt="Test_Port?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Test_Login" prompt="Test_Login?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_String" value="root"/>
+    <contextParameter comment="" name="Test_Database" prompt="Test_Database?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_String" value="test"/>
+    <contextParameter comment="" name="Test_Password" prompt="Test_Password?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_Password" value="NZNgK6DuncI="/>
+    <contextParameter comment="" name="Test_Server" prompt="Test_Server?" promptNeeded="false" repositoryContextId="_U-JEwIG5EeeclMM4duO8XA" type="id_String" value="localhost"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
