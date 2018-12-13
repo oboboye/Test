@@ -23,7 +23,7 @@
       "artifactId": "AlansJob",
       "version": "7.0.1_LATEST"
     },
-    "executionServer": "dev_jobserver"
+    "executionServer": "JOB_LAS01"
 	
 	
     
