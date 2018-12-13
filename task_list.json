@@ -1,9 +1,9 @@
 [
   {
-    "project": "temiproj",
+    "project": "CI",
     "task": {
-      "name": "Task22",
-      "description": "task22 description",
+      "name": "AlansJob",
+      "description": "testing Alans Job",
       "active": true
     },
 
@@ -18,89 +18,16 @@
     },
 
     "nexus": {
-      "repository": "snapshot_ci",
-      "groupId": "org.example.temiproj.job",
-      "artifactId": "sdfdsd",
-      "version": "1.0.0-LATEST"
-    },
-	
-    "context": {
-	    "variable1" : "value1",
-	    "variable2" : "value2",
-	    "variable3" : "value3"
-	},
-	
-    "executionServer": "dev_jobserver",
-
-    "triggers": [
-      {
-        "cron": {
-          "label": "FirstCronTrigger",
-          "description": "First cron trigger",
-          "timezone": "JOBSERVER_TIMEZONE",
-          "pauseOnError": true,
-          "minutes": "0,30",
-          "hours": "12,15",
-          "daysOfMonth": "15",
-          "months": "*",
-          "years": "2018"
-        }
-      }
-    ]
-  },
-  {
-    "project": "temiproj",
-    "task": {
-      "name": "Task2",
-      "description": "task2 description",
-      "active": true
-    },
-    
-	"parameters": {
-      "contextName": "Default",
-      "applyContextToChildren": true,
-      "logLevel": "Info",
-      "statisticsEnabled": true,
-      "onUnavailableJobServer": "Restart Task",
-      "timeout": 200,
-      "pauseTriggerOnError": true
-    },
-    
-	"nexus": {
       "repository": "release_ci",
-      "groupId": "org.example.temiproj.job",
-      "artifactId": "sdfdsd",
-      "version": "1.0.0-LATEST"
+      "groupId": "org.example.ci.job",
+      "artifactId": "AlansJob",
+      "version": "7.0.1_LATEST"
     },
+    "executionServer": "dev_jobserver"
+	
+	
     
-	"executionServer": "dev_jobserver",
-    
-	"triggers": [
-      {
-        "simple": {
-          "label": "SimpleTrigger",
-          "description": "First simple trigger",
-          "pauseOnError": true,
-          "timezone": "JOBSERVER_TIMEZONE",
-          "startTime": "2016-12-15 10:00:06",
-          "endTime": "2016-12-30 11:00:15",
-          "repeatCount": 10,
-          "repeatInterval": 120
-        }
-      },
-      {
-        "cron": {
-          "label": "CronTrigger2",
-          "description": "Second cron trigger",
-          "pauseOnError": true,
-          "timezone": "JOBSERVER_TIMEZONE",
-          "hours": "5,10",
-          "minutes": "1,10",
-          "daysOfMonth": "10",
-          "months": "*",
-          "years": "2017"
-        }
-      }
-    ]
   }
+  
+  
 ]
