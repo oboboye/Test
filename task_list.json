@@ -1,1 +1,106 @@
-[{"project":"CI","task":{"name":"sdgvsdffsdf","description":"sdgvsdffsdf","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"sdgvsdffsdf","version":"0.1.0_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"sdgvsdffsdf","description":"sdgvsdffsdf","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"sdgvsdffsdf","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"testing_k","description":"testing_k","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"testing_k","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"testing_b","description":"testing_b","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"testing_b","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"testing_c","description":"testing_c","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"testing_c","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"testing_l","description":"testing_l","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"testing_l","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"testing_m","description":"testing_m","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"testing_m","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"testing_a","description":"testing_a","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"testing_a","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"new_today_c","description":"new_today_c","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"new_today_c","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"new_today_d","description":"new_today_d","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"new_today_d","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"new_today_b","description":"new_today_b","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"new_today_b","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"AlansJob","description":"AlansJob","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"AlansJob","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"AlansJob_c","description":"AlansJob_c","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"AlansJob_c","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"dfgdfg","description":"dfgdfg","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"dfgdfg","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"AlansJob_b","description":"AlansJob_b","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"AlansJob_b","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"},{"project":"CI","task":{"name":"new_today_a","description":"new_today_a","active":true},"parameters":{"contextName":"Default","applyContextToChildren":false,"loglevel":"info","statisticsEnabled":true,"onUnavailableJobServer":"WAIT","timeout":1500,"pauseTriggerOnError":false},"nexus":{"repository":"release_ci","group":"org.example.ci.job","artifactId":"new_today_a","version":"7.0.1_LATEST"},"executionServer":"JOB_LAS01"}]
+[
+  {
+    "project": "temiproj",
+    "task": {
+      "name": "Task22",
+      "description": "task22 description",
+      "active": true
+    },
+
+    "parameters": {
+      "contextName": "Default",
+      "applyContextToChildren": false,
+      "logLevel": "Info",
+      "statisticsEnabled": true,
+      "onUnavailableJobServer": "WAIT",
+      "timeout": 1500,
+      "pauseTriggerOnError": false
+    },
+
+    "nexus": {
+      "repository": "snapshot_ci",
+      "groupId": "org.example.temiproj.job",
+      "artifactId": "sdfdsd",
+      "version": "1.0.0-LATEST"
+    },
+	
+    "context": {
+	    "variable1" : "value1",
+	    "variable2" : "value2",
+	    "variable3" : "value3"
+	},
+	
+    "executionServer": "dev_jobserver",
+
+    "triggers": [
+      {
+        "cron": {
+          "label": "FirstCronTrigger",
+          "description": "First cron trigger",
+          "timezone": "JOBSERVER_TIMEZONE",
+          "pauseOnError": true,
+          "minutes": "0,30",
+          "hours": "12,15",
+          "daysOfMonth": "15",
+          "months": "*",
+          "years": "2018"
+        }
+      }
+    ]
+  },
+  {
+    "project": "temiproj",
+    "task": {
+      "name": "Task2",
+      "description": "task2 description",
+      "active": true
+    },
+    
+	"parameters": {
+      "contextName": "Default",
+      "applyContextToChildren": true,
+      "logLevel": "Info",
+      "statisticsEnabled": true,
+      "onUnavailableJobServer": "Restart Task",
+      "timeout": 200,
+      "pauseTriggerOnError": true
+    },
+    
+	"nexus": {
+      "repository": "release_ci",
+      "groupId": "org.example.temiproj.job",
+      "artifactId": "sdfdsd",
+      "version": "1.0.0-LATEST"
+    },
+    
+	"executionServer": "dev_jobserver",
+    
+	"triggers": [
+      {
+        "simple": {
+          "label": "SimpleTrigger",
+          "description": "First simple trigger",
+          "pauseOnError": true,
+          "timezone": "JOBSERVER_TIMEZONE",
+          "startTime": "2016-12-15 10:00:06",
+          "endTime": "2016-12-30 11:00:15",
+          "repeatCount": 10,
+          "repeatInterval": 120
+        }
+      },
+      {
+        "cron": {
+          "label": "CronTrigger2",
+          "description": "Second cron trigger",
+          "pauseOnError": true,
+          "timezone": "JOBSERVER_TIMEZONE",
+          "hours": "5,10",
+          "minutes": "1,10",
+          "daysOfMonth": "10",
+          "months": "*",
+          "years": "2017"
+        }
+      }
+    ]
+  }
+]
